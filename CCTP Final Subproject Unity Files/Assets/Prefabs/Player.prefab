@@ -115,9 +115,9 @@ MonoBehaviour:
   walkSpeed: 2.5
   sprintSpeed: 5
   movementSmoothTime: 0.1
-  jumpForce: 15
+  jumpForce: 12
   gravityForce: 20
-  sphericalMovement: 1
+  sphericalMovement: 0
   planetGameObject: {fileID: 0}
   wallWalk: 0
   gravityRotationSpeed: 10
