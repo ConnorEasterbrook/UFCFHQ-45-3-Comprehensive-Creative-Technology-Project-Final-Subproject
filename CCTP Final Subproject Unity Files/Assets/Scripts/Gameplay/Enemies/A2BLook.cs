@@ -7,7 +7,7 @@ public class A2BLook : MonoBehaviour
     public GameObject lookPoint;
     private Quaternion lookStartPoint;
     private Quaternion lookPointRot;
-    public float rotationSpeed = 5.0f;
+    public float rotationSpeed = 1.0f;
 
     public bool atPointB;
 
@@ -25,9 +25,7 @@ public class A2BLook : MonoBehaviour
         {
             transform.rotation = Quaternion.Lerp (transform.rotation, lookPointRot, rotationSpeed * Time.deltaTime);
 
-            Debug.Log (Quaternion.Dot(transform.rotation, lookPointRot));
-
-            if (Quaternion.Dot(transform.rotation, lookPointRot) == -1f)
+            if (Quaternion.Dot (transform.rotation, lookPointRot) == -1f || Quaternion.Dot (transform.rotation, lookPointRot) == 1f)
             {
                 atPointB = true;
             }

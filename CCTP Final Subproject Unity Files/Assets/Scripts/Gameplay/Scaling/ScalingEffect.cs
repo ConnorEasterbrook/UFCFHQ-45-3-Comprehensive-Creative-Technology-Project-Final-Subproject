@@ -23,7 +23,7 @@ public class ScalingEffect : MonoBehaviour
     void Update()
     {
         // Check for left mouse click
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKeyDown (KeyCode.E))
         {
             UpdateInput();
         }
@@ -43,7 +43,8 @@ public class ScalingEffect : MonoBehaviour
             {
                 // Set target object to grabbed object and disable its physics
                 targetObject = grabbedObject.transform;
-                targetObject.GetComponent<Rigidbody>().isKinematic = true;
+                targetObject.GetComponent <Rigidbody>().isKinematic = true;
+                targetObject.GetComponent <BoxCollider>().enabled = false;
 
                 // Calculate the distance between the camera and the object
                 initialDistance = Vector3.Distance (transform.position, targetObject.position);
@@ -57,6 +58,7 @@ public class ScalingEffect : MonoBehaviour
         {
             // Re-enable physics for the target (grabbed) object
             targetObject.GetComponent<Rigidbody>().isKinematic = false;
+            targetObject.GetComponent <BoxCollider>().enabled = true;
 
             // Reset target object
             targetObject = null;
