@@ -13,7 +13,7 @@ public class ScalingEffect : MonoBehaviour
     public LayerMask ignoreLayer; // USUALLY JUST IGNORE ALL EXCEPT INTERACTIBLE LAYER
 
     [Tooltip ("The offset amount for targetObject to avoid clipping.")]
-    [Range (0.0f, 2.5f)] public float offsetFactor = 1.0f;
+    [Range (0.0f, 2.5f)] private float offsetFactor = 1.0f;
 
     // Calculation variables
     private float initialDistance; // The initial distance between the transform object and the target object
@@ -39,7 +39,7 @@ public class ScalingEffect : MonoBehaviour
             RaycastHit grabbedObject;
 
             // If raycast hits then get information for scaling effect
-            if (Physics.Raycast (transform.position, transform.forward, out grabbedObject, Mathf.Infinity, interactibleLayer))
+            if (Physics.Raycast (transform.position, transform.forward, out grabbedObject, 10.0f, interactibleLayer))
             {
                 // Set target object to grabbed object and disable its physics
                 targetObject = grabbedObject.transform;
@@ -85,7 +85,7 @@ public class ScalingEffect : MonoBehaviour
             intendedScale.x = intendedScale.y = intendedScale.z = distanceCalc;
  
             // Set the scale for the target objectm, multiplied by the original scale
-            targetObject.localScale = intendedScale * initialScale;
+            targetObject.localScale = initialScale * intendedScale;
         }
     }
 }
