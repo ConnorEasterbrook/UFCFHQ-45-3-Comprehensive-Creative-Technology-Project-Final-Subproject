@@ -32,11 +32,9 @@ public class SimonSaysActivator : MonoBehaviour
             if (Input.GetKeyDown (KeyCode.E))
             {
                 pressCooldown = true;
-                Debug.Log (pressCooldown);
                 UpdateInput();
 
                 await Task.Delay (500);
-                Debug.Log (pressCooldown);
                 pressCooldown = false;
             }
         }
@@ -55,6 +53,10 @@ public class SimonSaysActivator : MonoBehaviour
             if (targetObject.tag == "PuzzlePanel")
             {
                 UpdatePuzzlePanel();
+            }
+            else if (targetObject.tag == "PuzzlePanel")
+            {
+                
             }
             else
             {

@@ -14,7 +14,7 @@ public class Portal : MonoBehaviour
 	// Essentials for portal functioning
 	[Header ("Essentials")]
 	[Tooltip ("Link the two connected portals")]
-	public Portal portalPair;
+	public Portal linkedPortal;
 	private RenderTexture[] iterationRender;
 
 	// Create variables for portal render
@@ -24,6 +24,10 @@ public class Portal : MonoBehaviour
 	private int portalIterationsCheck = 1; // A safety check
 	private int currentIteration = 0; // Integer to count the iteration
 	private MeshRenderer portalScreen; // Used as the portal screen material
+
+	[Header ("Advanced Portal Rendering")]
+    public float nearClipOffset = 0.2f;
+    public float nearClipLimit = 0.3f;
 
 	[Header ("Portal Movement")]
 	private List<PortalObject> portalObjects = new List<PortalObject>(); // Create a list that will record gameobjects entering portals
@@ -55,11 +59,6 @@ public class Portal : MonoBehaviour
 		
 		/* COLLISIONS */
 		PortalMovement();
-	}
-
-	// LateUpdate is needed in order to change the transform of character controllers due to them being constantly updated
-	private void LateUpdate()
-	{
 	}
 
 	/* VISUALS */
@@ -131,28 +130,49 @@ public class Portal : MonoBehaviour
 			// Positioning
 			Vector3 relativePosition = transform.InverseTransformPoint (portalCamera.transform.position); // Convert portal camera's position from world space to the portal's local space
 			relativePosition = Quaternion.Euler (0.0f, 180.0f, 0.0f) * relativePosition; // Rotate around y-axis by 180 degrees to move behind the other portal
-			portalCameraTransform.position = portalPair.transform.TransformPoint (relativePosition); // With the camera in the correct relative position, set the portal camera's transform back into world space using the other portal
+			portalCameraTransform.position = linkedPortal.transform.TransformPoint (relativePosition); // With the camera in the correct relative position, set the portal camera's transform back into world space using the other portal
 
 			// Rotating
 			Quaternion relativeRotation = Quaternion.Inverse (transform.rotation) * portalCameraTransform.rotation; // Convert portal camera's rotation from world space to the portals local space
 			relativeRotation = Quaternion.Euler (0.0f, 180.0f, 0.0f) * relativeRotation; // Rotate y-axis by 180 degrees to have the portal camera looking at the other portal
-			portalCameraTransform.rotation = portalPair.transform.rotation * relativeRotation; // With the camera in the correct relative rotation, set the portal camera's rotation back into world space
+			portalCameraTransform.rotation = linkedPortal.transform.rotation * relativeRotation; // With the camera in the correct relative rotation, set the portal camera's rotation back into world space
 
 			/* ISSUE WITH THE CLIPPING. SOMETIMES THE CLIP IS NOT SMOOTH AND IS VISIBLE FROM PLAYER'S VIEW */
-			// Define the camera's clip plane in world space by converting a defined plane object into a Vector4
-			Plane plane = new Plane (-portalPair.transform.forward, portalPair.transform.position);
-			Vector4 clipPlaneWorldSpace = new Vector4 (plane.normal.x, plane.normal.y, plane.normal.z, plane.distance); // Via normal distance format, get the defined plane transform for calculations
-			// Convert from world space to camera space by getting the inverse transposr of the camera's worldToCameraMatrix and then use that to multiply the world space clip plane.
-			Vector4 clipPlaneCameraSpace = Matrix4x4.Transpose (Matrix4x4.Inverse (portalCamera.worldToCameraMatrix)) * clipPlaneWorldSpace; 
-
-			// Set the camera's oblique view with the defined clip plane vector 4
-			var cameraMatrix = mainCamera.CalculateObliqueMatrix (clipPlaneCameraSpace);
-			portalCamera.projectionMatrix = cameraMatrix;
+			// Handle portal view clipping
+			CameraClipping();
 		}
 	}
 
+	private void CameraClipping()
+	{
+		// Define the camera's clip plane in world space by converting a defined dot point into two Vector 3 variables
+		Transform clipPlane = linkedPortal.transform;
+        int clipPlanePoint = System.Math.Sign (Vector3.Dot (clipPlane.forward, transform.position - portalCamera.transform.position));
+
+		// Establish the position and normals of the clip plane via the portal camera transforms
+        Vector3 camSpacePos = portalCamera.worldToCameraMatrix.MultiplyPoint (clipPlane.position);
+        Vector3 camSpaceNormal = portalCamera.worldToCameraMatrix.MultiplyVector (clipPlane.forward) * clipPlanePoint;
+
+		// Calculate the distance between the clip plane and the camera
+        float cameraDistance = -Vector3.Dot (camSpacePos, camSpaceNormal) + nearClipOffset;
+
+        // If camera is close to portal then don't use oblique matrix
+        if (Mathf.Abs (cameraDistance) > nearClipLimit) 
+		{
+            Vector4 clipPlaneCameraSpace = new Vector4 (camSpaceNormal.x, camSpaceNormal.y, camSpaceNormal.z, cameraDistance);
+
+            // Update projection based on new clip plane
+            // Calculate matrix with player cam so that player camera settings (fov, etc) are used
+            portalCamera.projectionMatrix = mainCamera.CalculateObliqueMatrix (clipPlaneCameraSpace);
+        } 
+		else 
+		{
+            portalCamera.projectionMatrix = mainCamera.projectionMatrix;
+        }
+	}
+
 	/* COLLISIONS */
-	void PortalMovement()
+	private void PortalMovement()
 	{
 		for (int i = 0; i < portalObjects.Count; i++)
 		{
@@ -164,7 +184,7 @@ public class Portal : MonoBehaviour
 			// Update position of portal object.
 			Vector3 relativePos = transform.InverseTransformPoint (portalObject.transform.position); // Get local position of the portal object
 			relativePos = halfTurn * relativePos; // Apply the halfTurn to portal object's transform position
-			Vector3 teleportPosition = portalPair.transform.TransformPoint (relativePos); // Establish world space transform for portal object now that halfturn is applied
+			Vector3 teleportPosition = linkedPortal.transform.TransformPoint (relativePos); // Establish world space transform for portal object now that halfturn is applied
 
 			// Update rotation of portal object.
 			// Quaternion relativeRot = Quaternion.Inverse (transform.rotation) * portalObject.transform.rotation; // Get the opposite rotation of current rotation
@@ -173,7 +193,7 @@ public class Portal : MonoBehaviour
 			Quaternion relativeRot = Quaternion.Inverse (transform.rotation) * portalObjectChild.rotation; // Get the opposite rotation of current rotation
 			
 			relativeRot = halfTurn * relativeRot; // Apply the halfTurn to portal object's inverse transform rotation
-			Quaternion teleportRotation = portalPair.transform.rotation * relativeRot; // Establish rotation variable for correct way to face after teleportation
+			Quaternion teleportRotation = linkedPortal.transform.rotation * relativeRot; // Establish rotation variable for correct way to face after teleportation
 
 			Vector3 offsetFromPortal = portalObject.transform.position - transform.position; // Record where the portal object is in regards to the portal
 
@@ -184,10 +204,10 @@ public class Portal : MonoBehaviour
 			// If portal object has crossed, then teleport. If not then update previous portal offset
 			if ((preTeleportDot < 0) != (postTeleportDot < 0))
 			{
-				portalObject.Teleport (transform, portalPair.transform, teleportPosition, teleportRotation); // Teleport the portal object
+				portalObject.Teleport (transform, linkedPortal.transform, teleportPosition, teleportRotation); // Teleport the portal object
 
 				// This is required to ensure portal enter/exit tracking occurs in LateUpdate() due to complications with Character Controller
-				portalPair.OnEnterPortal (portalObject); 
+				linkedPortal.OnEnterPortal (portalObject); 
 				portalObjects.RemoveAt (i);
 				i--;
 			}
@@ -243,6 +263,6 @@ public class Portal : MonoBehaviour
 	{	
 		portalLineInEditor.a = 1f;
 		Gizmos.color = portalLineInEditor;
-		Gizmos.DrawLine (transform.position, portalPair.transform.position);
+		Gizmos.DrawLine (transform.position, linkedPortal.transform.position);
 	}
 }

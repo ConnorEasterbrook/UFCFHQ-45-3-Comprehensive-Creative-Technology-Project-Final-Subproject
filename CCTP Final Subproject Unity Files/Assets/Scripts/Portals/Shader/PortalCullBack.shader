@@ -8,9 +8,11 @@
 	{
 		Tags { "RenderType"="Opaque"}
 		LOD 100
-		ztest Less
 		cull back
-		Offset -1, -1
+		ZWrite On
+		ZTest Less
+		
+		Fog{ Mode Off }
 
 		Pass
 		{
