@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3683195609683648388}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: PlayerChild
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 6580672309553013682}
   - component: {fileID: 6580672309553013684}
   - component: {fileID: 6580672309553013685}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 6580672309997577636}
   - component: {fileID: 6580672309997577634}
   - component: {fileID: 6580672309997577635}
-  m_Layer: 4
+  m_Layer: 6
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 6580672310488416212}
   - component: {fileID: 6580672310488416209}
   - component: {fileID: 6580672310488416210}
-  m_Layer: 4
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -300,7 +300,8 @@ GameObject:
   - component: {fileID: 6580672310590983516}
   - component: {fileID: 6580672310590983517}
   - component: {fileID: 3936365358967298093}
-  m_Layer: 0
+  - component: {fileID: 1471654945}
+  m_Layer: 6
   m_Name: Player Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -332,7 +333,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -353,7 +354,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 6183
+    m_Bits: 1191
   m_RenderingPath: 1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -387,8 +388,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactibleLayer:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 128
   ignoreLayer:
     serializedVersion: 2
-    m_Bits: 6199
-  offsetFactor: 1
+    m_Bits: 129
+--- !u!114 &1471654945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6580672310590983489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb246aea73b982b47a8b49dd5ded1954, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BaseColour: {fileID: 0}
+  showColour: {fileID: 0}
+  positiveCheck: {fileID: 2100000, guid: e9f9a2a82b4f2fb4db5ef5fd53aff787, type: 2}
+  negativeCheck: {fileID: 0}
+  interactibleLayer:
+    serializedVersion: 2
+    m_Bits: 0

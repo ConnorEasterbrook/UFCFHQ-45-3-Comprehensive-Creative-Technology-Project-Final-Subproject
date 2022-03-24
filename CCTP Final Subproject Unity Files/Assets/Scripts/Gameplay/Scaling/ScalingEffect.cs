@@ -9,8 +9,8 @@ public class ScalingEffect : MonoBehaviour
     // Inspector variables
     [Tooltip ("The layer of the interactible objects.")]
     public LayerMask interactibleLayer;
-    [Tooltip ("What layers to ignore but still use for the scaling effect.")]
-    public LayerMask ignoreLayer; // USUALLY JUST IGNORE ALL EXCEPT INTERACTIBLE LAYER
+    [Tooltip ("What layers to use for scaling the target object.")]
+    public LayerMask scaleLayer; // USUALLY JUST IGNORE ALL EXCEPT INTERACTIBLE LAYER AND DEFAULT  
 
     [Tooltip ("The offset amount for targetObject to avoid clipping.")]
     [Range (0.0f, 2.5f)] private float offsetFactor = 1.0f;
@@ -22,7 +22,7 @@ public class ScalingEffect : MonoBehaviour
  
     void Update()
     {
-        // Check for left mouse click
+        // Check for E button press
         if (Input.GetKeyDown (KeyCode.E))
         {
             UpdateInput();
@@ -70,7 +70,7 @@ public class ScalingEffect : MonoBehaviour
     {
         // Cast a ray forward from the camera position, ignore the layer that is used to acquire targets
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.forward, out hit, Mathf.Infinity, ignoreLayer))
+        if (Physics.Raycast(transform.position, transform.forward, out hit, Mathf.Infinity, scaleLayer))
         {
             // Set the new position of the target by getting the hit point and moving it back
             targetObject.position = hit.point - transform.forward * offsetFactor * intendedScale.x;

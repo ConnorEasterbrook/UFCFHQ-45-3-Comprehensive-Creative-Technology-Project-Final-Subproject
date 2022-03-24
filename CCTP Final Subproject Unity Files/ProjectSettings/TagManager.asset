@@ -5,11 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Portal
+  - PuzzlePanel
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Building
   - Water
   - UI
   - Player
@@ -21,7 +22,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - SimonButton
   - 
   - 
   - 
