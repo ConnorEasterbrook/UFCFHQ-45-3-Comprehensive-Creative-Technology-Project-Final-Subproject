@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class SimonSays : MonoBehaviour
@@ -7,84 +8,119 @@ public class SimonSays : MonoBehaviour
     [Tooltip ("How many buttons to start with.")]
     public int startButtonCount = 1; //start with 1 buttons
     public SimonSaysButton[] simonButton; //objects containing the LightUp script.
-    public bool beginGame;
-    public List<int> sequence = new List<int>(); //list of chosen buttons in order
+    public List <int> sequence = new List <int>(); //list of chosen buttons in order
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (beginGame == true)
-        {
-            Debug.Log ("DEBUG");
-
-            StartCoroutine (StartOrder());
-            beginGame = false;
-        }
-    }
-
-    public IEnumerator StartOrder()//choose first 2 buttons
+    public async void StartOrder()//choose first 2 buttons
     {    
         for (int i = 0; i < startButtonCount; i++)
         {
-            ChooseButton();
+            SelectRandomButton();
         }
 
-        yield return new WaitForSeconds(1f);
+        await Task.Delay (1000);
 
-        StartCoroutine (ShowOrder());
-    }   
+        ShowRandomButton();
+    } 
 
-    public void ChooseButton()//choose a random button
+    public void SelectRandomButton()
     {
-        float buttonSelect = Random.Range(0, simonButton.Length); 
+        float buttonSelect = Random.Range (0, simonButton.Length);
 
-        if (buttonSelect == 0)
-        {
-            sequence.Add (1);
-        }
+        int select = (int)buttonSelect;
 
-        if (buttonSelect == 1)
-        {
-            sequence.Add (2);
-        }
+        sequence.Add (select + 1);
 
-        if (buttonSelect == 2)
-        {
-            sequence.Add (3);
-        }
-
-        if (buttonSelect == 3)
-        {
-            sequence.Add (4);
-        }
+        // if (buttonSelect == 0)
+        // {
+        //     sequence.Add (1);
+        // }
+        // else if (buttonSelect == 1)
+        // {
+        //     sequence.Add (2);
+        // }
+        // else if (buttonSelect == 2)
+        // {
+        //     sequence.Add (3);
+        // }
+        // else if (buttonSelect == 3)
+        // {
+        //     sequence.Add (4);
+        // }
+        // else if (buttonSelect == 4)
+        // {
+        //     sequence.Add (5);
+        // }
+        // else if (buttonSelect == 5)
+        // {
+        //     sequence.Add (6);
+        // }
+        // else if (buttonSelect == 6)
+        // {
+        //     sequence.Add (7);
+        // }
+        // else if (buttonSelect == 7)
+        // {
+        //     sequence.Add (8);
+        // }
+        // else if (buttonSelect == 8)
+        // {
+        //     sequence.Add (9);
+        // }
+        // else
+        // {
+        //     sequence.Add (9);
+        // }
     }
 
-    public IEnumerator ShowOrder()//blink the buttons in order
+    public async void ShowRandomButton()
     {
         for (int i = 0; i < sequence.Count; i++)
         {
-            yield return new WaitForSeconds(1f);
+            await Task.Delay (1000);
 
-            if (sequence[i] == 1)
-            {
-                //red 0.01f
-                StartCoroutine (simonButton [0].Blink (0.01f, 0.6f));
-            }
-            if (sequence[i] == 2)
-            {
-                //green 0.41f
-                StartCoroutine (simonButton [1].Blink (0.41f, 0.6f));
-            }
-            if (sequence[i] == 3)
-            {
-                //blue 0.66f
-                StartCoroutine (simonButton [2].Blink (0.66f, 0.6f));
-            }
-            if (sequence[i] == 4)
-            {
-                //yellow 0.16f
-                StartCoroutine (simonButton [3].Blink (0.16f, 0.6f));
-            }        
+            int sequenceNumber = sequence [i] - 1;
+            simonButton [sequenceNumber].ChangeColour();
+            
+            // if (sequenceNumber == 1)
+            // {
+            //     simonButton [0].ChangeColour();
+            // }
+            // else if (sequenceNumber == 2)
+            // {
+            //     simonButton [1].ChangeColour();
+            // }
+            // else if (sequenceNumber == 3)
+            // {
+            //     simonButton [2].ChangeColour();
+            // }
+            // else if (sequenceNumber == 4)
+            // {
+            //     simonButton [3].ChangeColour();
+            // }  
+            // else if (sequenceNumber == 5)
+            // {
+            //     simonButton [4].ChangeColour();
+            // }  
+            // else if (sequenceNumber == 6)
+            // {
+            //     simonButton [5].ChangeColour();
+            // }  
+            // else if (sequenceNumber == 7)
+            // {
+            //    simonButton [6].ChangeColour();
+            // }        
+            // else if (sequenceNumber == 8)
+            // {
+            //    simonButton [7].ChangeColour();
+            // }  
+            // else if (sequenceNumber == 9)
+            // {
+            //     simonButton [8].ChangeColour();
+            // }  
+            // else
+            // {
+            //     simonButton [8].ChangeColour();
+            // }
         }
     }
 }

@@ -3928,7 +3928,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fbc6b256f8492834397fc7ee033d6811, type: 2}
+  - {fileID: 2100000, guid: 8c2b5c4c4ecbe004da7551e81bb11bac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3972,6 +3972,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonPressed: 0
   correctButton: 0
+  baseColour: {fileID: 2100000, guid: 8c2b5c4c4ecbe004da7551e81bb11bac, type: 2}
+  showColour: {fileID: 2100000, guid: 41137b82c269fc44faf318f3f59e1313, type: 2}
 --- !u!1 &71674161
 GameObject:
   m_ObjectHideFlags: 0
@@ -6155,7 +6157,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fbc6b256f8492834397fc7ee033d6811, type: 2}
+  - {fileID: 2100000, guid: 8c2b5c4c4ecbe004da7551e81bb11bac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6199,6 +6201,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonPressed: 0
   correctButton: 0
+  baseColour: {fileID: 2100000, guid: 8c2b5c4c4ecbe004da7551e81bb11bac, type: 2}
+  showColour: {fileID: 2100000, guid: 41137b82c269fc44faf318f3f59e1313, type: 2}
 --- !u!1 &114631931
 GameObject:
   m_ObjectHideFlags: 0
@@ -22992,7 +22996,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fbc6b256f8492834397fc7ee033d6811, type: 2}
+  - {fileID: 2100000, guid: 8c2b5c4c4ecbe004da7551e81bb11bac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23036,6 +23040,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonPressed: 0
   correctButton: 0
+  baseColour: {fileID: 2100000, guid: 8c2b5c4c4ecbe004da7551e81bb11bac, type: 2}
+  showColour: {fileID: 2100000, guid: 41137b82c269fc44faf318f3f59e1313, type: 2}
 --- !u!1 &413997068
 GameObject:
   m_ObjectHideFlags: 0
@@ -24881,7 +24887,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fbc6b256f8492834397fc7ee033d6811, type: 2}
+  - {fileID: 2100000, guid: 8c2b5c4c4ecbe004da7551e81bb11bac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24925,6 +24931,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonPressed: 0
   correctButton: 0
+  baseColour: {fileID: 2100000, guid: 8c2b5c4c4ecbe004da7551e81bb11bac, type: 2}
+  showColour: {fileID: 2100000, guid: 41137b82c269fc44faf318f3f59e1313, type: 2}
 --- !u!1 &445630989
 GameObject:
   m_ObjectHideFlags: 0
@@ -25648,7 +25656,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fbc6b256f8492834397fc7ee033d6811, type: 2}
+  - {fileID: 2100000, guid: 8c2b5c4c4ecbe004da7551e81bb11bac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -25692,6 +25700,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonPressed: 0
   correctButton: 0
+  baseColour: {fileID: 2100000, guid: 8c2b5c4c4ecbe004da7551e81bb11bac, type: 2}
+  showColour: {fileID: 2100000, guid: 41137b82c269fc44faf318f3f59e1313, type: 2}
 --- !u!1 &455408537
 GameObject:
   m_ObjectHideFlags: 0
@@ -35390,7 +35400,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fbc6b256f8492834397fc7ee033d6811, type: 2}
+  - {fileID: 2100000, guid: 8c2b5c4c4ecbe004da7551e81bb11bac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -35434,6 +35444,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonPressed: 0
   correctButton: 0
+  baseColour: {fileID: 2100000, guid: 8c2b5c4c4ecbe004da7551e81bb11bac, type: 2}
+  showColour: {fileID: 2100000, guid: 41137b82c269fc44faf318f3f59e1313, type: 2}
 --- !u!1 &589294482
 GameObject:
   m_ObjectHideFlags: 0
@@ -37780,7 +37792,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fbc6b256f8492834397fc7ee033d6811, type: 2}
+  - {fileID: 2100000, guid: 8c2b5c4c4ecbe004da7551e81bb11bac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -37824,6 +37836,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonPressed: 0
   correctButton: 0
+  baseColour: {fileID: 2100000, guid: 8c2b5c4c4ecbe004da7551e81bb11bac, type: 2}
+  showColour: {fileID: 2100000, guid: 41137b82c269fc44faf318f3f59e1313, type: 2}
 --- !u!1 &623518837
 GameObject:
   m_ObjectHideFlags: 0
@@ -52125,7 +52139,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fbc6b256f8492834397fc7ee033d6811, type: 2}
+  - {fileID: 2100000, guid: 8c2b5c4c4ecbe004da7551e81bb11bac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -52169,6 +52183,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonPressed: 0
   correctButton: 0
+  baseColour: {fileID: 2100000, guid: 8c2b5c4c4ecbe004da7551e81bb11bac, type: 2}
+  showColour: {fileID: 2100000, guid: 41137b82c269fc44faf318f3f59e1313, type: 2}
 --- !u!1 &848491915
 GameObject:
   m_ObjectHideFlags: 0
@@ -101727,6 +101743,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1471654945, guid: bb06c7e54e17d984095e1478d634eadf, type: 3}
+      propertyPath: BaseColour
+      value: 
+      objectReference: {fileID: 2100000, guid: 8c2b5c4c4ecbe004da7551e81bb11bac, type: 2}
+    - target: {fileID: 1471654945, guid: bb06c7e54e17d984095e1478d634eadf, type: 3}
+      propertyPath: baseColour
+      value: 
+      objectReference: {fileID: 2100000, guid: 8c2b5c4c4ecbe004da7551e81bb11bac, type: 2}
+    - target: {fileID: 1471654945, guid: bb06c7e54e17d984095e1478d634eadf, type: 3}
+      propertyPath: showColour
+      value: 
+      objectReference: {fileID: 2100000, guid: 41137b82c269fc44faf318f3f59e1313, type: 2}
+    - target: {fileID: 1471654945, guid: bb06c7e54e17d984095e1478d634eadf, type: 3}
       propertyPath: negativeCheck
       value: 
       objectReference: {fileID: 2100000, guid: fbc6b256f8492834397fc7ee033d6811, type: 2}
@@ -107914,7 +107942,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startButtonCount: 1
-  simonButton: []
+  simonButton:
+  - {fileID: 113715448}
+  - {fileID: 71541801}
+  - {fileID: 848486079}
+  - {fileID: 589237337}
+  - {fileID: 443619900}
+  - {fileID: 453229680}
+  - {fileID: 1879461326}
+  - {fileID: 410375265}
+  - {fileID: 621289012}
   beginGame: 0
   sequence: 
 --- !u!65 &1801234948
@@ -114316,7 +114353,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fbc6b256f8492834397fc7ee033d6811, type: 2}
+  - {fileID: 2100000, guid: 8c2b5c4c4ecbe004da7551e81bb11bac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -114360,6 +114397,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonPressed: 0
   correctButton: 0
+  baseColour: {fileID: 2100000, guid: 8c2b5c4c4ecbe004da7551e81bb11bac, type: 2}
+  showColour: {fileID: 2100000, guid: 41137b82c269fc44faf318f3f59e1313, type: 2}
 --- !u!1 &1879835444
 GameObject:
   m_ObjectHideFlags: 0
