@@ -145,6 +145,18 @@ public class Portal : MonoBehaviour
 
 	private void CameraClipping()
 	{
+		// // Define the camera's clip plane in world space by converting a defined plane object into a Vector4
+		// Plane plane = new Plane (-linkedPortal.transform.forward, linkedPortal.transform.position);
+
+		// Vector4 clipPlaneWorldSpace = new Vector4 (plane.normal.x, plane.normal.y, plane.normal.z, plane.distance); // Via normal distance format, get the defined plane transform for calculations
+
+		// // Convert from world space to camera space by getting the inverse transposr of the camera's worldToCameraMatrix and then use that to multiply the world space clip plane.
+		// Vector4 clipPlaneCameraSpace = Matrix4x4.Transpose (Matrix4x4.Inverse (portalCamera.worldToCameraMatrix)) * clipPlaneWorldSpace; 
+
+		// // Set the camera's oblique view with the defined clip plane vector 4
+		// var cameraMatrix = mainCamera.CalculateObliqueMatrix (clipPlaneCameraSpace);
+		// portalCamera.projectionMatrix = cameraMatrix;
+
 		// Define the camera's clip plane in world space by converting a defined dot point into two Vector 3 variables
 		Transform clipPlane = linkedPortal.transform;
         int clipPlanePoint = System.Math.Sign (Vector3.Dot (clipPlane.forward, transform.position - portalCamera.transform.position));

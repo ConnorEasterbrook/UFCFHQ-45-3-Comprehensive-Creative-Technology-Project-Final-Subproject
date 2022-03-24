@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 7311966374120585405}
   - component: {fileID: 1724910103}
   m_Layer: 0
-  m_Name: Tower
+  m_Name: SphericalTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
