@@ -29,47 +29,6 @@ public class SimonSays : MonoBehaviour
         int select = (int)buttonSelect;
 
         sequence.Add (select + 1);
-
-        // if (buttonSelect == 0)
-        // {
-        //     sequence.Add (1);
-        // }
-        // else if (buttonSelect == 1)
-        // {
-        //     sequence.Add (2);
-        // }
-        // else if (buttonSelect == 2)
-        // {
-        //     sequence.Add (3);
-        // }
-        // else if (buttonSelect == 3)
-        // {
-        //     sequence.Add (4);
-        // }
-        // else if (buttonSelect == 4)
-        // {
-        //     sequence.Add (5);
-        // }
-        // else if (buttonSelect == 5)
-        // {
-        //     sequence.Add (6);
-        // }
-        // else if (buttonSelect == 6)
-        // {
-        //     sequence.Add (7);
-        // }
-        // else if (buttonSelect == 7)
-        // {
-        //     sequence.Add (8);
-        // }
-        // else if (buttonSelect == 8)
-        // {
-        //     sequence.Add (9);
-        // }
-        // else
-        // {
-        //     sequence.Add (9);
-        // }
     }
 
     public async void ShowRandomButton()
@@ -80,47 +39,6 @@ public class SimonSays : MonoBehaviour
 
             int sequenceNumber = sequence [i] - 1;
             simonButton [sequenceNumber].ChangeColour();
-            
-            // if (sequenceNumber == 1)
-            // {
-            //     simonButton [0].ChangeColour();
-            // }
-            // else if (sequenceNumber == 2)
-            // {
-            //     simonButton [1].ChangeColour();
-            // }
-            // else if (sequenceNumber == 3)
-            // {
-            //     simonButton [2].ChangeColour();
-            // }
-            // else if (sequenceNumber == 4)
-            // {
-            //     simonButton [3].ChangeColour();
-            // }  
-            // else if (sequenceNumber == 5)
-            // {
-            //     simonButton [4].ChangeColour();
-            // }  
-            // else if (sequenceNumber == 6)
-            // {
-            //     simonButton [5].ChangeColour();
-            // }  
-            // else if (sequenceNumber == 7)
-            // {
-            //    simonButton [6].ChangeColour();
-            // }        
-            // else if (sequenceNumber == 8)
-            // {
-            //    simonButton [7].ChangeColour();
-            // }  
-            // else if (sequenceNumber == 9)
-            // {
-            //     simonButton [8].ChangeColour();
-            // }  
-            // else
-            // {
-            //     simonButton [8].ChangeColour();
-            // }
         }
     }
 }

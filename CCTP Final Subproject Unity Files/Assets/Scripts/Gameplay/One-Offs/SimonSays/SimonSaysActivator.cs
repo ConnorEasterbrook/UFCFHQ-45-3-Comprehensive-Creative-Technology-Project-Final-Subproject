@@ -12,20 +12,33 @@ public class SimonSaysActivator : MonoBehaviour
     public Material positiveCheck;
     public Material negativeCheck;
 
+    public Renderer[] panelLights;
+    private int checkLight = 0;
+
     private GameObject targetObject; // The transform for the target interactible object
     private Renderer targetObjectRenderer;
     private SimonSays simonSaysScript;
     private SimonSaysButton simonSaysButtonScript;
     private int buttonPressCount = 0;
     private List<int> buttonPressSequence = new List<int>();
+    private bool pressCooldown = false;
 
     // Update is called once per frame
     async void Update()
     {
-        // Check for E button press
-        if (Input.GetKeyDown (KeyCode.E))
+        if (!pressCooldown)
         {
-            UpdateInput();
+            // Check for E button press
+            if (Input.GetKeyDown (KeyCode.E))
+            {
+                pressCooldown = true;
+                Debug.Log (pressCooldown);
+                UpdateInput();
+
+                await Task.Delay (500);
+                Debug.Log (pressCooldown);
+                pressCooldown = false;
+            }
         }
     }
 
@@ -73,7 +86,6 @@ public class SimonSaysActivator : MonoBehaviour
             if (targetObject.GetComponent <SimonSaysButton>() == simonSaysScript.simonButton[i])
             {
                 buttonPressSequence.Add (i + 1);
-                Debug.Log ("Adding " + i);
             }
         }
 
@@ -88,7 +100,7 @@ public class SimonSaysActivator : MonoBehaviour
             buttonPressCount += 1; // Increase button press count
 
             targetObjectRenderer.material = positiveCheck;
-            ChangeColour();
+            ChangeColour(); // Wait before setting colour back to default
 
             await Task.Delay (1000);
             // Check if the buttonPressCount matches the amount of shown buttons
@@ -98,21 +110,44 @@ public class SimonSaysActivator : MonoBehaviour
                 simonSaysScript.SelectRandomButton();
                 simonSaysScript.ShowRandomButton();
 
+                // Clear all data for the button presses
                 buttonPressSequence.Clear();
-
                 buttonPressCount = 0;
+
+                // Update check light and move on to the next
+                panelLights [checkLight].material = positiveCheck;
+                checkLight++;
             }
         }
         else
         {
+            // Clear all data for the shown button sequence
+            simonSaysScript.sequence.Clear();
+
+            // Select and show random buttons to continue game
+            simonSaysScript.SelectRandomButton();
+            simonSaysScript.ShowRandomButton();
+
+            // Clear all data for the button presses
+            buttonPressSequence.Clear();
+            buttonPressCount = 0;
+
+            // Clear all data for the check lights
+            for (int i = 0; i < panelLights.Length; i++)
+            {
+                panelLights [i].material = baseColour;
+            }
+            checkLight = 0;
+
+            // Set incorrect colour to button
             targetObjectRenderer.material = negativeCheck;
-            ChangeColour();
+            ChangeColour(); // Wait before setting colour back to default
         }
     }
 
     private async void ChangeColour()
     {
-        await Task.Delay (1000);
+        await Task.Delay (500);
         targetObjectRenderer.material = baseColour;
     }
 }
