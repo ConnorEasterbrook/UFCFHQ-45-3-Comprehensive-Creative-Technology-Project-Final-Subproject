@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Outside/Outside.unity
+    guid: ab63332424b04fa4fa78ec149d0131ba
+  - enabled: 1
+    path: Assets/Scenes/Office/Office.unity
+    guid: 865b0b80cde47c5469304fae5e7e34f1
+  - enabled: 1
+    path: Assets/Scenes/WhiteRoom/WhiteRoom.unity
+    guid: 41eeea5dd225df3419089723fe6ec063
+  - enabled: 1
+    path: Assets/Scenes/Alpha Subprojects/Portal/PortalTest.unity
+    guid: eba97a68a2a405c4f8d19a8ceac87176
+  - enabled: 1
+    path: Assets/Scenes/Alpha Subprojects/Portal/HorrorMap/HorrorMap.unity
+    guid: efc7dd8e7015cb44a82d2d885a6e7461
   m_configObjects: {}

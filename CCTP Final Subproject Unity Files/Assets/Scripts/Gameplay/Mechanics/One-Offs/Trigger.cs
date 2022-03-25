@@ -8,7 +8,7 @@ public class Trigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) 
     {
-        if (other.tag != "Untagged" || other.tag != "Default")
+        if (other.tag == "Player" || other.tag == "TriggerIt")
         {
             isTriggered = true;
         }

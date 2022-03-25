@@ -13,6 +13,7 @@ public class SimonSaysActivator : MonoBehaviour
     public Material negativeCheck;
 
     public Renderer[] panelLights;
+    public bool simonComplete = false;
     private int checkLight = 0;
 
     private GameObject targetObject; // The transform for the target interactible object
@@ -37,6 +38,12 @@ public class SimonSaysActivator : MonoBehaviour
                 await Task.Delay (500);
                 pressCooldown = false;
             }
+        }
+
+        if (checkLight >= 5)
+        {
+            // ADD SCRIPT TO PUT ON OBJECTS THAT WILL CHANGE AFTER SIMON SAYS IS COMPLETE
+            // SCRIPT.BOOL = TRUE
         }
     }
 
