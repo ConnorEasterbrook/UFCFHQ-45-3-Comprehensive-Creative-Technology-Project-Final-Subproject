@@ -54,11 +54,14 @@ public class Portal : MonoBehaviour
 	// Update is called once per frame
 	private void Update()
 	{
-		/* VISUALS */
-		PortalVisuals();
-		
-		/* COLLISIONS */
-		PortalMovement();
+		if (linkedPortal != null)
+		{
+			/* VISUALS */
+			PortalVisuals();
+			
+			/* COLLISIONS */
+			PortalMovement();
+		}
 	}
 
 	/* VISUALS */
@@ -258,8 +261,11 @@ public class Portal : MonoBehaviour
 
 	private void OnDrawGizmos()
 	{	
-		portalLineInEditor.a = 1f;
-		Gizmos.color = portalLineInEditor;
-		Gizmos.DrawLine (transform.position, linkedPortal.transform.position);
+		if (linkedPortal != null)
+		{
+			portalLineInEditor.a = 1f;
+			Gizmos.color = portalLineInEditor;
+			Gizmos.DrawLine (transform.position, linkedPortal.transform.position);
+		}
 	}
 }
