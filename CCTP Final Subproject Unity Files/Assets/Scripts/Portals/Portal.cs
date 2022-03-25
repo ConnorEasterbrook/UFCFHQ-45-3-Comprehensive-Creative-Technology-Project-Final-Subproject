@@ -137,7 +137,7 @@ public class Portal : MonoBehaviour
 			relativeRotation = Quaternion.Euler (0.0f, 180.0f, 0.0f) * relativeRotation; // Rotate y-axis by 180 degrees to have the portal camera looking at the other portal
 			portalCameraTransform.rotation = linkedPortal.transform.rotation * relativeRotation; // With the camera in the correct relative rotation, set the portal camera's rotation back into world space
 
-			/* ISSUE WITH THE CLIPPING. SOMETIMES THE CLIP IS NOT SMOOTH AND IS VISIBLE FROM PLAYER'S VIEW */
+			/* ISSUE WITH THE CLIPPING. THE CLIP IS NOT SMOOTH AND IS VISIBLE FROM PLAYER'S VIEW */
 			// Handle portal view clipping
 			CameraClipping();
 		}
@@ -145,44 +145,27 @@ public class Portal : MonoBehaviour
 
 	private void CameraClipping()
 	{
-		// // Define the camera's clip plane in world space by converting a defined plane object into a Vector4
-		// Plane plane = new Plane (-linkedPortal.transform.forward, linkedPortal.transform.position);
+		// Define the camera's clip plane in world space by converting a defined plane object into a Vector4
+		Plane plane = new Plane (-linkedPortal.transform.forward, linkedPortal.transform.position);
 
-		// Vector4 clipPlaneWorldSpace = new Vector4 (plane.normal.x, plane.normal.y, plane.normal.z, plane.distance); // Via normal distance format, get the defined plane transform for calculations
+		float distance = plane.distance + nearClipOffset;
 
-		// // Convert from world space to camera space by getting the inverse transposr of the camera's worldToCameraMatrix and then use that to multiply the world space clip plane.
-		// Vector4 clipPlaneCameraSpace = Matrix4x4.Transpose (Matrix4x4.Inverse (portalCamera.worldToCameraMatrix)) * clipPlaneWorldSpace; 
+		Vector4 clipPlaneWorldSpace = new Vector4 (plane.normal.x, plane.normal.y, plane.normal.z, distance); // Via normal distance format, get the defined plane transform for calculations
 
-		// // Set the camera's oblique view with the defined clip plane vector 4
-		// var cameraMatrix = mainCamera.CalculateObliqueMatrix (clipPlaneCameraSpace);
-		// portalCamera.projectionMatrix = cameraMatrix;
-
-		
-
-		// Define the camera's clip plane in world space by converting a defined dot point into two Vector 3 variables
-		Transform clipPlane = linkedPortal.transform;
-        int clipPlanePoint = System.Math.Sign (Vector3.Dot (-linkedPortal.transform.forward, transform.position - portalCamera.transform.position));
-
-		// Establish the position and normals of the clip plane via the portal camera transforms
-        Vector3 camSpacePos = portalCamera.worldToCameraMatrix.MultiplyPoint (clipPlane.position);
-        Vector3 camSpaceNormal = portalCamera.worldToCameraMatrix.MultiplyVector (clipPlane.forward) * clipPlanePoint;
-
-		// Calculate the distance between the clip plane and the camera
-        float cameraDistance = -Vector3.Dot (camSpacePos, camSpaceNormal) + nearClipOffset;
-
-        // If camera is close to portal then don't use oblique matrix
-        if (Mathf.Abs (cameraDistance) > nearClipLimit) 
+		// If camera is close to portal then don't use oblique matrix
+		if (Mathf.Abs (distance) > nearClipLimit) 
 		{
-            Vector4 clipPlaneCameraSpace = new Vector4 (camSpaceNormal.x, camSpaceNormal.y, camSpaceNormal.z, cameraDistance);
+			// Convert from world space to camera space by getting the inverse transposr of the camera's worldToCameraMatrix and then use that to multiply the world space clip plane.
+			Vector4 clipPlaneCameraSpace = Matrix4x4.Transpose (Matrix4x4.Inverse (portalCamera.worldToCameraMatrix)) * clipPlaneWorldSpace; 
 
-            // Update projection based on new clip plane
-            // Calculate matrix with player cam so that player camera settings (fov, etc) are used
-            portalCamera.projectionMatrix = mainCamera.CalculateObliqueMatrix (clipPlaneCameraSpace);
-        } 
+			// Set the camera's oblique view with the defined clip plane vector 4
+			var cameraMatrix = mainCamera.CalculateObliqueMatrix (clipPlaneCameraSpace);
+			portalCamera.projectionMatrix = cameraMatrix;
+		} 
 		else 
 		{
-            portalCamera.projectionMatrix = mainCamera.projectionMatrix;
-        }
+			portalCamera.projectionMatrix = mainCamera.projectionMatrix;
+		}
 	}
 
 	/* COLLISIONS */
