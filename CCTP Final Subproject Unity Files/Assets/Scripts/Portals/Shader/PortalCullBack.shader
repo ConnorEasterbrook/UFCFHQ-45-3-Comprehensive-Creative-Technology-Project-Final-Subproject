@@ -9,10 +9,10 @@
 		Tags { "RenderType"="Opaque"}
 		LOD 100
 		cull back
-		ZWrite On
 		ZTest Less
+		ZWrite On
 		
-		Fog{ Mode Off }
+		// Fog{ Mode Off }
 
 		Pass
 		{

@@ -157,9 +157,11 @@ public class Portal : MonoBehaviour
 		// var cameraMatrix = mainCamera.CalculateObliqueMatrix (clipPlaneCameraSpace);
 		// portalCamera.projectionMatrix = cameraMatrix;
 
+		
+
 		// Define the camera's clip plane in world space by converting a defined dot point into two Vector 3 variables
 		Transform clipPlane = linkedPortal.transform;
-        int clipPlanePoint = System.Math.Sign (Vector3.Dot (clipPlane.forward, transform.position - portalCamera.transform.position));
+        int clipPlanePoint = System.Math.Sign (Vector3.Dot (-linkedPortal.transform.forward, transform.position - portalCamera.transform.position));
 
 		// Establish the position and normals of the clip plane via the portal camera transforms
         Vector3 camSpacePos = portalCamera.worldToCameraMatrix.MultiplyPoint (clipPlane.position);
