@@ -11,11 +11,6 @@ public class SimonSaysActivator : MonoBehaviour
     public Material baseColour;
     public Material positiveCheck;
     public Material negativeCheck;
-
-    public Renderer[] panelLights;
-    public bool simonComplete = false;
-    private int checkLight = 0;
-
     private GameObject targetObject; // The transform for the target interactible object
     private Renderer targetObjectRenderer;
     private SimonSays simonSaysScript;
@@ -40,10 +35,12 @@ public class SimonSaysActivator : MonoBehaviour
             }
         }
 
-        if (checkLight >= 5)
+        if (simonSaysScript != null)
         {
-            // ADD SCRIPT TO PUT ON OBJECTS THAT WILL CHANGE AFTER SIMON SAYS IS COMPLETE
-            // SCRIPT.BOOL = TRUE
+            if (simonSaysScript.checkLight == simonSaysScript.panelLights.Length)
+            {
+                simonSaysScript.SimonSaysResult (simonSaysScript.desiredResult);
+            }
         }
     }
 
@@ -124,8 +121,8 @@ public class SimonSaysActivator : MonoBehaviour
                 buttonPressCount = 0;
 
                 // Update check light and move on to the next
-                panelLights [checkLight].material = positiveCheck;
-                checkLight++;
+                simonSaysScript.panelLights [simonSaysScript.checkLight].material = positiveCheck;
+                simonSaysScript.checkLight++;
             }
         }
         else
@@ -142,11 +139,11 @@ public class SimonSaysActivator : MonoBehaviour
             buttonPressCount = 0;
 
             // Clear all data for the check lights
-            for (int i = 0; i < panelLights.Length; i++)
+            for (int i = 0; i < simonSaysScript.panelLights.Length; i++)
             {
-                panelLights [i].material = baseColour;
+                simonSaysScript.panelLights [i].material = baseColour;
             }
-            checkLight = 0;
+            simonSaysScript.checkLight = 0;
 
             // Set incorrect colour to button
             targetObjectRenderer.material = negativeCheck;

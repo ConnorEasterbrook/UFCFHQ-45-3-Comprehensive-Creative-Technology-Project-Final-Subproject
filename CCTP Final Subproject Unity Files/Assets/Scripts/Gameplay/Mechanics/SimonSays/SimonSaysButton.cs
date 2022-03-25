@@ -21,7 +21,7 @@ public class SimonSaysButton : MonoBehaviour
         await Task.Delay (1000);
         buttonRenderer.material = showColour;
 
-        await Task.Delay (1000);
+        await Task.Delay (500);
         buttonRenderer.material = baseColour;
     }
 }

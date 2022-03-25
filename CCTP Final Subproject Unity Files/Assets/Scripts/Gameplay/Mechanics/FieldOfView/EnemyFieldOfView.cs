@@ -21,6 +21,8 @@ public class EnemyFieldOfView : MonoBehaviour
     private float rayCastHitPointDistance;
     private float rayCastHitPointAngle;
 
+    public OutsideMapManager gameManager;
+
     private void Awake() 
     {
         viewRenderChild = transform.GetChild(0).gameObject;
@@ -71,6 +73,9 @@ public class EnemyFieldOfView : MonoBehaviour
                 {
                     // Add target transform to the list of visible targets
                     visibleTargets.Add (targetTransform);
+
+                    // Make code work with current game
+                    gameManager.playerDetected = true;
                 }
             }
         }
@@ -156,28 +161,6 @@ public class EnemyFieldOfView : MonoBehaviour
         viewMesh.triangles = triangles;
         viewMesh.RecalculateNormals();
     }
-
-    // private void SetRayCastInfo (float globalAngle)
-    // {
-    //     Vector3 direction = DirectionFromAngle (true, globalAngle);
-
-    //     RaycastHit hit;
-
-    //     if (Physics.Raycast (transform.position, direction, out hit, detectionRadius, obstructionMask))
-    //     {
-    //         rayCastHit = true;
-    //         rayCastHitPoint = hit.point;
-    //         rayCastHitPointDistance = hit.distance;
-    //         rayCastHitPointAngle = globalAngle;
-    //     }
-    //     else
-    //     {
-    //         rayCastHit = false;
-    //         rayCastHitPoint = transform.position + direction * detectionRadius;
-    //         rayCastHitPointDistance = detectionRadius;
-    //         rayCastHitPointAngle = globalAngle;
-    //     }
-    // }
 
     // Calculate view angle points. Gets called twice with different values to create the FOV
     public Vector3 DirectionFromAngle(bool globalAngle, float angleInDegrees)
