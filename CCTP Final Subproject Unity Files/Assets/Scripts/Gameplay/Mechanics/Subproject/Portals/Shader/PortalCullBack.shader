@@ -8,6 +8,7 @@
 	{
 		Tags { 
 				"RenderType"="Transparent"
+				"Queue" = "Geometry"
 				"RenderPipeline"="UniversalPipeline"
 			}
 

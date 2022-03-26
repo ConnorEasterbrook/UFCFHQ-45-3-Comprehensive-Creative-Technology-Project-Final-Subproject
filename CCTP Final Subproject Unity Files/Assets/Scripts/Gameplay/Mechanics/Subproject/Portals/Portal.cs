@@ -39,6 +39,11 @@ public class Portal : MonoBehaviour
 	[Tooltip ("Will draw a line between connected portals for visual aid.")]
 	public Color portalLineInEditor = Color.green;
 
+
+
+	private RenderTexture tempTexture1;
+	
+
 	// Awake is called when the script instance is being loaded
 	private void Awake()
 	{
@@ -46,12 +51,18 @@ public class Portal : MonoBehaviour
 		mainCamera = Camera.main; // Set mainCamera variable to mean the player camera
 		portalCamera = GetComponentInChildren <Camera>(); // Set portalCamera to portal
 		portalScreen = GetComponent <MeshRenderer>(); // Get portal screen for rendering
+
+
+		tempTexture1 = new RenderTexture(Screen.width, Screen.height, 24, RenderTextureFormat.ARGB32);
 	}
 
 	// Start is called before the first frame update
 	void Start()
 	{
-		IterationProcess(); // Start visual process
+		/* VISUALS */
+		// IterationProcess(); // Start visual process
+
+		portalScreen.material.mainTexture = tempTexture1;
 	}
 
 	// Update is called once per frame
@@ -59,15 +70,27 @@ public class Portal : MonoBehaviour
 	{
 		if (linkedPortal != null)
 		{
-			/* VISUALS */
-			PortalVisuals();
-			
 			/* COLLISIONS */
 			PortalMovement();
+		}
+		else
+		{
+			portalScreen.gameObject.SetActive (false);
 		}
 	}
 
 	/* VISUALS */
+
+	private void OnDisable()
+    {
+        RenderPipeline.beginCameraRendering -= PreparePortalCameras;
+    }
+
+	private void OnEnable() 
+	{
+		RenderPipeline.beginCameraRendering += PreparePortalCameras;
+	}
+
 	// Process the current iteration and update the check
 	private void IterationProcess()
 	{
@@ -75,7 +98,7 @@ public class Portal : MonoBehaviour
 		portalIterationsCheck = portalIterations;
 	}
 
-	private void PortalVisuals()
+	private void PreparePortalCameras (ScriptableRenderContext SRC, Camera camera)
 	{
 		// Check that the gameobject this script is attached to is active. Used just in case something calls the script when it shouldn't
 		if (!gameObject.activeInHierarchy)
@@ -83,45 +106,33 @@ public class Portal : MonoBehaviour
 			return;
 		}
 
-		// Check if portals are visible in any camera before rendering
 		if (portalScreen.isVisible)
 		{
-			portalCamera.targetTexture = iterationRender [currentIteration];
-			portalCamera.Render(); // Render the camera
-		}
+			portalCamera.targetTexture = tempTexture1;
 
-		// Check if portal iteration number is correct
-		if (portalIterationsCheck != portalIterations)
-		{
-			IterationProcess();
-		}
-			
-		currentIteration = -1;
-		portalScreen.material.mainTexture = iterationRender [0]; // Render portal texture on correct iteration
-	}
-
-	private void OnWillRenderObject()
-	{
-		if (currentIteration < portalIterationsCheck - 1)
-		{
-			currentIteration++;
-
-			// Set Portal Buffer
-			RenderTexture.ReleaseTemporary (iterationRender [currentIteration]);
-
-			// Assign a created render texture to establish the portal screen parameters
-			iterationRender [currentIteration] = RenderTexture.GetTemporary (Screen.width, Screen.height, 0);
-
-			// Clear the portal view of backside of portals
-			int excludePortal = (gameObject.layer == 11) ? 12 : 11;
-			portalCamera.cullingMask = ~(1 << excludePortal);
-
-			// PortalCameraTransform ();
+			for (int i = portalIterations - 1; i >= 0; i--)
+			{
+				BeginPortalCamera (SRC, i);
+			}
 		}
 	}
 
 	// This function handles the visuals. It moves the portal cameras to match the player's P.O.V. and clip out anything that shouldn't be seen.
-	private void PortalCameraTransform (ScriptableRenderContext SRC, Camera camera)
+	private void BeginPortalCamera (ScriptableRenderContext SRC, int iterationID)
+	{
+		// Clear the portal view of backside of portals
+		int excludePortal = (gameObject.layer == 11) ? 12 : 11;
+		portalCamera.cullingMask = ~(1 << excludePortal);
+
+        for(int i = 0; i <= iterationID; ++i)
+        {
+			PortalCameraTransform();
+        }
+
+		CameraClipping (SRC);
+	}
+
+	private void PortalCameraTransform ()
 	{
 		// Check to make sure that the camera transforms aren't changing when they don't need to be
 		Vector3 camToPortal = transform.InverseTransformPoint(mainCamera.transform.position);
@@ -145,7 +156,7 @@ public class Portal : MonoBehaviour
 
 			/* ISSUE WITH THE CLIPPING. THE CLIP IS NOT SMOOTH AND IS VISIBLE FROM PLAYER'S VIEW */
 			// Handle portal view clipping
-			CameraClipping (SRC);
+			// CameraClipping (SRC);
 		}
 	}
 
@@ -156,10 +167,12 @@ public class Portal : MonoBehaviour
 
 		float distance = plane.distance + nearClipOffset;
 
+		float planeToPlayerDistance = Vector3.Distance (mainCamera.transform.position, linkedPortal.transform.position);
+
 		Vector4 clipPlaneWorldSpace = new Vector4 (plane.normal.x, plane.normal.y, plane.normal.z, distance); // Via normal distance format, get the defined plane transform for calculations
 
 		// If camera is close to portal then don't use oblique matrix
-		if (Mathf.Abs (distance) > nearClipLimit) 
+		if (Mathf.Abs (planeToPlayerDistance) > (nearClipOffset)) 
 		{
 			// Convert from world space to camera space by getting the inverse transposr of the camera's worldToCameraMatrix and then use that to multiply the world space clip plane.
 			Vector4 clipPlaneCameraSpace = Matrix4x4.Transpose (Matrix4x4.Inverse (portalCamera.worldToCameraMatrix)) * clipPlaneWorldSpace; 
@@ -172,6 +185,8 @@ public class Portal : MonoBehaviour
 		} 
 		else 
 		{
+			Debug.Log (gameObject.name + ": " + planeToPlayerDistance + " ? " + nearClipLimit);
+
 			portalCamera.projectionMatrix = mainCamera.projectionMatrix;
 
 			UniversalRenderPipeline.RenderSingleCamera (SRC, portalCamera);
@@ -274,15 +289,5 @@ public class Portal : MonoBehaviour
 			Gizmos.color = portalLineInEditor;
 			Gizmos.DrawLine (transform.position, linkedPortal.transform.position);
 		}
-	}
-
-	private void OnDisable()
-    {
-        RenderPipeline.beginCameraRendering -= PortalCameraTransform;
-    }
-
-	private void OnEnable() 
-	{
-		RenderPipeline.beginCameraRendering += PortalCameraTransform;
 	}
 }
