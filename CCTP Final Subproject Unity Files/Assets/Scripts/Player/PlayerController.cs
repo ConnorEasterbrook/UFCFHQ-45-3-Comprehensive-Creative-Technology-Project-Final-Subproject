@@ -51,6 +51,10 @@ public class PlayerController : PortalObject
     private Vector3 velocity;
     private Vector3 currentVelocity;
 
+    // Dissolving Floor Variables
+    public bool dissolvingFloor;
+    public Material[] dissolvingMaterials;
+
     // Spherical Variables
     [HideInInspector] public bool sphericalMovement;
     [HideInInspector] public GameObject planetGameObject;
@@ -120,6 +124,8 @@ public class PlayerController : PortalObject
     {
         UpdateCameraMovement();
         UpdateDefaultMovement();
+
+        if (dissolvingFloor) UpdateDissolvingFloor();
         
         if (sphericalMovement && planetGameObject != null) UpdateSphericalRotation();
         if (wallWalk) UpdateWallWalk();
@@ -263,6 +269,14 @@ public class PlayerController : PortalObject
         return Physics.Raycast (transform.position, transform.up, yCollisionBounds + 0.1f);
     }
 
+    private void UpdateDissolvingFloor()
+    {
+        foreach (Material material in dissolvingMaterials)
+        {
+            material.SetVector ("_playerPosition", transform.position);
+        }
+    }
+
     private void UpdateSphericalRotation()
     {
         // Get player's current "up" && get the centre of the planetGameObject
@@ -374,9 +388,9 @@ public class PlayerController : PortalObject
 
         playerChild.transform.localEulerAngles = Vector3.up * cameraPanSmooth;  // Set player rotation to correct rotation. It should match the implied direction before entering portals
 
-        playerRigidbody.transform.position = teleportPosition; // Set player position to the calculated teleport location
-
         velocity = outPortal.TransformVector (inPortal.InverseTransformVector (-velocity)); // Move player off the dotProduct (mid point) of the portal and match velocity of entering
+
+        playerRigidbody.transform.position = teleportPosition; // Set player position to the calculated teleport location
 
         // playerRigidbody.AddForce (playerCamera.transform.forward * walkSpeed);
         Physics.SyncTransforms (); // Apply transform changes to the physics engine

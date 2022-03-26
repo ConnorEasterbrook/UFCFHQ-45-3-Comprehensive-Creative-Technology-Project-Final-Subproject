@@ -24,7 +24,6 @@ public class Portal : MonoBehaviour
 	[Header ("Portal Rendering")]
 	[Tooltip ("Amount of times a portal can render another portal")]
 	public int portalIterations = 1; // Set the desired amount of portal iterations
-	private int portalIterationsCheck = 1; // A safety check
 	private MeshRenderer portalScreen; // Used as the portal screen material
 
 	[Header ("Advanced Portal Rendering")]
@@ -60,7 +59,6 @@ public class Portal : MonoBehaviour
 	void Start()
 	{
 		/* VISUALS */
-		// IterationProcess(); // Start visual process
 
 		portalScreen.material.mainTexture = tempTexture1;
 	}
@@ -70,17 +68,19 @@ public class Portal : MonoBehaviour
 	{
 		if (linkedPortal != null)
 		{
-			if (portalScreen.isVisible && portalToPlayerDistance < 20.0f)
-			{
-				portalCamera.Render(); // Render the camera
-			}
-
 			/* COLLISIONS */
 			PortalMovement();
+
+			if (portalScreen.isVisible && portalToPlayerDistance < 20.0f)
+			{
+				// linkedPortal.gameObject.SetActive (true);
+
+				portalCamera.Render(); // Render the camera
+			}
 		}
 		else
 		{
-			portalScreen.gameObject.SetActive (false);
+			gameObject.SetActive (false);
 		}
 	}
 
@@ -89,13 +89,6 @@ public class Portal : MonoBehaviour
 	private void OnWillRenderObject() 
 	{
 		PreparePortalCameras();
-	}
-
-	// Process the current iteration and update the check
-	private void IterationProcess()
-	{
-		iterationRender = new RenderTexture [portalIterations]; // Ensure each iteration has its own texture in the array
-		portalIterationsCheck = portalIterations;
 	}
 
 	private void PreparePortalCameras ()
@@ -155,10 +148,6 @@ public class Portal : MonoBehaviour
 			Quaternion relativeRotation = Quaternion.Inverse (transform.rotation) * portalCameraTransform.rotation; // Convert portal camera's rotation from world space to the portals local space
 			relativeRotation = Quaternion.Euler (0.0f, 180.0f, 0.0f) * relativeRotation; // Rotate y-axis by 180 degrees to have the portal camera looking at the other portal
 			portalCameraTransform.rotation = linkedPortal.transform.rotation * relativeRotation; // With the camera in the correct relative rotation, set the portal camera's rotation back into world space
-
-			/* ISSUE WITH THE CLIPPING. THE CLIP IS NOT SMOOTH AND IS VISIBLE FROM PLAYER'S VIEW */
-			// Handle portal view clipping
-			// CameraClipping (SRC);
 		}
 	}
 
@@ -182,16 +171,10 @@ public class Portal : MonoBehaviour
 			// Set the camera's oblique view with the defined clip plane vector 4
 			var cameraMatrix = mainCamera.CalculateObliqueMatrix (clipPlaneCameraSpace);
 			portalCamera.projectionMatrix = cameraMatrix;
-
-			// UniversalRenderPipeline.RenderSingleCamera (SRC, portalCamera);
 		} 
 		else 
 		{
-			Debug.Log (gameObject.name + ": " + planeToPlayerDistance + " ? " + nearClipLimit);
-
 			portalCamera.projectionMatrix = mainCamera.projectionMatrix;
-
-			// UniversalRenderPipeline.RenderSingleCamera (SRC, portalCamera);
 		}
 	}
 
@@ -290,11 +273,6 @@ public class Portal : MonoBehaviour
 			portalLineInEditor.a = 1f;
 			Gizmos.color = portalLineInEditor;
 			Gizmos.DrawLine (transform.position, linkedPortal.transform.position);
-		}
-
-		if (mainCamera != null)
-		{
-			Gizmos.DrawWireSphere (mainCamera.transform.position, 20);
 		}
 	}
 }

@@ -1,23 +1,66 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class ThrowSpirit : MonoBehaviour
 {
     public GameObject player;
-    private float floatSpeed = 8.0f;
-    private bool shooting = false;
+    public Transform target;
+    public Transform parent;
+    public float spiritSpeed = 8.0f;
+    private float floatSpeed = 8f;
+    public bool flying = false;
+    private bool check;
+    private Vector3 finalPosition;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Update() 
     {
+        if (Input.GetMouseButtonDown (1))
+        {
+            flying = true;
+            check = true;
+        }
 
+        Vector3 forwardOffset = Camera.main.transform.forward * 1.5f;
+        Vector3 rightOffset = Camera.main.transform.right * 1.0f;
+        Vector3 upOffset = Camera.main.transform.up * 0.5f;
+
+        finalPosition = Camera.main.transform.position + forwardOffset + rightOffset + upOffset;
+
+        if (check == true)
+        {
+            target.position = Camera.main.transform.position + (Camera.main.transform.forward * 20.0f);
+
+            check = false;
+        }
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        transform.position = Vector3.Lerp(transform.position, 
-        new Vector3 (player.transform.position.x + 0.75f, player.transform.position.y + 1.0f, player.transform.position.z + 0.75f), Time.deltaTime * floatSpeed);
+        if (flying)
+        {
+            if (transform.position != target.position)
+            {
+                transform.position = Vector3.MoveTowards (transform.position, target.position, floatSpeed * Time.fixedDeltaTime);
+            }
+            else
+            {
+                flying = false;
+            }
+        }
+
+        if (!flying)
+        {
+            transform.rotation = Camera.main.transform.rotation;
+
+            transform.position = Vector3.Lerp
+            (
+                transform.position,
+                finalPosition, 
+                Time.deltaTime * floatSpeed
+            );
+        }
     }
 }
