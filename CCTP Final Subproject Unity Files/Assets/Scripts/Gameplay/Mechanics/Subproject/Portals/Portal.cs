@@ -23,9 +23,8 @@ public class Portal : MonoBehaviour
 	// Create variables for portal render
 	[Header ("Portal Rendering")]
 	[Tooltip ("Amount of times a portal can render another portal")]
-	public int portalIterations = 4; // Set the desired amount of portal iterations
+	public int portalIterations = 1; // Set the desired amount of portal iterations
 	private int portalIterationsCheck = 1; // A safety check
-	private int currentIteration = 0; // Integer to count the iteration
 	private MeshRenderer portalScreen; // Used as the portal screen material
 
 	[Header ("Advanced Portal Rendering")]
@@ -42,6 +41,7 @@ public class Portal : MonoBehaviour
 
 
 	private RenderTexture tempTexture1;
+	private float portalToPlayerDistance = 0;
 	
 
 	// Awake is called when the script instance is being loaded
@@ -70,6 +70,11 @@ public class Portal : MonoBehaviour
 	{
 		if (linkedPortal != null)
 		{
+			if (portalScreen.isVisible && portalToPlayerDistance < 20.0f)
+			{
+				portalCamera.Render(); // Render the camera
+			}
+
 			/* COLLISIONS */
 			PortalMovement();
 		}
@@ -81,14 +86,9 @@ public class Portal : MonoBehaviour
 
 	/* VISUALS */
 
-	private void OnDisable()
-    {
-        RenderPipeline.beginCameraRendering -= PreparePortalCameras;
-    }
-
-	private void OnEnable() 
+	private void OnWillRenderObject() 
 	{
-		RenderPipeline.beginCameraRendering += PreparePortalCameras;
+		PreparePortalCameras();
 	}
 
 	// Process the current iteration and update the check
@@ -98,7 +98,7 @@ public class Portal : MonoBehaviour
 		portalIterationsCheck = portalIterations;
 	}
 
-	private void PreparePortalCameras (ScriptableRenderContext SRC, Camera camera)
+	private void PreparePortalCameras ()
 	{
 		// Check that the gameobject this script is attached to is active. Used just in case something calls the script when it shouldn't
 		if (!gameObject.activeInHierarchy)
@@ -106,19 +106,21 @@ public class Portal : MonoBehaviour
 			return;
 		}
 
-		if (portalScreen.isVisible)
+		portalToPlayerDistance = Vector3.Distance (mainCamera.transform.position, transform.position);
+
+		if (portalScreen.isVisible && portalToPlayerDistance < 20.0f)
 		{
 			portalCamera.targetTexture = tempTexture1;
 
 			for (int i = portalIterations - 1; i >= 0; i--)
 			{
-				BeginPortalCamera (SRC, i);
+				BeginPortalCamera (i);
 			}
 		}
 	}
 
 	// This function handles the visuals. It moves the portal cameras to match the player's P.O.V. and clip out anything that shouldn't be seen.
-	private void BeginPortalCamera (ScriptableRenderContext SRC, int iterationID)
+	private void BeginPortalCamera (int iterationID)
 	{
 		// Clear the portal view of backside of portals
 		int excludePortal = (gameObject.layer == 11) ? 12 : 11;
@@ -129,7 +131,7 @@ public class Portal : MonoBehaviour
 			PortalCameraTransform();
         }
 
-		CameraClipping (SRC);
+		CameraClipping ();
 	}
 
 	private void PortalCameraTransform ()
@@ -160,7 +162,7 @@ public class Portal : MonoBehaviour
 		}
 	}
 
-	private void CameraClipping (ScriptableRenderContext SRC)
+	private void CameraClipping ()
 	{
 		// Define the camera's clip plane in world space by converting a defined plane object into a Vector4
 		Plane plane = new Plane (-linkedPortal.transform.forward, linkedPortal.transform.position);
@@ -181,7 +183,7 @@ public class Portal : MonoBehaviour
 			var cameraMatrix = mainCamera.CalculateObliqueMatrix (clipPlaneCameraSpace);
 			portalCamera.projectionMatrix = cameraMatrix;
 
-			UniversalRenderPipeline.RenderSingleCamera (SRC, portalCamera);
+			// UniversalRenderPipeline.RenderSingleCamera (SRC, portalCamera);
 		} 
 		else 
 		{
@@ -189,7 +191,7 @@ public class Portal : MonoBehaviour
 
 			portalCamera.projectionMatrix = mainCamera.projectionMatrix;
 
-			UniversalRenderPipeline.RenderSingleCamera (SRC, portalCamera);
+			// UniversalRenderPipeline.RenderSingleCamera (SRC, portalCamera);
 		}
 	}
 
@@ -288,6 +290,11 @@ public class Portal : MonoBehaviour
 			portalLineInEditor.a = 1f;
 			Gizmos.color = portalLineInEditor;
 			Gizmos.DrawLine (transform.position, linkedPortal.transform.position);
+		}
+
+		if (mainCamera != null)
+		{
+			Gizmos.DrawWireSphere (mainCamera.transform.position, 20);
 		}
 	}
 }
