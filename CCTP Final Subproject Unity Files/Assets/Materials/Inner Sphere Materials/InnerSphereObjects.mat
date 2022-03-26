@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: InnerSphereObjects
-  m_Shader: {fileID: 4800000, guid: 71380ee471b567e4f867b5e4a52f61d2, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 79f7495edb837304c968b3e16b5855fe, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,6 +19,14 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_09d95341f90d427cb111ab315b6b708e:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_1cfa28ec5cde421298e1494f530bf5be:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -55,7 +63,23 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_1357f847a04648c5aceea788a09e5135: 0.5
+    - Vector1_1a7b381f37614ddcae91e76863bb7afc: 1
+    - Vector1_38109a56fd7f43e19b5579bc44e6b2fb: 0.4
+    - Vector1_4f13e23e81c34a35ae072b6cc1758b74: 15
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -75,7 +99,11 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
+    - Color_7a7c3bf43e924e61822c45171a8ac70b: {r: 0.32941177, g: 0.47843137, b: 0.6431373, a: 1}
+    - Color_91bee39f41d34b729167ad1ca63b041d: {r: 0, g: 0, b: 0, a: 0}
+    - Vector4_59ce2ca81b5d487dabc0d0845e6cf107: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 0.24746348, g: 0.35087386, b: 0.6320754, a: 1}
     - _Colour: {r: 0.24705882, g: 0.34901962, b: 0.6313726, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _PlayerPos: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

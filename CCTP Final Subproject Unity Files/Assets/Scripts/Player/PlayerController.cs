@@ -327,8 +327,8 @@ public class PlayerController : PortalObject
 
     private void UpdateInsideSphere()
     {
-        Vector4 playerPos = new Vector4(transform.position.x, transform.position.y, transform.position.z, 0);
-        Shader.SetGlobalVector("_PlayerPos", playerPos);
+        Vector4 playerPos = new Vector4 (transform.position.x, transform.position.y, transform.position.z, 0);
+        Shader.SetGlobalVector ("_PlayerPos", playerPos);
     }
 
     private void UpdateShooting()

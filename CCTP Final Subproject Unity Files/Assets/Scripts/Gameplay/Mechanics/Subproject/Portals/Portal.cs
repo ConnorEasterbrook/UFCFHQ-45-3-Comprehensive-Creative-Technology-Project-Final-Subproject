@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
+using RenderPipeline = UnityEngine.Rendering.RenderPipelineManager;
 
 [RequireComponent(typeof(MeshFilter))]
 [RequireComponent (typeof (MeshRenderer))]
@@ -65,6 +68,13 @@ public class Portal : MonoBehaviour
 	}
 
 	/* VISUALS */
+	// Process the current iteration and update the check
+	private void IterationProcess()
+	{
+		iterationRender = new RenderTexture [portalIterations]; // Ensure each iteration has its own texture in the array
+		portalIterationsCheck = portalIterations;
+	}
+
 	private void PortalVisuals()
 	{
 		// Check that the gameobject this script is attached to is active. Used just in case something calls the script when it shouldn't
@@ -90,13 +100,6 @@ public class Portal : MonoBehaviour
 		portalScreen.material.mainTexture = iterationRender [0]; // Render portal texture on correct iteration
 	}
 
-	// Process the current iteration and update the check
-	private void IterationProcess()
-	{
-		iterationRender = new RenderTexture [portalIterations]; // Ensure each iteration has its own texture in the array
-		portalIterationsCheck = portalIterations;
-	}
-
 	private void OnWillRenderObject()
 	{
 		if (currentIteration < portalIterationsCheck - 1)
@@ -113,12 +116,12 @@ public class Portal : MonoBehaviour
 			int excludePortal = (gameObject.layer == 11) ? 12 : 11;
 			portalCamera.cullingMask = ~(1 << excludePortal);
 
-			PortalCameraTransform ();
+			// PortalCameraTransform ();
 		}
 	}
 
 	// This function handles the visuals. It moves the portal cameras to match the player's P.O.V. and clip out anything that shouldn't be seen.
-	private void PortalCameraTransform()
+	private void PortalCameraTransform (ScriptableRenderContext SRC, Camera camera)
 	{
 		// Check to make sure that the camera transforms aren't changing when they don't need to be
 		Vector3 camToPortal = transform.InverseTransformPoint(mainCamera.transform.position);
@@ -142,11 +145,11 @@ public class Portal : MonoBehaviour
 
 			/* ISSUE WITH THE CLIPPING. THE CLIP IS NOT SMOOTH AND IS VISIBLE FROM PLAYER'S VIEW */
 			// Handle portal view clipping
-			CameraClipping();
+			CameraClipping (SRC);
 		}
 	}
 
-	private void CameraClipping()
+	private void CameraClipping (ScriptableRenderContext SRC)
 	{
 		// Define the camera's clip plane in world space by converting a defined plane object into a Vector4
 		Plane plane = new Plane (-linkedPortal.transform.forward, linkedPortal.transform.position);
@@ -164,10 +167,14 @@ public class Portal : MonoBehaviour
 			// Set the camera's oblique view with the defined clip plane vector 4
 			var cameraMatrix = mainCamera.CalculateObliqueMatrix (clipPlaneCameraSpace);
 			portalCamera.projectionMatrix = cameraMatrix;
+
+			UniversalRenderPipeline.RenderSingleCamera (SRC, portalCamera);
 		} 
 		else 
 		{
 			portalCamera.projectionMatrix = mainCamera.projectionMatrix;
+
+			UniversalRenderPipeline.RenderSingleCamera (SRC, portalCamera);
 		}
 	}
 
@@ -267,5 +274,15 @@ public class Portal : MonoBehaviour
 			Gizmos.color = portalLineInEditor;
 			Gizmos.DrawLine (transform.position, linkedPortal.transform.position);
 		}
+	}
+
+	private void OnDisable()
+    {
+        RenderPipeline.beginCameraRendering -= PortalCameraTransform;
+    }
+
+	private void OnEnable() 
+	{
+		RenderPipeline.beginCameraRendering += PortalCameraTransform;
 	}
 }
