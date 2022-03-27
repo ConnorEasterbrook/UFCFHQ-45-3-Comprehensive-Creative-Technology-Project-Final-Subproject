@@ -3,10 +3,16 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class HorrorMapTrigger : MonoBehaviour
 {
     public Trigger triggerScript;
+
+    private bool oneTime;
+    public string tempTextString_1;
+    public string tempTextString_2;
+    public Text tempText;
 
     // Update is called once per frame
     void Update()
@@ -16,11 +22,35 @@ public class HorrorMapTrigger : MonoBehaviour
             Debug.Log ("Load WhiteRoom");
             LoadNextScene();
         }
+
+        if (!oneTime)
+        {
+            TempShowText();
+        }
     }
 
     private async void LoadNextScene()
     {
         await Task.Delay (5000);
         SceneManager.LoadScene (2);
+    }
+
+    private async void TempShowText()
+    {
+        if (tempText != null)
+        {
+            oneTime = true;
+            
+            tempText.text = tempTextString_1;
+            tempText.gameObject.SetActive (true);
+
+            await Task.Delay (5000);
+
+            tempText.text = tempTextString_2;
+
+            await Task.Delay (5000);
+
+            tempText.gameObject.SetActive (false);
+        }
     }
 }

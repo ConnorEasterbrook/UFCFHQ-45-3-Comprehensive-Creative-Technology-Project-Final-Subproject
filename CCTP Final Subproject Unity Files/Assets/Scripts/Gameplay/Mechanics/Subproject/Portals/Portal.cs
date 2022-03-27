@@ -194,9 +194,6 @@ public class Portal : MonoBehaviour
 			Vector3 teleportPosition = linkedPortal.transform.TransformPoint (relativePos); // Establish world space transform for portal object now that halfturn is applied
 
 			// Update rotation of portal object.
-			// Quaternion relativeRot = Quaternion.Inverse (transform.rotation) * portalObject.transform.rotation; // Get the opposite rotation of current rotation
-
-			// Update rotation of portal object.
 			Quaternion relativeRot = Quaternion.Inverse (transform.rotation) * portalObjectChild.rotation; // Get the opposite rotation of current rotation
 			
 			relativeRot = halfTurn * relativeRot; // Apply the halfTurn to portal object's inverse transform rotation

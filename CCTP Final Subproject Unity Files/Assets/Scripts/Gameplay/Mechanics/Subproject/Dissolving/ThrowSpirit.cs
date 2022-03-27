@@ -1,13 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using UnityEngine;
 
 public class ThrowSpirit : MonoBehaviour
 {
-    public GameObject player;
     public Transform target;
-    public Transform parent;
     public float spiritSpeed = 8.0f;
     private float floatSpeed = 8f;
     public bool flying = false;
@@ -36,7 +33,7 @@ public class ThrowSpirit : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+    // Update is called once per frame.
     void FixedUpdate()
     {
         if (flying)
@@ -62,5 +59,11 @@ public class ThrowSpirit : MonoBehaviour
                 Time.deltaTime * floatSpeed
             );
         }
+    }
+
+    private void OnTriggerEnter(Collider other) 
+    {
+        Debug.Log ("dfsknmf");
+        flying = false;
     }
 }

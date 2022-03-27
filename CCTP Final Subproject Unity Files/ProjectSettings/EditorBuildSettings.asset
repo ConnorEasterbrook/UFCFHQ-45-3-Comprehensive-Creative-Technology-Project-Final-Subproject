@@ -21,6 +21,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Alpha Subprojects/Portal/HorrorMap/HorrorMap.unity
     guid: efc7dd8e7015cb44a82d2d885a6e7461
   - enabled: 1
-    path: Assets/Scenes/Alpha Subprojects/DissolvingFloor/DissolvingMap.unity
-    guid: c3e0413f5a332c643bc3645658418721
+    path: Assets/Scenes/Alpha Subprojects/DissolvingFloor/DissolveTest.unity
+    guid: 7ff98d1b109fd2841bace9076bf58f10
   m_configObjects: {}
