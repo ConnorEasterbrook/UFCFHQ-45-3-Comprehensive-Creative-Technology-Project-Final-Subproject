@@ -20,7 +20,6 @@ public class HorrorMapTrigger : MonoBehaviour
     {
         if (triggerScript.isTriggered && Input.GetKeyDown (KeyCode.W))
         {
-            Debug.Log ("Load WhiteRoom");
             LoadNextScene();
         }
 

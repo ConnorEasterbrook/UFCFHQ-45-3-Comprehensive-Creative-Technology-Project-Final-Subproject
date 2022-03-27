@@ -11,6 +11,7 @@ public class Trigger : MonoBehaviour
         if (other.tag == "Player" || other.tag == "TriggerIt")
         {
             isTriggered = true;
+            gameObject.SetActive (false);
         }
     }
 }

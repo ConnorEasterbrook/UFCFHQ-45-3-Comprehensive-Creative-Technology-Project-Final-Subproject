@@ -253,7 +253,6 @@ public class PlayerController : PortalObject
         }
         else if (CheckGrounded() && fallingVelocity <= 0) // If there is collision below the player (ground)
         {
-            Debug.Log ("Ground!");
             lastGroundedTime = Time.time; // Set lastGroundedTime to the current time
             fallingVelocity = 0; // Stop fallingVelocity
         }
