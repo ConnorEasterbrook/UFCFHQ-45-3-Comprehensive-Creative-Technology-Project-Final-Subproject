@@ -123,6 +123,7 @@ public class PlayerController : PortalObject
     void Update()
     {
         UpdateCameraMovement();
+        FixedGravity();
         UpdateDefaultMovement();
 
         if (dissolvingFloor) UpdateDissolvingFloor();
@@ -137,8 +138,10 @@ public class PlayerController : PortalObject
 
     private void FixedUpdate()
     {
-        FixedGravity();
+        // FixedGravity();
         FixedCameraMovement();
+
+        playerRigidbody.AddForce (-transform.up * playerRigidbody.mass * gravityForce);
 
         // Apply movement to rigidbody based on calculations
 		Vector3 localMove = transform.TransformDirection (velocity); // Final calculation
@@ -204,7 +207,7 @@ public class PlayerController : PortalObject
         Vector3 inputDirection = new Vector3 (input.x, 0, input.y).normalized;
         Vector3 inputMove = inputDirection * walkSpeed;
 
-        // If sprint key is pressed then make our current speed equal to sprintSpeed
+        // If sprint key is pressed then make our current speed equal to sprintSpeed 
         float speedOffset = 2; // Speed offset required to keep values tidy (Stop speed from being 0.5f, for example.)
         if (Input.GetKey (KeyCode.LeftShift))
         {
@@ -240,18 +243,17 @@ public class PlayerController : PortalObject
 
     private void FixedGravity()
     {
-        playerRigidbody.AddForce (-transform.up * playerRigidbody.mass * gravityForce);
-
         // Establish falling speed. Increase as the falling duration grows
         fallingVelocity -= gravityForce * Time.deltaTime;
 
         // Check for jump input and if true, check that the character isn't jumping or falling. Then jump
-        if (Input.GetKey (KeyCode.Space) && CheckGrounded())
+        if (Input.GetKeyDown (KeyCode.Space) && CheckGrounded())
         {
             fallingVelocity = jumpForce;
         }
-        else if (CheckGrounded()) // If there is collision below the player (ground)
+        else if (CheckGrounded() && fallingVelocity <= 0) // If there is collision below the player (ground)
         {
+            Debug.Log ("Ground!");
             lastGroundedTime = Time.time; // Set lastGroundedTime to the current time
             fallingVelocity = 0; // Stop fallingVelocity
         }
@@ -260,7 +262,8 @@ public class PlayerController : PortalObject
     // Boolean function that uses a raycast to see if there is ground within a superficial amount of the collider bounds.
     private bool CheckGrounded()
     {
-        return Physics.Raycast (transform.position, -transform.up, yCollisionBounds + 0.1f);
+        // return Physics.Raycast (transform.position, -transform.up, yCollisionBounds + 0.1f);
+        return Physics.Raycast (transform.position, -transform.up, 0.1f);
     }
 
     // Bool to check ceiling collision with capsule raycast for accurate detection
