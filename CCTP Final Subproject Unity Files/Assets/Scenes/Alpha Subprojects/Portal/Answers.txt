@@ -1,8 +1,0 @@
-Room order:
-
-Room 1
-Room 3
-Room 6
-Room 12 
-Room 14 (‘Room 6’)
-Room 13 (‘Room 3’)

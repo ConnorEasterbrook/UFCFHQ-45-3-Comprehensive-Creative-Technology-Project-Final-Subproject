@@ -15,12 +15,18 @@ EditorBuildSettings:
     path: Assets/Scenes/WhiteRoom/WhiteRoom.unity
     guid: 41eeea5dd225df3419089723fe6ec063
   - enabled: 1
-    path: Assets/Scenes/Alpha Subprojects/Portal/PortalTest.unity
+    path: Assets/Scenes/Alpha Subprojects/HorrorWithPortals/PortalTest.unity
     guid: eba97a68a2a405c4f8d19a8ceac87176
   - enabled: 1
-    path: Assets/Scenes/Alpha Subprojects/Portal/HorrorMap/HorrorMap.unity
+    path: Assets/Scenes/Alpha Subprojects/HorrorWithPortals/HorrorMap/HorrorMap.unity
     guid: efc7dd8e7015cb44a82d2d885a6e7461
   - enabled: 1
     path: Assets/Scenes/Alpha Subprojects/DissolvingFloor/DissolveTest.unity
     guid: 7ff98d1b109fd2841bace9076bf58f10
+  - enabled: 1
+    path: Assets/Scenes/Alpha Subprojects/SphericalExploration/SphericalExploration.unity
+    guid: de5fdced24893214d8414dd6171fa81e
+  - enabled: 1
+    path: Assets/Scenes/Alpha Subprojects/InnerSphere/InnerSphere.unity
+    guid: 23c29e511a6f2e94983e1fe219305646
   m_configObjects: {}

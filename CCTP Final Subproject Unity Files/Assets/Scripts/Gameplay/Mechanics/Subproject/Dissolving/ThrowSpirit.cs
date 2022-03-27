@@ -63,7 +63,6 @@ public class ThrowSpirit : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) 
     {
-        Debug.Log ("dfsknmf");
         flying = false;
     }
 }
