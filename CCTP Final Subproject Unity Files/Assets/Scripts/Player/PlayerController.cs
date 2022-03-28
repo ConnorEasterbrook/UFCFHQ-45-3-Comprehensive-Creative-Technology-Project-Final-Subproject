@@ -261,8 +261,11 @@ public class PlayerController : PortalObject
     // Boolean function that uses a raycast to see if there is ground within a superficial amount of the collider bounds.
     private bool CheckGrounded()
     {
-        // return Physics.Raycast (transform.position, -transform.up, yCollisionBounds + 0.1f);
-        return Physics.Raycast (transform.position, -transform.up, 0.1f);
+        if (!sphericalMovement)
+        {
+            return Physics.Raycast (transform.position, -transform.up, yCollisionBounds + 0.1f);
+        }
+        else return Physics.Raycast (transform.position, -transform.up, 0.1f);
     }
 
     // Bool to check ceiling collision with capsule raycast for accurate detection
