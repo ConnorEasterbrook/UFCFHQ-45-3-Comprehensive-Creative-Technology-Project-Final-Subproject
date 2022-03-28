@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Alpha Subprojects/InnerSphere/InnerSphere.unity
     guid: 23c29e511a6f2e94983e1fe219305646
+  - enabled: 1
+    path: Assets/Scenes/Alpha Subprojects/ScalingPuzzle/ScalingPuzzler.unity
+    guid: f4c7c7084ac2c184f8fe17508696d924
   m_configObjects: {}

@@ -130,7 +130,6 @@ public class PlayerController : PortalObject
         if (dissolvingFloor) UpdateDissolvingFloor();
         
         if (sphericalMovement && planetGameObject != null) UpdateSphericalRotation();
-        if (wallWalk) UpdateWallWalk();
 
         if (insideSphere) UpdateInsideSphere();
         
@@ -139,8 +138,9 @@ public class PlayerController : PortalObject
 
     private void FixedUpdate()
     {
-        // FixedGravity();
         FixedCameraMovement();
+        
+        if (wallWalk) UpdateWallWalk();
 
         playerRigidbody.AddForce (-transform.up * playerRigidbody.mass * gravityForce);
 
@@ -323,6 +323,7 @@ public class PlayerController : PortalObject
         Physics.Raycast (playerChild.transform.position, playerChild.transform.forward, out rayFront, wallWalkDetection, groundLayers);
         if (rayFront.transform != null)
         {
+            Debug.Log ("FOR");
             hitDirection += rayFront.normal;
         }
 
