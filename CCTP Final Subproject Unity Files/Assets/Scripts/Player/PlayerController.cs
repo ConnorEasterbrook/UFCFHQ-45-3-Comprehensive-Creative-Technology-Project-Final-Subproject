@@ -71,6 +71,7 @@ public class PlayerController : PortalObject
 
     // Inner-Sphere Variables
     [HideInInspector] public bool insideSphere;
+    public float insideSphereRadius = 5.0f;
 
     // Shooting Variables
     public bool enableShooting;
@@ -348,13 +349,14 @@ public class PlayerController : PortalObject
     {
         Vector4 playerPos = new Vector4 (transform.position.x, transform.position.y, transform.position.z, 0);
         Shader.SetGlobalVector ("_PlayerPos", playerPos);
+        Shader.SetGlobalFloat ("_MaskRadius", insideSphereRadius);
     }
 
     private void UpdateShooting()
     {
         if (Input.GetMouseButtonDown (0))
         {
-            // Get Vector3 of desired spawn location of the projectile
+            // Get Vector3 of desired spawn location of the projectile.
             Vector3 projectilePosition = new Vector3 (playerCamera.transform.position.x, playerCamera.transform.position.y - 0.15f, playerCamera.transform.position.z);
 
             // Get Quaternion to ensure the projectile travels in the direction the player is facing

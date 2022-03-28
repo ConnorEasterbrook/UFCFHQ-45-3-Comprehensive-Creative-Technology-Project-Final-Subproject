@@ -21,7 +21,7 @@ public class innerSphereMaterial : MonoBehaviour
     {
         if (playerController.insideSphere)
         {
-            innerSphereRenderer.material = innerSphereMat;
+            innerSphereRenderer.material = innerSphereMat; 
         }
         else
         {

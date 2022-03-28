@@ -92,7 +92,7 @@ Material:
     m_Colors:
     - Color_7a7c3bf43e924e61822c45171a8ac70b: {r: 0.43529412, g: 0.49019608, b: 0.29803923, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Colour: {r: 0.43529412, g: 0.49019608, b: 0.29803923, a: 1}
+    - _Colour: {r: 0.38679248, g: 0.20055613, b: 0.06811437, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _PlayerPos: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
