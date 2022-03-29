@@ -57,6 +57,7 @@ public class PlayerController : PortalObject
     // Spherical Variables
     [HideInInspector] public bool sphericalMovement;
     [HideInInspector] public GameObject planetGameObject;
+    [HideInInspector] public bool isModel;
     private Quaternion panRotation;
     private Quaternion playerToPlanetRotation;
     private GameObject playerChild; // Child object of the player
@@ -76,6 +77,11 @@ public class PlayerController : PortalObject
     [HideInInspector] public bool enableShooting;
     [HideInInspector] public Rigidbody projectileRigidbody;
     [HideInInspector] public float projectileSpeed = 20;
+
+    // Spherical world variables
+    [HideInInspector] public bool sphericalWorld;
+    [HideInInspector] public float sphereXAxis;
+    [HideInInspector] public float sphereYAxis;
 
     // Awake is called when the script instance is being loaded
     private void Awake()
@@ -129,6 +135,8 @@ public class PlayerController : PortalObject
         if (sphericalMovement && planetGameObject != null) UpdateSphericalRotation();
 
         if (insideSphere) UpdateInsideSphere();
+
+        if (sphericalWorld) UpdateSphericalWorld();
         
         if (enableShooting && projectileRigidbody != null) UpdateShooting();
     }
@@ -259,7 +267,7 @@ public class PlayerController : PortalObject
     // Boolean function that uses a raycast to see if there is ground within a superficial amount of the collider bounds.
     private bool CheckGrounded()
     {
-        if (!sphericalMovement)
+        if (!sphericalMovement || isModel)
         {
             return Physics.Raycast (transform.position, -transform.up, yCollisionBounds + 0.1f);
         }
@@ -339,6 +347,18 @@ public class PlayerController : PortalObject
         Vector4 playerPos = new Vector4 (transform.position.x, transform.position.y, transform.position.z, 0);
         Shader.SetGlobalVector ("_PlayerPos", playerPos);
         Shader.SetGlobalFloat ("_MaskRadius", insideSphereRadius);
+    }
+
+    private void UpdateSphericalWorld()
+    {
+        if (!insideSphere)
+        {
+            Vector4 playerPos = new Vector4 (transform.position.x, transform.position.y, transform.position.z, 0);
+            Shader.SetGlobalVector ("_PlayerPos", playerPos);
+        }
+        
+        Shader.SetGlobalFloat ("_SphereXAxis", sphereXAxis);
+        Shader.SetGlobalFloat ("_SphereYAxis", sphereYAxis);
     }
 
     private void UpdateShooting()
