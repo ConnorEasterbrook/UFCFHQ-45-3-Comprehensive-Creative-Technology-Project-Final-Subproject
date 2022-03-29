@@ -6,13 +6,19 @@ using UnityEngine.SceneManagement;
 public class OutsideMapManager : MonoBehaviour
 {
     public bool playerDetected = false;
+    public Trigger progressScene;
 
     // Update is called once per frame
     void Update()
     {
         if (playerDetected)
         {
-            SceneManager.LoadScene (0);
+            SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex);
+        }
+
+        if (progressScene.isTriggered)
+        {
+            SceneManager.LoadScene (2);
         }
     }
 }

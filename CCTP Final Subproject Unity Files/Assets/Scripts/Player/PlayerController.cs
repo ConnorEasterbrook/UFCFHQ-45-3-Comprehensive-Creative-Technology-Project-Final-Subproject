@@ -323,7 +323,6 @@ public class PlayerController : PortalObject
         Physics.Raycast (playerChild.transform.position, playerChild.transform.forward, out rayFront, wallWalkDetection, groundLayers);
         if (rayFront.transform != null)
         {
-            Debug.Log ("FOR");
             hitDirection += rayFront.normal;
         }
 
