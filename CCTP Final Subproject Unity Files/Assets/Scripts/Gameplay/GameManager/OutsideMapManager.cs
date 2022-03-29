@@ -17,14 +17,16 @@ public class OutsideMapManager : MonoBehaviour
             SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex);
         }
 
-        if (progressScene.isTriggered)
+        if (progressScene != null)
         {
-            
-        if (!oneTime)
-        {
-            SceneManager.LoadScene (1);
-            oneTime = true;
-        }
+            if (progressScene.isTriggered)
+            {
+                if (!oneTime)
+                {
+                    SceneManager.LoadScene (1);
+                    oneTime = true;
+                }
+            }
         }
     }
 }
