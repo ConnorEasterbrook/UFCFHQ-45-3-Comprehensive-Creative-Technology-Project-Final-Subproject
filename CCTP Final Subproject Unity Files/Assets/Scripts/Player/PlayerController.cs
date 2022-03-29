@@ -52,8 +52,7 @@ public class PlayerController : PortalObject
     private Vector3 currentVelocity;
 
     // Dissolving Floor Variables
-    public bool dissolvingFloor;
-    public Material[] dissolvingMaterials;
+    [HideInInspector] public bool dissolvingFloor;
 
     // Spherical Variables
     [HideInInspector] public bool sphericalMovement;
@@ -71,12 +70,12 @@ public class PlayerController : PortalObject
 
     // Inner-Sphere Variables
     [HideInInspector] public bool insideSphere;
-    public float insideSphereRadius = 5.0f;
+    [HideInInspector] public float insideSphereRadius = 5.0f;
 
     // Shooting Variables
-    public bool enableShooting;
-    public Rigidbody projectileRigidbody;
-    public float projectileSpeed = 20;
+    [HideInInspector] public bool enableShooting;
+    [HideInInspector] public Rigidbody projectileRigidbody;
+    [HideInInspector] public float projectileSpeed = 20;
 
     // Awake is called when the script instance is being loaded
     private void Awake()
@@ -126,8 +125,6 @@ public class PlayerController : PortalObject
         UpdateCameraMovement();
         FixedGravity();
         UpdateDefaultMovement();
-
-        if (dissolvingFloor) UpdateDissolvingFloor();
         
         if (sphericalMovement && planetGameObject != null) UpdateSphericalRotation();
 
@@ -273,14 +270,6 @@ public class PlayerController : PortalObject
     private bool CheckCeilingCollision()
     {
         return Physics.Raycast (transform.position, transform.up, yCollisionBounds + 0.1f);
-    }
-
-    private void UpdateDissolvingFloor()
-    {
-        foreach (Material material in dissolvingMaterials)
-        {
-            material.SetVector ("_playerPosition", transform.position);
-        }
     }
 
     private void UpdateSphericalRotation()

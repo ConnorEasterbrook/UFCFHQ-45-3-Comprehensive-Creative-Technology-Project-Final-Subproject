@@ -5,13 +5,22 @@ using UnityEngine;
 public class Trigger : MonoBehaviour
 {
     public bool isTriggered = false;
+    public int result = 0;
 
     private void OnTriggerEnter(Collider other) 
     {
         if (other.tag == "Player" || other.tag == "TriggerIt")
         {
             isTriggered = true;
-            gameObject.SetActive (false);
+            if (result == 0) gameObject.SetActive (false);
+        }
+    }
+
+    private void OnTriggerExit(Collider other) 
+    {
+        if (other.tag == "Player" || other.tag == "TriggerIt")
+        {
+            isTriggered = false;
         }
     }
 }

@@ -1670,6 +1670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTriggered: 0
+  result: 1
 --- !u!1 &246173657
 GameObject:
   m_ObjectHideFlags: 0
@@ -3938,6 +3939,7 @@ GameObject:
   m_Component:
   - component: {fileID: 588239226}
   - component: {fileID: 588239225}
+  - component: {fileID: 588239227}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3957,15 +3959,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c35041965149a0e4b9cd5758b9e023b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tempTextString_1: Welcome to the Inner Shere alpha stage subproject. Nothing too
-    fancy, just a shader.
-  tempTextString_2: You've been placed in what could only be considered as a pet
-    enclosure... Or a doll house
-  tempTextString_3: Explore the map and find the requested objects. Press 'P' to
-    see this again.
-  tempText: {fileID: 5861009473398611441}
-  playerScript: {fileID: 0}
-  decreaseIncreaseView: {x: 0, y: 0}
+  tempTextScript: {fileID: 588239227}
+  playerScript: {fileID: 663901782733703611}
+  decreaseIncreaseView: {x: 8, y: 12}
   decreaseViewTrigger:
   - {fileID: 1599353252}
   - {fileID: 1697391125}
@@ -3974,7 +3970,11 @@ MonoBehaviour:
   - {fileID: 1318011843}
   - {fileID: 1422835591}
   - {fileID: 840598442}
-  objectives: []
+  objectives:
+  - {fileID: 1135850751}
+  - {fileID: 236802858}
+  - {fileID: 1655259404}
+  - {fileID: 1675569170}
 --- !u!4 &588239226
 Transform:
   m_ObjectHideFlags: 0
@@ -3989,6 +3989,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &588239227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588239224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0bcb530225a4c41b0495493e4d330a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tempTextString_1: Welcome to the Inner Shere alpha stage subproject. Nothing too
+    fancy, just a shader.
+  tempTextString_2: You've been placed in what could only be considered as a pet
+    enclosure... Or a doll house
+  tempTextString_3: Explore the map and find the requested objects. Press 'P' to
+    see this again.
+  tempText: {fileID: 5861009473398611441}
+  textPanel: {fileID: 5861009473722113874}
 --- !u!1 &588714303
 GameObject:
   m_ObjectHideFlags: 0
@@ -5525,6 +5545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTriggered: 0
+  result: 1
 --- !u!4 &858971450 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2859956688662114917, guid: 1a002b3df33fa7c4fb8586ee0c3a7566, type: 3}
@@ -6498,6 +6519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTriggered: 0
+  result: 1
 --- !u!1 &1072734700
 GameObject:
   m_ObjectHideFlags: 0
@@ -7004,6 +7026,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTriggered: 0
+  result: 1
 --- !u!1 &1162595709
 GameObject:
   m_ObjectHideFlags: 0
@@ -8018,13 +8041,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1318011840}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.0000002533197}
-  m_LocalPosition: {x: 8.693999, y: 1.504, z: -5.2460003}
+  m_LocalRotation: {x: -0, y: 0.0000026226041, z: -0, w: -1}
+  m_LocalPosition: {x: 8.693995, y: 1.504, z: -3.0170002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1669125163}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 360, z: 0}
 --- !u!65 &1318011842
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8051,6 +8074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTriggered: 0
+  result: 1
 --- !u!1 &1422835590
 GameObject:
   m_ObjectHideFlags: 0
@@ -8082,6 +8106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTriggered: 0
+  result: 1
 --- !u!65 &1422835592
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9559,13 +9584,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599353249}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.0000002533197}
-  m_LocalPosition: {x: 8.694002, y: 1.504, z: -3.0170002}
+  m_LocalRotation: {x: -0, y: 0.0000026226041, z: -0, w: -1}
+  m_LocalPosition: {x: 8.694003, y: 1.504, z: -5.2460003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1669125163}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 360, z: 0}
 --- !u!65 &1599353251
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9592,6 +9617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTriggered: 0
+  result: 1
 --- !u!1 &1625388943
 GameObject:
   m_ObjectHideFlags: 0
@@ -9874,6 +9900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTriggered: 0
+  result: 1
 --- !u!1 &1669125162
 GameObject:
   m_ObjectHideFlags: 0
@@ -10100,6 +10127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTriggered: 0
+  result: 1
 --- !u!1 &1676606518
 GameObject:
   m_ObjectHideFlags: 0
@@ -10382,6 +10410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTriggered: 0
+  result: 1
 --- !u!1 &1697817185
 GameObject:
   m_ObjectHideFlags: 0
@@ -13708,14 +13737,13 @@ MonoBehaviour:
   jumpForce: 12
   gravityForce: 20
   dissolvingFloor: 0
-  dissolvingMaterials: []
   sphericalMovement: 0
   planetGameObject: {fileID: 0}
   wallWalk: 0
   gravityRotationSpeed: 10
   wallWalkDetection: 1.5
   insideSphere: 1
-  insideSphereRadius: 8
+  insideSphereRadius: 12
   enableShooting: 1
   projectileRigidbody: {fileID: 0}
   projectileSpeed: 40
@@ -13828,7 +13856,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5861009474596949893}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -14399,7 +14427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5754717, g: 0.55306244, b: 0.06333801, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -14521,10 +14549,9 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 9166987415170777230}
+  m_Children: []
   m_Father: {fileID: 5861009474596949893}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -14598,6 +14625,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: gravestone
       objectReference: {fileID: 0}
+    - target: {fileID: 8469786881147722102, guid: 46917ab7ee9b5fd409fb3f09703bc814, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0dba68a2198770246a07b06aad80de7d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46917ab7ee9b5fd409fb3f09703bc814, type: 3}
 --- !u!1 &4146962211049264572
@@ -14633,13 +14664,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5861009473398611443}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 5861009473722113875}
+  m_Children: []
   m_Father: {fileID: 5861009474596949893}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -14659,7 +14689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5754717, g: 0.55306244, b: 0.06333801, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -14698,7 +14728,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &5861009473722113872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14712,7 +14742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.36078432}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.69803923}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -14766,13 +14796,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 0.4, y: 0.1, z: 1}
   m_Children: []
-  m_Father: {fileID: 5861009473398611440}
+  m_Father: {fileID: 5861009474596949893}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -2}
-  m_SizeDelta: {x: 1760, y: 1020}
+  m_AnchoredPosition: {x: 0, y: -480}
+  m_SizeDelta: {x: 932, y: -30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &5861009474596949888
 Canvas:
@@ -14865,8 +14895,10 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 5861009473722113875}
   - {fileID: 5861009473398611440}
   - {fileID: 1097600145941611520}
+  - {fileID: 9166987415170777230}
   - {fileID: 3821524789360629334}
   m_Father: {fileID: 0}
   m_RootOrder: 12
@@ -15522,7 +15554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.36078432}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.69803923}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -15564,13 +15596,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 0.25, y: 0.1, z: 1}
   m_Children: []
-  m_Father: {fileID: 3821524789360629334}
-  m_RootOrder: 0
+  m_Father: {fileID: 5861009474596949893}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1.9999924}
-  m_SizeDelta: {x: 1760, y: 1020}
+  m_AnchoredPosition: {x: 668.06006, y: 471.81}
+  m_SizeDelta: {x: 292.69995, y: 52.400024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &9170747949839862450
 GameObject:

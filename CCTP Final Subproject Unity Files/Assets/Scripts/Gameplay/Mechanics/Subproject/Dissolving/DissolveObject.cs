@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DissolveObject : MonoBehaviour
 {
+    public PlayerController playerScript;
     public Transform spiritObject;
     public GameObject lightParent;
     private Vector3 initialScale;
@@ -32,52 +33,55 @@ public class DissolveObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Run this function once
-        if (!ranOnce)
+        if (playerScript.dissolvingFloor)
         {
-            runFunctionOnce();
-        }
-
-        // Get the relevant distances
-        float distanceFromSpirit = Vector3.Distance (spiritObject.position, transform.position);
-        float distanceFromCamera = Vector3.Distance (Camera.main.transform.position, transform.position);
-
-        // If the environment is outside of cameraRange then use spirit code, otherwise set position and scale to default
-        if (distanceFromCamera > 5.0f && !inLight)
-        {
-            // If the environment is within spirit range then manipulate its transform based on the distance
-            if (distanceFromSpirit <= 14.0f && distanceFromSpirit > 5.05f)
+            // Run this function once
+            if (!ranOnce)
             {
-                // Set scale to vary based on distance
-                Vector3 objectScale = initialScale / distanceFromSpirit * scaleMultiplier;
-                transform.localScale = objectScale;
+                runFunctionOnce();
+            }
 
-                transform.position = new Vector3 (transform.position.x, distanceFromSpirit - 5.0f, transform.position.z);
-            }
-            else if (distanceFromSpirit > 14.0f)
+            // Get the relevant distances
+            float distanceFromSpirit = Vector3.Distance (spiritObject.position, transform.position);
+            float distanceFromCamera = Vector3.Distance (Camera.main.transform.position, transform.position);
+
+            // If the environment is outside of cameraRange then use spirit code, otherwise set position and scale to default
+            if (distanceFromCamera > 5.0f && !inLight)
             {
-                // If environment is outside of spirit range and an extra padding range then hide it
-                transform.localScale = new Vector3 (0, 0, 0);
+                // If the environment is within spirit range then manipulate its transform based on the distance
+                if (distanceFromSpirit <= 14.0f && distanceFromSpirit > 5.05f)
+                {
+                    // Set scale to vary based on distance
+                    Vector3 objectScale = initialScale / distanceFromSpirit * scaleMultiplier;
+                    transform.localScale = objectScale;
+
+                    transform.position = new Vector3 (transform.position.x, distanceFromSpirit - 5.0f, transform.position.z);
+                }
+                else if (distanceFromSpirit > 14.0f)
+                {
+                    // If environment is outside of spirit range and an extra padding range then hide it
+                    transform.localScale = new Vector3 (0, 0, 0);
+                }
+                // If the environment is within the padding range then make sure it is set to its default positioning
+                else if (distanceFromCamera <= 5.05f && distanceFromCamera > 5.0f)
+                {
+                    transform.position = new Vector3 (transform.position.x, transform.position.y, transform.position.z);
+                }
+                else if (distanceFromSpirit <= 5.0f)
+                {
+                    // Set position and scale to default
+                    transform.localScale = Vector3.Lerp (transform.localScale, initialScale, Time.deltaTime * scaleMultiplier);
+
+                    transform.position = Vector3.Lerp (transform.position, initialPosition, Time.deltaTime * 5.0f);
+                }
             }
-            // If the environment is within the padding range then make sure it is set to its default positioning
-            else if (distanceFromCamera <= 5.05f && distanceFromCamera > 5.0f)
-            {
-                transform.position = new Vector3 (transform.position.x, transform.position.y, transform.position.z);
-            }
-            else if (distanceFromSpirit <= 5.0f)
+            else
             {
                 // Set position and scale to default
                 transform.localScale = Vector3.Lerp (transform.localScale, initialScale, Time.deltaTime * scaleMultiplier);
 
                 transform.position = Vector3.Lerp (transform.position, initialPosition, Time.deltaTime * 5.0f);
             }
-        }
-        else
-        {
-            // Set position and scale to default
-            transform.localScale = Vector3.Lerp (transform.localScale, initialScale, Time.deltaTime * scaleMultiplier);
-
-            transform.position = Vector3.Lerp (transform.position, initialPosition, Time.deltaTime * 5.0f);
         }
     }
 

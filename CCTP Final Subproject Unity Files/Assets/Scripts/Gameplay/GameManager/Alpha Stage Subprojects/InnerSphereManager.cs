@@ -7,11 +7,9 @@ using UnityEngine.UI;
 
 public class InnerSphereManager : MonoBehaviour
 {
-    private bool oneTime;
-    public string tempTextString_1;
-    public string tempTextString_2;
-    public string tempTextString_3;
-    public Text tempText;
+    private bool oneTime2;
+    public TempText tempTextScript;
+    private Text tempText;
 
     [Space (10)]
     public PlayerController playerScript;
@@ -22,6 +20,11 @@ public class InnerSphereManager : MonoBehaviour
 
     [Space (10)]
     public Trigger[] objectives;
+
+    private void Awake() 
+    {
+        tempText = tempTextScript.tempText;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -38,16 +41,6 @@ public class InnerSphereManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!oneTime)
-        {
-            TempShowText();
-        }
-
-        if (Input.GetKeyDown (KeyCode.P) && oneTime == true)
-        {
-            oneTime = false;
-        }
-
         for (int i = 0; i < decreaseViewTrigger.Length; i++)
         {
             if (decreaseViewTrigger [i].isTriggered)
@@ -60,7 +53,7 @@ public class InnerSphereManager : MonoBehaviour
         {
             if (increaseViewTrigger [i].isTriggered)
             {
-                playerScript.insideSphereRadius = Mathf.Lerp (playerScript.insideSphereRadius, decreaseIncreaseView.x, Time.deltaTime * lerpSpeed);
+                playerScript.insideSphereRadius = Mathf.Lerp (playerScript.insideSphereRadius, decreaseIncreaseView.y, Time.deltaTime * lerpSpeed);
             }
         }
 
@@ -73,27 +66,6 @@ public class InnerSphereManager : MonoBehaviour
         }
     }
 
-    private async void TempShowText()
-    {
-        if (tempText != null)
-        {
-            oneTime = true;
-            
-            tempText.gameObject.SetActive (true);
-
-            tempText.text = tempTextString_1;
-            await Task.Delay (5000);
-
-            tempText.text = tempTextString_2;
-            await Task.Delay (5000);
-
-            tempText.text = tempTextString_3;
-            await Task.Delay (5000);
-
-            tempText.gameObject.SetActive (false);
-        }
-    }
-
     private async void Objectives (int triggeredObjective)
     {
         if (triggeredObjective == 0)
@@ -101,7 +73,7 @@ public class InnerSphereManager : MonoBehaviour
             tempText.gameObject.SetActive (true);
             
             tempText.text = "It is I, the mystical plant pot. I'm owed some money by that gravestone fellow. Go find him for me.";
-            await Task.Delay (5000);
+            await Task.Delay (7500);
 
             objectives [triggeredObjective + 1].gameObject.SetActive (true);
             tempText.gameObject.SetActive (false);
@@ -111,7 +83,7 @@ public class InnerSphereManager : MonoBehaviour
             tempText.gameObject.SetActive (true);
             
             tempText.text = "Ah... I know I owe planty some money but I was recently mugged by the big tree. Not these small ones around you. He's huge."; 
-            await Task.Delay (5000);
+            await Task.Delay (7500);
 
             objectives [triggeredObjective + 1].gameObject.SetActive (true);
             tempText.gameObject.SetActive (false);
@@ -121,7 +93,7 @@ public class InnerSphereManager : MonoBehaviour
             tempText.gameObject.SetActive (true);
             
             tempText.text = "Gravestone... Lying... Shelves.. Know..."; 
-            await Task.Delay (5000);
+            await Task.Delay (7500);
 
             objectives [triggeredObjective + 1].gameObject.SetActive (true);
             tempText.gameObject.SetActive (false);
@@ -131,10 +103,15 @@ public class InnerSphereManager : MonoBehaviour
             tempText.gameObject.SetActive (true);
             
             tempText.text = "The big guy said what now? Nah, that's a lie. Time for you to go now. Go on. Scoot."; 
-            await Task.Delay (5000);
+            await Task.Delay (7500);
 
+            if (!oneTime2) 
+            {
+                SceneManager.LoadScene (2);
+                oneTime2 = true;
+            }
 
-            SceneManager.LoadScene (2);
+            objectives [triggeredObjective].gameObject.SetActive (false);
         }
     }
 }

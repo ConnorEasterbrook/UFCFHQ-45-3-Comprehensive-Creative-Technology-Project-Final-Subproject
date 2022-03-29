@@ -11,11 +11,16 @@ public class TempText : MonoBehaviour
     public string tempTextString_2;
     public string tempTextString_3;
     public Text tempText;
+    public GameObject textPanel;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (oneTime)
+        {
+            textPanel.gameObject.SetActive (false);
+            tempText.gameObject.SetActive (false);
+        }
     }
 
     // Update is called once per frame
@@ -37,7 +42,7 @@ public class TempText : MonoBehaviour
         if (tempText != null)
         {
             oneTime = true;
-            
+            textPanel.gameObject.SetActive (true);
             tempText.gameObject.SetActive (true);
 
             tempText.text = tempTextString_1;
@@ -49,6 +54,7 @@ public class TempText : MonoBehaviour
             tempText.text = tempTextString_3;
             await Task.Delay (5000);
 
+            textPanel.gameObject.SetActive (false);
             tempText.gameObject.SetActive (false);
         }
     }

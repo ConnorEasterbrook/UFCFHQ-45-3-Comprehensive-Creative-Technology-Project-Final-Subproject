@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,14 +11,16 @@ public class WhiteRoomManager : MonoBehaviour
 
     public bool alphaStage = true;
 
+    private static bool[] alphaPortalUsed = {false, false, false, false, false};
+    private static bool[] betaPortalUsed = {false, false};
+
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
-    void Update()
+    async void Update()
     {
         if (alphaStage)
         {
@@ -27,29 +30,31 @@ public class WhiteRoomManager : MonoBehaviour
                 {
                     if (i == 0)
                     {
-                        alphaPortal [i].gameObject.SetActive (false);
                         SceneManager.LoadScene (3);
                     }
                     else if (i == 1)
                     {
-                        alphaPortal [i].gameObject.SetActive (false);
                         SceneManager.LoadScene (5);
                     }
                     else if (i == 2)
                     {
-                        alphaPortal [i].gameObject.SetActive (false);
                         SceneManager.LoadScene (6);
                     }
                     else if (i == 3)
                     {
-                        alphaPortal [i].gameObject.SetActive (false);
                         SceneManager.LoadScene (7);
                     }
                     else if (i == 4)
                     {
-                        alphaPortal [i].gameObject.SetActive (false);
                         SceneManager.LoadScene (8);
                     }
+
+                    await Task.Delay (500);
+                    alphaPortalUsed [i] = true;
+                }
+                else if (alphaPortalUsed [i] == true)
+                {
+                    alphaPortal [i].gameObject.SetActive (false);
                 }
             }
         }
@@ -61,14 +66,19 @@ public class WhiteRoomManager : MonoBehaviour
                 {
                     if (i == 0)
                     {
-                        alphaPortal [i].gameObject.SetActive (false);
                         SceneManager.LoadScene (9);
                     }
                     else if (i == 1)
                     {
-                        alphaPortal [i].gameObject.SetActive (false);
                         SceneManager.LoadScene (10);
                     }
+
+                    await Task.Delay (500);
+                    betaPortalUsed [i] = true;
+                }
+                else if (betaPortalUsed [i] == true)
+                {
+                    betaPortal [i].gameObject.SetActive (false);
                 }
             }
         }
