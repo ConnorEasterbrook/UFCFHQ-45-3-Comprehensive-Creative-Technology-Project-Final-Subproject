@@ -356,7 +356,7 @@ public class PlayerController : PortalObject
             Vector4 playerPos = new Vector4 (transform.position.x, transform.position.y, transform.position.z, 0);
             Shader.SetGlobalVector ("_PlayerPos", playerPos);
         }
-        
+
         Shader.SetGlobalFloat ("_SphereXAxis", sphereXAxis);
         Shader.SetGlobalFloat ("_SphereYAxis", sphereYAxis);
     }

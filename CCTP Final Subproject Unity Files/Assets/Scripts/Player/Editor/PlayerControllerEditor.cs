@@ -7,10 +7,6 @@ using UnityEditor;
 public class PlayerControllerEditor : Editor
 {
     PlayerController editScript;
-    bool showNoConflictMenus;
-
-    // Conditional variables
-    bool sphericalWallWalk = false;
 
     public override void OnInspectorGUI()
     {
@@ -97,8 +93,9 @@ public class PlayerControllerEditor : Editor
 
         if (editScript.sphericalWorld)
         {
-            // FLOAT INSIDESPHERERADIUS
+            // FLOAT SPHEREXAXIS
             editScript.sphereXAxis = EditorGUILayout.Slider (new GUIContent ("X-Axis Shift", "Set the X-AxIs offset"), editScript.sphereXAxis, -1, 1);
+            // FLOAT SPHEREYAXIS
             editScript.sphereYAxis = EditorGUILayout.Slider (new GUIContent ("Y-Axis Shift", "Set the Y-AxIs offset"), editScript.sphereYAxis, -1, 1);
         }
     }
