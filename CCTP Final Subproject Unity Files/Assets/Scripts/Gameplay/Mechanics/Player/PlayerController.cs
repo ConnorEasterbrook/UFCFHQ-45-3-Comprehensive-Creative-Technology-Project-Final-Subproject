@@ -384,8 +384,8 @@ public class PlayerController : PortalObject
             SphereCollider sphereCollider = projectile.gameObject.AddComponent <SphereCollider>();
             sphereCollider.isTrigger = true;
 
-            // Add the projectile script to the projectile
-            projectile.gameObject.AddComponent <ProjectileScript>();
+            // // Add the projectile script to the projectile
+            // projectile.gameObject.AddComponent <ProjectileScript>();
 
             // Add forward momentum to launch the projectile
             projectile.AddForce (playerCamera.transform.forward * (projectileSpeed * 20));

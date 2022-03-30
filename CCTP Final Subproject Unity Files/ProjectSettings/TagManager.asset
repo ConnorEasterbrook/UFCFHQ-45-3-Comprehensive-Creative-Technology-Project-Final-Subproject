@@ -9,6 +9,7 @@ TagManager:
   - Activator
   - TriggerIt
   - Planet
+  - Target
   layers:
   - Default
   - TransparentFX

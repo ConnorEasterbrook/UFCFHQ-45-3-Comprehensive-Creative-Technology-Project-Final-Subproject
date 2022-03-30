@@ -7,6 +7,7 @@ public class ProjectileScript : MonoBehaviour
     private Rigidbody _rigidbody;
     private GameObject planetGameObject;
     private GameObject player;
+    public TargetUI targetScript;
 
     // Start is called before the first frame update
     void Start()
@@ -55,6 +56,7 @@ public class ProjectileScript : MonoBehaviour
             if (other.tag == "Target")
             {
                 other.gameObject.SetActive (false);
+                targetScript.targetsDestroyed++;
             }
 
             Destroy (gameObject);
