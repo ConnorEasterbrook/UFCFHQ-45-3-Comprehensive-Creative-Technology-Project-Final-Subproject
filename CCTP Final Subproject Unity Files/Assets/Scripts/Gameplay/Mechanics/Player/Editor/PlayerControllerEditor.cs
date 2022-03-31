@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using UnityEditorInternal;
 
 [CustomEditor(typeof(PlayerController))]
 public class PlayerControllerEditor : Editor
@@ -60,6 +61,9 @@ public class PlayerControllerEditor : Editor
 
             // FLOAT WALLDETECTION
             editScript.wallWalkDetection = EditorGUILayout.Slider (new GUIContent ("Wall Walk Detection Range", "Set range of the collision detection raycasts."), editScript.wallWalkDetection, 0, 5);
+
+            // LAYERMASK GROUNDLAYERS
+            editScript.groundLayers = EditorGUILayout.MaskField (new GUIContent ("Ground Layers", "Select the layers that player can wall walk on."), editScript.groundLayers, InternalEditorUtility.layers);
         }
     }
 

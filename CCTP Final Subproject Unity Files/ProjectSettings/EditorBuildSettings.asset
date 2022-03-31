@@ -32,4 +32,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Alpha Subprojects/ScalingPuzzle/ScalingPuzzler.unity
     guid: f4c7c7084ac2c184f8fe17508696d924
+  - enabled: 1
+    path: Assets/Scenes/Beta Subprojects/Portal Sphere Shooter/PortalSphereShooter.unity
+    guid: 1ae09d498035b7b438feceb005572950
+  - enabled: 1
+    path: Assets/Scenes/Beta Subprojects/Gravitation Tactical Scaling/GravitationalTacticalScaling.unity
+    guid: b3c73f341f8ec1044b4be1dd314a88d2
+  - enabled: 1
+    path: Assets/Scenes/Finale/Finale.unity
+    guid: ff0b07980314c3648b51d936e554928c
   m_configObjects: {}

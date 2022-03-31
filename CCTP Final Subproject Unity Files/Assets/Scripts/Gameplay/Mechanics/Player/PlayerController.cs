@@ -67,8 +67,8 @@ public class PlayerController : PortalObject
     [HideInInspector] public bool wallWalk; // Enable wall walking
     [HideInInspector] public float gravityRotationSpeed = 10.0f; // How quickly should the player rotate
     [HideInInspector] public float wallWalkDetection = 1.5f; // How long should the raycast be
+    [HideInInspector] public LayerMask groundLayers; // What layers are floor objects set as
     private Vector3 groundDirection; // What direction is the ground
-    private LayerMask groundLayers; // What layers are floor objects set as
 
     // Inner-Sphere Variables
     [HideInInspector] public bool insideSphere;
@@ -121,16 +121,13 @@ public class PlayerController : PortalObject
 
         // Set direction of the ground
         groundDirection = transform.position;
-
-        // Set the layer for ground object. Used for wall walking
-        groundLayers = LayerMask.GetMask ("Ground");
     }
 
     // Update is called once per frame
     void Update()
     {
         UpdateCameraMovement();
-        FixedGravity();
+        UpdateGravity();
         UpdateDefaultMovement();
         
         if (sphericalMovement && planetGameObject != null) UpdateSphericalRotation();
@@ -248,7 +245,7 @@ public class PlayerController : PortalObject
         velocity = new Vector3 (velocity.x, fallingVelocity, velocity.z); // This is used in FixedUpdate() to move the player
     }
 
-    private void FixedGravity()
+    private void UpdateGravity()
     {
         // Establish falling speed. Increase as the falling duration grows
         fallingVelocity -= gravityForce * Time.deltaTime;

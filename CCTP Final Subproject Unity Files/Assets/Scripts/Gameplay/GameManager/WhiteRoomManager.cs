@@ -8,8 +8,11 @@ public class WhiteRoomManager : MonoBehaviour
 {
     public Trigger[] alphaPortal;
     public Trigger[] betaPortal;
+    public Trigger finalPortal;
 
     public bool alphaStage = true;
+    private static int portalsComplete;
+    private bool finalStage;
 
     private static bool[] alphaPortalUsed = {false, false, false, false, false};
     private static bool[] betaPortalUsed = {false, false};
@@ -31,22 +34,27 @@ public class WhiteRoomManager : MonoBehaviour
                     if (i == 0)
                     {
                         SceneManager.LoadScene (3);
+                        portalsComplete++;
                     }
                     else if (i == 1)
                     {
                         SceneManager.LoadScene (5);
+                        portalsComplete++;
                     }
                     else if (i == 2)
                     {
                         SceneManager.LoadScene (6);
+                        portalsComplete++;
                     }
                     else if (i == 3)
                     {
                         SceneManager.LoadScene (7);
+                        portalsComplete++;
                     }
                     else if (i == 4)
                     {
                         SceneManager.LoadScene (8);
+                        portalsComplete++;
                     }
 
                     await Task.Delay (500);
@@ -67,10 +75,12 @@ public class WhiteRoomManager : MonoBehaviour
                     if (i == 0)
                     {
                         SceneManager.LoadScene (9);
+                        portalsComplete++;
                     }
                     else if (i == 1)
                     {
                         SceneManager.LoadScene (10);
+                        portalsComplete++;
                     }
 
                     await Task.Delay (500);
@@ -81,6 +91,16 @@ public class WhiteRoomManager : MonoBehaviour
                     betaPortal [i].gameObject.SetActive (false);
                 }
             }
+        }
+
+        if (portalsComplete == 7)
+        {
+            finalStage = true;
+        }
+
+        if (finalStage && finalPortal.isTriggered)
+        {
+            SceneManager.LoadScene (11);
         }
     }
 }
