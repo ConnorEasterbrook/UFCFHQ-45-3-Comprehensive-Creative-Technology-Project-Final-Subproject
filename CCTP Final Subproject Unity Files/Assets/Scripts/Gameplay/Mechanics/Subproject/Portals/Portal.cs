@@ -41,6 +41,7 @@ public class Portal : MonoBehaviour
 
 	private RenderTexture tempTexture1;
 	private float portalToPlayerDistance = 0;
+	public float activateDistance = 20.0f;
 	
 
 	// Awake is called when the script instance is being loaded
@@ -101,7 +102,7 @@ public class Portal : MonoBehaviour
 
 		portalToPlayerDistance = Vector3.Distance (mainCamera.transform.position, transform.position);
 
-		if (portalScreen.isVisible && portalToPlayerDistance < 20.0f)
+		if (portalScreen.isVisible && portalToPlayerDistance < activateDistance)
 		{
 			portalCamera.targetTexture = tempTexture1;
 
