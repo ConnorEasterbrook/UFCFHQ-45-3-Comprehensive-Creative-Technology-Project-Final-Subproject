@@ -24,7 +24,7 @@ public class TargetUI : MonoBehaviour
 
         if (targetsDestroyed == 3)
         {
-            SceneManager.LoadScene (2);
+            SceneManager.LoadScene (3);
         }
     }
 }

@@ -58,6 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTriggered: 0
+  result: 1
 --- !u!1 &5619498876046203901
 GameObject:
   m_ObjectHideFlags: 0

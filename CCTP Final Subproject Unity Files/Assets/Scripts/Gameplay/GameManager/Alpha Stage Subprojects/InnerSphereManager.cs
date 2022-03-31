@@ -107,7 +107,7 @@ public class InnerSphereManager : MonoBehaviour
 
             if (!oneTime2) 
             {
-                SceneManager.LoadScene (2);
+                SceneManager.LoadScene (3);
                 oneTime2 = true;
             }
 

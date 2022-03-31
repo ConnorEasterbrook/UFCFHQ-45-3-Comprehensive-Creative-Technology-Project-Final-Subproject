@@ -35,7 +35,7 @@ public class SphericalExplorationManager : MonoBehaviour
         await Task.Delay (5000);
         if (!oneTime2)
         {
-            SceneManager.LoadScene (2);
+            SceneManager.LoadScene (3);
             oneTime2 = true;
         }
     }

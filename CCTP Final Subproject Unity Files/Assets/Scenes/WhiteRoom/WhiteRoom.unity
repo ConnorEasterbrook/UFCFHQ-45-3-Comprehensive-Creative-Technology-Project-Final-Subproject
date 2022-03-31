@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTriggered: 0
-  result: 0
+  result: 1
 --- !u!1 &171316964
 GameObject:
   m_ObjectHideFlags: 0
@@ -662,7 +662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTriggered: 0
-  result: 0
+  result: 1
 --- !u!1 &216714048
 GameObject:
   m_ObjectHideFlags: 0
@@ -2419,7 +2419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTriggered: 0
-  result: 0
+  result: 1
 --- !u!1 &1096333636
 GameObject:
   m_ObjectHideFlags: 0
@@ -2695,7 +2695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTriggered: 0
-  result: 0
+  result: 1
 --- !u!65 &1129887560
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2962,7 +2962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTriggered: 0
-  result: 0
+  result: 1
 --- !u!1 &1307346390
 GameObject:
   m_ObjectHideFlags: 0
@@ -3012,6 +3012,7 @@ MonoBehaviour:
   tempTextString_3: Is this mysterious villain thing working for me?
   tempText: {fileID: 6804104045066539873}
   textPanel: {fileID: 6804104045142544834}
+  whiteRoom: 1
 --- !u!114 &1307346393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3034,7 +3035,7 @@ MonoBehaviour:
   - {fileID: 1025739894}
   - {fileID: 1737498164}
   finalPortal: {fileID: 0}
-  alphaStage: 1
+  alphaStage: 0
 --- !u!1 &1349611520
 GameObject:
   m_ObjectHideFlags: 0
@@ -3441,7 +3442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTriggered: 0
-  result: 0
+  result: 1
 --- !u!1 &1509968958
 GameObject:
   m_ObjectHideFlags: 0
@@ -4306,7 +4307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTriggered: 0
-  result: 0
+  result: 1
 --- !u!1 &1773222751
 GameObject:
   m_ObjectHideFlags: 0
@@ -4824,7 +4825,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTriggered: 0
-  result: 0
+  result: 1
 --- !u!1 &2072233628
 GameObject:
   m_ObjectHideFlags: 0
@@ -6125,7 +6126,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6804104045142544835
 RectTransform:
   m_ObjectHideFlags: 0

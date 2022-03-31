@@ -16,12 +16,12 @@ public class HorrorMapTrigger : MonoBehaviour
     {
         if (triggerScript.isTriggered && Input.GetKeyDown (KeyCode.W) && result == 0)
         {
-            LoadNextScene (5000, 2);
+            LoadNextScene (5000, 3);
         }
 
         if (triggerScript.isTriggered && result == 1)
         {
-            LoadNextScene (15000, 4);
+            LoadNextScene (15000, 5);
         }
     }
 

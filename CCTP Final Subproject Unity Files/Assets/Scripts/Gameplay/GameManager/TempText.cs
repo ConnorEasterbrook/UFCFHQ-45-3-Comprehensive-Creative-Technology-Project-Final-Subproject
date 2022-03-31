@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TempText : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class TempText : MonoBehaviour
     public string tempTextString_3;
     public Text tempText;
     public GameObject textPanel;
+
+    public bool whiteRoom;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +37,11 @@ public class TempText : MonoBehaviour
         if (Input.GetKeyDown (KeyCode.P) && oneTime == true)
         {
             oneTime = false;
+        }
+
+        if (Input.GetKeyDown (KeyCode.LeftControl) && !whiteRoom)
+        {
+            SceneManager.LoadScene (3);
         }
     }
 

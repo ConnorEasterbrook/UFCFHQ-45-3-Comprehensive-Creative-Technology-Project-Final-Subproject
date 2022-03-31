@@ -17,15 +17,11 @@ public class WhiteRoomManager : MonoBehaviour
     private static bool[] alphaPortalUsed = {false, false, false, false, false};
     private static bool[] betaPortalUsed = {false, false};
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
 
     // Update is called once per frame
     async void Update()
     {
-        if (alphaStage)
+        if (!finalStage)
         {
             for (int i = 0; i < alphaPortal.Length; i++)
             {
@@ -33,27 +29,27 @@ public class WhiteRoomManager : MonoBehaviour
                 {
                     if (i == 0)
                     {
-                        SceneManager.LoadScene (3);
+                        SceneManager.LoadScene (4);
                         portalsComplete++;
                     }
                     else if (i == 1)
                     {
-                        SceneManager.LoadScene (5);
+                        SceneManager.LoadScene (6);
                         portalsComplete++;
                     }
                     else if (i == 2)
                     {
-                        SceneManager.LoadScene (6);
+                        SceneManager.LoadScene (7);
                         portalsComplete++;
                     }
                     else if (i == 3)
                     {
-                        SceneManager.LoadScene (7);
+                        SceneManager.LoadScene (8);
                         portalsComplete++;
                     }
                     else if (i == 4)
                     {
-                        SceneManager.LoadScene (8);
+                        SceneManager.LoadScene (9);
                         portalsComplete++;
                     }
 
@@ -74,12 +70,12 @@ public class WhiteRoomManager : MonoBehaviour
                 {
                     if (i == 0)
                     {
-                        SceneManager.LoadScene (9);
+                        SceneManager.LoadScene (10);
                         portalsComplete++;
                     }
                     else if (i == 1)
                     {
-                        SceneManager.LoadScene (10);
+                        SceneManager.LoadScene (11);
                         portalsComplete++;
                     }
 
@@ -100,7 +96,7 @@ public class WhiteRoomManager : MonoBehaviour
 
         if (finalStage && finalPortal.isTriggered)
         {
-            SceneManager.LoadScene (11);
+            SceneManager.LoadScene (12);
         }
     }
 }

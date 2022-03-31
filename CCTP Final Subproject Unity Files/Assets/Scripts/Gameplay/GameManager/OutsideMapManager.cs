@@ -7,6 +7,7 @@ public class OutsideMapManager : MonoBehaviour
 {
     public bool playerDetected = false;
     public Trigger progressScene;
+    public int result;
     private bool oneTime;
 
     // Update is called once per frame
@@ -21,9 +22,14 @@ public class OutsideMapManager : MonoBehaviour
         {
             if (progressScene.isTriggered)
             {
-                if (!oneTime)
+                if (!oneTime && result == 0)
                 {
-                    SceneManager.LoadScene (1);
+                    SceneManager.LoadScene (2);
+                    oneTime = true;
+                }
+                else if (!oneTime && result != 0)
+                {
+                    SceneManager.LoadScene (3);
                     oneTime = true;
                 }
             }
