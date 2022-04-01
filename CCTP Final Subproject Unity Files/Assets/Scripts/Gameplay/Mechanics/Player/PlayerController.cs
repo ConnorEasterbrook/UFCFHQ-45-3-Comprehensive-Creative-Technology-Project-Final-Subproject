@@ -29,6 +29,13 @@ public class PlayerController : PortalObject
     [Tooltip ("Control the camera tilt range. X = Up. Y = Down. +-40 = A good range.")]
     [SerializeField] private Vector2 cameraTiltRange = new Vector2 (-40.0f, 40.0f); // Control how far player can look (up, down)
 
+    [Header ("Sound Options")]
+    public bool useSound;
+    public AudioSource playFootsteps;
+    public AudioClip[] walkingSounds;
+    public AudioClip[] sprintingSounds;
+    private float stepTimer;
+
     // Movement Variables
     private Vector3 moveDirection;
     [Header ("Player Movement")]
@@ -51,6 +58,8 @@ public class PlayerController : PortalObject
     private float lastGroundedTime = 0.0f; // Keep track of when last grounded
     private Vector3 velocity;
     private Vector3 currentVelocity;
+    private bool sprinting;
+    private bool moving;
 
     // Dissolving Floor Variables
     [HideInInspector] public bool dissolvingFloor;
@@ -129,6 +138,8 @@ public class PlayerController : PortalObject
         UpdateCameraMovement();
         UpdateGravity();
         UpdateDefaultMovement();
+
+        if (useSound) UpdateSound();
         
         if (sphericalMovement && planetGameObject != null) UpdateSphericalRotation();
 
@@ -141,6 +152,22 @@ public class PlayerController : PortalObject
         if (Input.GetKeyDown (KeyCode.O))
         {
             playerRigidbody.transform.Rotate (90, 0, 0);
+        }
+
+        if (Input.GetKey (KeyCode.W) || Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.S) || Input.GetKey (KeyCode.D))
+        {
+            if (CheckGrounded())
+            {
+                moving = true;
+            }
+            else
+            {
+                moving = false;
+            }
+        }
+        else
+        {
+            moving = false;
         }
     }
 
@@ -212,6 +239,25 @@ public class PlayerController : PortalObject
         playerCamera.transform.localEulerAngles = Vector3.right * cameraTiltSmooth;
     }
 
+    private void UpdateGravity()
+    {
+        // Establish falling speed. Increase as the falling duration grows
+        fallingVelocity -= gravityForce * Time.deltaTime;
+
+        // Check for jump input and if true, check that the character isn't jumping or falling. Then jump
+        if (Input.GetKeyDown (KeyCode.Space) && CheckGrounded())
+        {
+            jumping = true;
+            fallingVelocity = jumpForce;
+        }
+        else if (CheckGrounded() && fallingVelocity <= 0) // If there is collision below the player (ground)
+        {
+            jumping = false;
+            lastGroundedTime = Time.time; // Set lastGroundedTime to the current time
+            fallingVelocity = 0; // Stop fallingVelocity
+        }
+    }
+
     private void UpdateDefaultMovement()
     {
         // Create a new Vector2 variable that takes in our movement inputs
@@ -225,10 +271,12 @@ public class PlayerController : PortalObject
         float speedOffset = 2; // Speed offset required to keep values tidy (Stop speed from being 0.5f, for example.)
         if (Input.GetKey (KeyCode.LeftShift) && CheckGrounded())
         {
+            sprinting = true;
             currentSpeed = sprintSpeed / speedOffset;
         }
         else if (!jumping)
         {
+            sprinting = false;
             currentSpeed = walkSpeed / speedOffset;
         }
 
@@ -255,25 +303,6 @@ public class PlayerController : PortalObject
         velocity = new Vector3 (velocity.x, fallingVelocity, velocity.z); // This is used in FixedUpdate() to move the player
     }
 
-    private void UpdateGravity()
-    {
-        // Establish falling speed. Increase as the falling duration grows
-        fallingVelocity -= gravityForce * Time.deltaTime;
-
-        // Check for jump input and if true, check that the character isn't jumping or falling. Then jump
-        if (Input.GetKeyDown (KeyCode.Space) && CheckGrounded())
-        {
-            jumping = true;
-            fallingVelocity = jumpForce;
-        }
-        else if (CheckGrounded() && fallingVelocity <= 0) // If there is collision below the player (ground)
-        {
-            jumping = false;
-            lastGroundedTime = Time.time; // Set lastGroundedTime to the current time
-            fallingVelocity = 0; // Stop fallingVelocity
-        }
-    }
-
     // Boolean function that uses a raycast to see if there is ground within a superficial amount of the collider bounds.
     private bool CheckGrounded()
     {
@@ -282,6 +311,29 @@ public class PlayerController : PortalObject
             return Physics.Raycast (transform.position, -transform.up, yCollisionBounds + 0.1f);
         }
         else return Physics.Raycast (transform.position, -transform.up, 0.1f);
+    }
+
+    private void UpdateSound()
+    {
+        if (moving)
+        {
+            stepTimer += Time.deltaTime * walkSpeed;
+
+            if (sprinting && stepTimer > 0.5f)
+            {
+                playFootsteps.clip = sprintingSounds [Random.Range (0, sprintingSounds.Length)];
+                playFootsteps.volume = 0.075f;
+                playFootsteps.PlayOneShot (playFootsteps.clip);
+                stepTimer = 0;
+            }
+            else if (stepTimer > 1.0f)
+            {
+                playFootsteps.clip = walkingSounds [Random.Range (0, walkingSounds.Length)];
+                playFootsteps.volume = 0.05f;
+                playFootsteps.PlayOneShot (playFootsteps.clip);
+                stepTimer = 0;
+            }
+        }
     }
 
     // Bool to check ceiling collision with capsule raycast for accurate detection
@@ -408,9 +460,6 @@ public class PlayerController : PortalObject
             // Add a sphere collider to allow the projectile to be deleted upon impact
             SphereCollider sphereCollider = projectile.gameObject.AddComponent <SphereCollider>();
             sphereCollider.isTrigger = true;
-
-            // // Add the projectile script to the projectile
-            // projectile.gameObject.AddComponent <ProjectileScript>();
 
             // Add forward momentum to launch the projectile
             projectile.AddForce (playerCamera.transform.forward * (projectileSpeed * 20));
