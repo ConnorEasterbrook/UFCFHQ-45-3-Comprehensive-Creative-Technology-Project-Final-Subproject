@@ -11,6 +11,6 @@ public class PortalObject : MonoBehaviour
     public virtual void Teleport (Transform fromPortal, Transform toPortal, Vector3 teleportPosition, Quaternion teleportRotation) 
     {
         transform.position = teleportPosition;
-        // transform.rotation = teleportRotation;
+        transform.rotation = teleportRotation;
     }
 }

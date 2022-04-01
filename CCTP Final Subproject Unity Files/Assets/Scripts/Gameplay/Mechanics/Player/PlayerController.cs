@@ -137,6 +137,11 @@ public class PlayerController : PortalObject
         if (sphericalWorld) UpdateSphericalWorld();
         
         if (enableShooting && projectileRigidbody != null) UpdateShooting();
+
+        if (Input.GetKeyDown (KeyCode.O))
+        {
+            playerRigidbody.transform.Rotate (90, 0, 0);
+        }
     }
 
     private void FixedUpdate()
@@ -150,6 +155,11 @@ public class PlayerController : PortalObject
         // Apply movement to rigidbody based on calculations
 		Vector3 localMove = transform.TransformDirection (velocity); // Final calculation
 		playerRigidbody.MovePosition (playerRigidbody.position + localMove * Time.fixedDeltaTime); // Movement call
+    }
+
+    private void LateUpdate() 
+    {
+        transform.rotation = Quaternion.Euler (transform.eulerAngles.x, 0, transform.eulerAngles.z);
     }
 
     private void UpdateCameraMovement()
@@ -301,40 +311,58 @@ public class PlayerController : PortalObject
     private void UpdateWallWalk()
     {
         Vector3 setGroundDirection = SurfaceAngle();
+
         setGroundDirection = new Vector3 (Mathf.Round (setGroundDirection.x), Mathf.Round (setGroundDirection.y), Mathf.Round (setGroundDirection.z));
         groundDirection = Vector3.Lerp (groundDirection, setGroundDirection, gravityRotationSpeed * Time.deltaTime);
 
         Quaternion wallRotation = Quaternion.FromToRotation (transform.up, groundDirection) * transform.rotation;
 
-        playerRigidbody.MoveRotation (wallRotation);
+        transform.rotation = wallRotation;
     }
 
     // Check to see the angle of the object to climb
     // NOTE: See if a raycast can be drawn in a movement direction for more accurate ray hits
     Vector3 SurfaceAngle()
     {
-        Vector3 hitDirection = transform.up;
+        Vector3 hitDirection = Vector3.zero;
+        Vector3 hitPosition = new Vector3 (transform.position.x, transform.position.y - 0.5f, transform.position.z);
 
         // Front raycast
         RaycastHit rayFront;
-        Physics.Raycast (playerChild.transform.position, playerChild.transform.forward, out rayFront, wallWalkDetection, groundLayers);
+        Physics.Raycast (hitPosition, transform.forward, out rayFront, wallWalkDetection, groundLayers);
         if (rayFront.transform != null)
         {
             hitDirection += rayFront.normal;
         }
 
+        // Back raycast
+        RaycastHit rayBack;
+        Physics.Raycast (hitPosition, -transform.forward, out rayBack, wallWalkDetection, groundLayers);
+        if (rayBack.transform != null)
+        {
+            hitDirection += rayBack.normal;
+        }
+
         // Down raycast
         RaycastHit rayDown;
-        Physics.Raycast (playerChild.transform.position, -playerChild.transform.up, out rayDown, wallWalkDetection, groundLayers);
+        Physics.Raycast (hitPosition, -transform.up, out rayDown, wallWalkDetection, groundLayers);
         if (rayDown.transform != null)
         {
             hitDirection += rayDown.normal;
         }
 
-        // Back raycast
-        RaycastHit rayBack;
-        Physics.Raycast (playerChild.transform.position, -playerChild.transform.forward, out rayBack, wallWalkDetection, groundLayers);
-        if (rayBack.transform != null)
+        // Right raycast
+        RaycastHit rayRight;
+        Physics.Raycast (hitPosition, -transform.up, out rayRight, wallWalkDetection, groundLayers);
+        if (rayRight.transform != null)
+        {
+            hitDirection += rayDown.normal;
+        }
+
+        // Left raycast
+        RaycastHit rayLeft;
+        Physics.Raycast (hitPosition, -transform.forward, out rayLeft, wallWalkDetection, groundLayers);
+        if (rayLeft.transform != null)
         {
             hitDirection += rayBack.normal;
         }
@@ -396,19 +424,18 @@ public class PlayerController : PortalObject
         Vector3 eulerRotation = teleportRotation.eulerAngles; // Create a Vector3 of quaternion for transform calculation
 
         // Calculate the shortest distance between player's camera rotation and desired teleportation rotation
-        float shortestDistance = Mathf.DeltaAngle (cameraPanSmooth, eulerRotation.y); 
+        float shortestDistance = Mathf.DeltaAngle (cameraPanSmooth, eulerRotation.y);
 
         cameraPan += shortestDistance; // Establish correct rotation for left & right camera movement
 
         cameraPanSmooth += shortestDistance; // Correct Yaw Smooth with calculated shortest distance to allow for continuity
 
-        playerChild.transform.localEulerAngles = Vector3.up * cameraPanSmooth;  // Set player rotation to correct rotation. It should match the implied direction before entering portals
+        playerChild.transform.rotation = Quaternion.Euler (transform.up * cameraPanSmooth); // Set player rotation to correct rotation. It should match the implied direction before entering portals
 
         velocity = outPortal.TransformVector (inPortal.InverseTransformVector (-velocity)); // Move player off the dotProduct (mid point) of the portal and match velocity of entering
 
         playerRigidbody.transform.position = teleportPosition; // Set player position to the calculated teleport location
 
-        // playerRigidbody.AddForce (playerCamera.transform.forward * walkSpeed);
         Physics.SyncTransforms (); // Apply transform changes to the physics engine
     }
 }
