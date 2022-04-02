@@ -54,13 +54,13 @@ public class TempText : MonoBehaviour
             tempText.gameObject.SetActive (true);
 
             tempText.text = tempTextString_1;
-            await Task.Delay (5000);
+            await Task.Delay (6000);
 
             tempText.text = tempTextString_2;
-            await Task.Delay (5000);
+            await Task.Delay (6000);
 
             tempText.text = tempTextString_3;
-            await Task.Delay (5000);
+            await Task.Delay (6000);
 
             textPanel.gameObject.SetActive (false);
             tempText.gameObject.SetActive (false);

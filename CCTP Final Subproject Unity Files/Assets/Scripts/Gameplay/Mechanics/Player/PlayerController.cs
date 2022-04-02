@@ -34,6 +34,7 @@ public class PlayerController : PortalObject
     public AudioSource playFootsteps;
     public AudioClip[] walkingSounds;
     public AudioClip[] sprintingSounds;
+    public float footstepVolume = 0.05f;
     private float stepTimer;
 
     // Movement Variables
@@ -186,7 +187,10 @@ public class PlayerController : PortalObject
 
     private void LateUpdate() 
     {
-        transform.rotation = Quaternion.Euler (transform.eulerAngles.x, 0, transform.eulerAngles.z);
+        if (!sphericalMovement)
+        {
+            transform.rotation = Quaternion.Euler (transform.eulerAngles.x, 0, transform.eulerAngles.z);
+        }
     }
 
     private void UpdateCameraMovement()
@@ -322,14 +326,15 @@ public class PlayerController : PortalObject
             if (sprinting && stepTimer > 0.5f)
             {
                 playFootsteps.clip = sprintingSounds [Random.Range (0, sprintingSounds.Length)];
-                playFootsteps.volume = 0.075f;
+                playFootsteps.volume = footstepVolume * 1.5f;
                 playFootsteps.PlayOneShot (playFootsteps.clip);
                 stepTimer = 0;
             }
             else if (stepTimer > 1.0f)
             {
                 playFootsteps.clip = walkingSounds [Random.Range (0, walkingSounds.Length)];
-                playFootsteps.volume = 0.05f;
+                // playFootsteps.volume = 0.05f;
+                playFootsteps.volume = footstepVolume;
                 playFootsteps.PlayOneShot (playFootsteps.clip);
                 stepTimer = 0;
             }

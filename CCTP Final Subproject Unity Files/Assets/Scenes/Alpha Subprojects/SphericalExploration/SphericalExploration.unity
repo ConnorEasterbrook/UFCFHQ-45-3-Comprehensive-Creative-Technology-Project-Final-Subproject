@@ -169,6 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -284,6 +285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -385,8 +387,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -461,12 +464,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3268630}
-  m_LocalRotation: {x: 0.6821914, y: -0.06764856, z: 0.72525144, w: 0.06363208}
-  m_LocalPosition: {x: 99.45911, y: -18.752224, z: 6.091522}
-  m_LocalScale: {x: 150.00002, y: 150.00003, z: 150.00003}
+  m_LocalRotation: {x: 0.6821914, y: -0.067648575, z: 0.72525144, w: 0.0636321}
+  m_LocalPosition: {x: 98.425766, y: -103.0889, z: -17.055962}
+  m_LocalScale: {x: 150, y: 150.00003, z: 150.00006}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 295
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7329884
 GameObject:
@@ -514,6 +517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -629,6 +633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -744,6 +749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -859,6 +865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -977,6 +984,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -5876,6 +5884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -5991,6 +6000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -6106,6 +6116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -6221,6 +6232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -6336,6 +6348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -6451,8 +6464,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -6566,6 +6580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -6667,8 +6682,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -6743,12 +6759,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 77691820}
-  m_LocalRotation: {x: 0.5152335, y: -0.17345539, z: 0.83241886, w: 0.107361846}
-  m_LocalPosition: {x: 82.123955, y: -39.97508, z: 40.92463}
-  m_LocalScale: {x: 200.00006, y: 200.00012, z: 200.00008}
+  m_LocalRotation: {x: 0.5152335, y: -0.1734554, z: 0.83241886, w: 0.10736185}
+  m_LocalPosition: {x: 81.090614, y: -124.31175, z: 17.777145}
+  m_LocalScale: {x: 200.00006, y: 200.00015, z: 200.00006}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 311
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &78796936
 GameObject:
@@ -6796,6 +6812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -6911,8 +6928,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -7026,6 +7044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -7127,8 +7146,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -7203,12 +7223,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 83604936}
-  m_LocalRotation: {x: 0.57805836, y: -0.2424402, z: 0.7568234, w: 0.18517473}
-  m_LocalPosition: {x: 79.613846, y: -58.915565, z: 21.712904}
-  m_LocalScale: {x: 150, y: 149.99995, z: 150}
+  m_LocalRotation: {x: 0.5780583, y: -0.2424402, z: 0.7568234, w: 0.18517472}
+  m_LocalPosition: {x: 78.580505, y: -143.25223, z: -1.4345798}
+  m_LocalScale: {x: 150.00002, y: 149.99995, z: 150}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 317
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &87914203
 GameObject:
@@ -7256,6 +7276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -7371,6 +7392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -7519,6 +7541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 0
@@ -7570,6 +7593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -7742,8 +7766,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -7890,6 +7915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 0
@@ -7941,8 +7967,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -8056,6 +8083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -8171,6 +8199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -8286,6 +8315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -8387,6 +8417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -8516,6 +8547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -8631,6 +8663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -8746,8 +8779,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -8917,8 +8951,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -8993,12 +9028,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 178877444}
-  m_LocalRotation: {x: -0.45535362, y: 0.057872333, z: -0.88793194, w: -0.029678373}
-  m_LocalPosition: {x: 79.34863, y: -12.791174, z: 57.018276}
-  m_LocalScale: {x: 200.00012, y: 200.00015, z: 200.00014}
+  m_LocalRotation: {x: -0.45535362, y: 0.057872336, z: -0.88793194, w: -0.029678375}
+  m_LocalPosition: {x: 78.31529, y: -97.127846, z: 33.870792}
+  m_LocalScale: {x: 200.00012, y: 200.00014, z: 200.00015}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 46
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 329
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &188665293
 GameObject:
@@ -9032,8 +9067,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -9108,12 +9144,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 188665293}
-  m_LocalRotation: {x: 0.65919185, y: -0.13617547, z: 0.7292253, w: 0.12309741}
-  m_LocalPosition: {x: 94.08149, y: -36.59286, z: 9.515382}
-  m_LocalScale: {x: 150, y: 150.00006, z: 150.00003}
+  m_LocalRotation: {x: 0.65919185, y: -0.13617545, z: 0.7292252, w: 0.123097405}
+  m_LocalPosition: {x: 93.04815, y: -120.929535, z: -13.632102}
+  m_LocalScale: {x: 149.99998, y: 150.00009, z: 150.00003}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 296
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &192563429
 GameObject:
@@ -9161,6 +9197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -9276,6 +9313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -9377,8 +9415,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -9454,11 +9493,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 200388239}
   m_LocalRotation: {x: -0.4452777, y: 0.11880431, z: -0.8854626, w: -0.059743814}
-  m_LocalPosition: {x: 77.502075, y: -26.382446, z: 57.571907}
-  m_LocalScale: {x: 200.00006, y: 200.00008, z: 200.00006}
+  m_LocalPosition: {x: 76.468735, y: -110.71912, z: 34.424423}
+  m_LocalScale: {x: 200.00006, y: 200.00009, z: 200.00006}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 308
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &214393426
 GameObject:
@@ -9492,8 +9531,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -9569,11 +9609,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 214393426}
   m_LocalRotation: {x: 0.70938545, y: -0.16912559, z: 0.65961015, w: 0.18188807}
-  m_LocalPosition: {x: 88.65069, y: -48.7883, z: -6.455031}
-  m_LocalScale: {x: 150, y: 150.00006, z: 150.00002}
+  m_LocalPosition: {x: 87.61735, y: -133.12497, z: -29.602514}
+  m_LocalScale: {x: 150, y: 150.00008, z: 150.00002}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 292
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &217473335
 GameObject:
@@ -9621,8 +9661,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -9769,6 +9810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 0
@@ -9820,8 +9862,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -9921,8 +9964,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -9998,11 +10042,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 244431920}
   m_LocalRotation: {x: 0.6628745, y: -0.23673297, z: 0.67067796, w: 0.23397855}
-  m_LocalPosition: {x: 78.922455, y: -63.64943, z: 0.9236808}
-  m_LocalScale: {x: 150, y: 150.00002, z: 150.00002}
+  m_LocalPosition: {x: 77.889114, y: -147.9861, z: -22.223803}
+  m_LocalScale: {x: 149.99998, y: 150.00002, z: 150.00002}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 294
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &252655440
 GameObject:
@@ -10050,6 +10094,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -10165,8 +10210,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -10280,6 +10326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -10395,6 +10442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -10510,8 +10558,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -10625,8 +10674,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -10740,6 +10790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -10841,6 +10892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -10970,6 +11022,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -11136,8 +11189,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -11212,12 +11266,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 311357927}
-  m_LocalRotation: {x: 0.5295909, y: -0.3037441, z: 0.7634656, w: 0.2106973}
-  m_LocalPosition: {x: 69.01439, y: -69.65423, z: 25.809538}
-  m_LocalScale: {x: 149.99997, y: 150, z: 150}
+  m_LocalRotation: {x: 0.5295909, y: -0.30374417, z: 0.7634655, w: 0.21069734}
+  m_LocalPosition: {x: 67.98105, y: -153.9909, z: 2.662054}
+  m_LocalScale: {x: 149.99997, y: 150, z: 149.99998}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 321
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &334745733
 GameObject:
@@ -11265,8 +11319,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -11380,8 +11435,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -11461,6 +11517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 0
@@ -11512,8 +11569,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -11593,6 +11651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 0
@@ -11644,6 +11703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -11725,6 +11785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 0
@@ -11776,6 +11837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -11891,6 +11953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -12006,6 +12069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -12154,6 +12218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 0
@@ -12205,8 +12270,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -12320,8 +12386,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -12435,8 +12502,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -12536,8 +12604,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -12612,12 +12681,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 405207898}
-  m_LocalRotation: {x: 0.58533645, y: -0.055715933, z: 0.8078659, w: 0.040368777}
-  m_LocalPosition: {x: 93.923836, y: -13.698758, z: 30.789516}
+  m_LocalRotation: {x: 0.58533645, y: -0.055715945, z: 0.8078659, w: 0.040368788}
+  m_LocalPosition: {x: 92.890495, y: -98.03543, z: 7.6420326}
   m_LocalScale: {x: 150, y: 150.00014, z: 150.00003}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 47
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 330
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &406896250
 GameObject:
@@ -12717,6 +12786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -12832,6 +12902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -12947,8 +13018,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -13062,6 +13134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -13177,6 +13250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -13292,6 +13366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -13407,6 +13482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -13522,8 +13598,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -13637,8 +13714,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -13752,6 +13830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -13867,6 +13946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -13968,6 +14048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -14097,8 +14178,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -14212,8 +14294,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -14313,8 +14396,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -14389,12 +14473,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 478267865}
-  m_LocalRotation: {x: -0.48518324, y: 0.0068499492, z: -0.8743774, w: -0.0038009677}
-  m_LocalPosition: {x: 86.02478, y: -1.5885823, z: 53.648037}
+  m_LocalRotation: {x: -0.48518324, y: 0.006849961, z: -0.8743774, w: -0.003800974}
+  m_LocalPosition: {x: 84.99144, y: -85.925255, z: 30.500553}
   m_LocalScale: {x: 150.00008, y: 150.00012, z: 149.99997}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 289
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &479188995
 GameObject:
@@ -14428,8 +14512,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -14504,12 +14589,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 479188995}
-  m_LocalRotation: {x: 0.5825848, y: -0.1028062, z: 0.8027825, w: 0.07460718}
-  m_LocalPosition: {x: 90.59294, y: -24.812801, z: 29.54508}
-  m_LocalScale: {x: 200, y: 200.00003, z: 200}
+  m_LocalRotation: {x: 0.5825848, y: -0.10280621, z: 0.8027825, w: 0.07460718}
+  m_LocalPosition: {x: 89.5596, y: -109.149475, z: 6.3975964}
+  m_LocalScale: {x: 199.99998, y: 200.00006, z: 199.99998}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 316
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &482339138
 GameObject:
@@ -14557,6 +14642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -14672,8 +14758,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -14822,6 +14909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -14937,6 +15025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -15052,6 +15141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -15167,6 +15257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -15282,6 +15373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -15383,8 +15475,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -15459,12 +15552,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 505448172}
-  m_LocalRotation: {x: 0.666476, y: -0.1728309, z: 0.70666075, w: 0.16300273}
-  m_LocalPosition: {x: 89.79544, y: -46.797863, z: 5.260228}
-  m_LocalScale: {x: 150, y: 150.00009, z: 150.00003}
+  m_LocalRotation: {x: 0.666476, y: -0.17283092, z: 0.70666075, w: 0.16300276}
+  m_LocalPosition: {x: 88.7621, y: -131.13454, z: -17.887257}
+  m_LocalScale: {x: 150, y: 150.00009, z: 150.00005}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 293
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &505652780
 GameObject:
@@ -15512,6 +15605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -15627,6 +15721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -15742,6 +15837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -15857,6 +15953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -15958,8 +16055,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -16034,12 +16132,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 520466602}
-  m_LocalRotation: {x: 0.5224627, y: -0.11963826, z: 0.84094864, w: 0.07432859}
-  m_LocalPosition: {x: 87.29509, y: -28.277676, z: 43.13723}
-  m_LocalScale: {x: 150.00002, y: 150.00009, z: 150.00006}
+  m_LocalRotation: {x: 0.5224627, y: -0.11963827, z: 0.84094864, w: 0.074328594}
+  m_LocalPosition: {x: 86.26175, y: -112.61435, z: 19.989746}
+  m_LocalScale: {x: 150.00002, y: 150.0001, z: 150.00006}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 307
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &524978026
 GameObject:
@@ -16087,6 +16185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -16168,6 +16267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 0
@@ -16205,6 +16305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -16334,6 +16435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -16482,6 +16584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 0
@@ -16533,6 +16636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -16668,6 +16772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -16783,8 +16888,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -16859,12 +16965,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 566398686}
-  m_LocalRotation: {x: 0.5661921, y: -0.117356315, z: 0.81175977, w: 0.08185453}
-  m_LocalPosition: {x: 91.256294, y: -28.717089, z: 33.592842}
-  m_LocalScale: {x: 150, y: 150.00012, z: 150.00003}
+  m_LocalRotation: {x: 0.5661921, y: -0.1173563, z: 0.81175977, w: 0.08185453}
+  m_LocalPosition: {x: 90.22295, y: -113.05376, z: 10.445358}
+  m_LocalScale: {x: 150.00002, y: 150.00012, z: 150.00003}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 309
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &577386624
 GameObject:
@@ -16912,6 +17018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -17027,6 +17134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -17142,6 +17250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -17257,6 +17366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -17372,6 +17482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -17487,8 +17598,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -17602,6 +17714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -17717,8 +17830,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -17832,6 +17946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -17984,6 +18099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -18035,8 +18151,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -18150,6 +18267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -18251,8 +18369,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -18327,12 +18446,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659100200}
-  m_LocalRotation: {x: 0.7253985, y: -0.19067678, z: 0.6230174, w: 0.22201088}
-  m_LocalPosition: {x: 83.0633, y: -56.748894, z: -12.686619}
-  m_LocalScale: {x: 150, y: 150, z: 150}
+  m_LocalRotation: {x: 0.7253985, y: -0.19067681, z: 0.6230174, w: 0.22201093}
+  m_LocalPosition: {x: 82.02996, y: -141.08557, z: -35.834103}
+  m_LocalScale: {x: 150.00002, y: 150, z: 150.00002}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 300
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &666323301
 GameObject:
@@ -18380,6 +18499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -18495,6 +18615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -18610,8 +18731,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -18725,6 +18847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -18840,8 +18963,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -19017,6 +19141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -19132,6 +19257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -19247,8 +19373,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -19362,6 +19489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -19477,8 +19605,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -19592,6 +19721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -19707,8 +19837,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -19855,6 +19986,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 0
@@ -19906,6 +20038,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -20021,6 +20154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -20136,6 +20270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -20251,6 +20386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -20366,6 +20502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -20481,6 +20618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -20582,8 +20720,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -20658,12 +20797,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 758918962}
-  m_LocalRotation: {x: 0.57499295, y: -0.3036273, z: 0.71999884, w: 0.24247754}
-  m_LocalPosition: {x: 69.02389, y: -72.605736, z: 15.65409}
-  m_LocalScale: {x: 150, y: 150.00009, z: 150.00008}
+  m_LocalRotation: {x: 0.5749929, y: -0.3036273, z: 0.7199988, w: 0.24247757}
+  m_LocalPosition: {x: 67.99055, y: -156.94241, z: -7.493394}
+  m_LocalScale: {x: 150.00002, y: 150.0001, z: 150.00009}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 322
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &765690332
 GameObject:
@@ -20697,6 +20836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -20826,6 +20966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -20941,8 +21082,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -21042,6 +21184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -21174,6 +21317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -26073,8 +26217,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -26221,6 +26366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 0
@@ -26272,8 +26418,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -26373,8 +26520,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -26449,12 +26597,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 830200557}
-  m_LocalRotation: {x: -0.49227315, y: 0.21266682, z: -0.83469087, w: -0.12542388}
-  m_LocalPosition: {x: 76.91029, y: -47.891766, z: 42.52439}
-  m_LocalScale: {x: 200.00006, y: 200.00014, z: 200.00015}
+  m_LocalRotation: {x: -0.49227315, y: 0.21266684, z: -0.83469087, w: -0.1254239}
+  m_LocalPosition: {x: 75.87695, y: -132.22844, z: 19.376907}
+  m_LocalScale: {x: 200.00005, y: 200.00014, z: 200.00015}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 48
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 331
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &835227263
 GameObject:
@@ -26502,8 +26650,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -26679,6 +26828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -26794,8 +26944,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -26909,6 +27060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -26978,6 +27130,107 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 859695830}
   m_Mesh: {fileID: -5495902117074765545, guid: df7419c78d550d940950e5772b99e0c7, type: 3}
+--- !u!1001 &860179262
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755694, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: playerScript
+      value: 
+      objectReference: {fileID: 2177446678226396923}
+    - target: {fileID: 429866991094755733, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_Name
+      value: In-Game Menu
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0736f463944b802428676c678c14ff8c, type: 3}
 --- !u!1 &865120721
 GameObject:
   m_ObjectHideFlags: 0
@@ -27024,8 +27277,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -27139,8 +27393,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -27254,6 +27509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -27369,8 +27625,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -27484,6 +27741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -27599,8 +27857,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -27714,6 +27973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -27829,6 +28089,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -27944,6 +28205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -28059,6 +28321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -28160,8 +28423,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -28237,11 +28501,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 978468963}
   m_LocalRotation: {x: -0.48969582, y: 0.09219357, z: -0.8654346, w: -0.052166633}
-  m_LocalPosition: {x: 82.541405, y: -20.750748, z: 49.584774}
-  m_LocalScale: {x: 199.99997, y: 200, z: 200}
+  m_LocalPosition: {x: 81.508064, y: -105.08742, z: 26.43729}
+  m_LocalScale: {x: 199.99997, y: 199.99998, z: 200}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 310
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &983993863
 GameObject:
@@ -28275,8 +28539,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -28351,12 +28616,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983993863}
-  m_LocalRotation: {x: 0.6174365, y: -0.029912062, z: 0.7857003, w: 0.023506165}
-  m_LocalPosition: {x: 98.23448, y: -7.709134, z: 23.904266}
+  m_LocalRotation: {x: 0.6174365, y: -0.029912075, z: 0.7857003, w: 0.023506174}
+  m_LocalPosition: {x: 97.20114, y: -92.04581, z: 0.75678253}
   m_LocalScale: {x: 150.00003, y: 150.00012, z: 150.00009}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 288
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &988796586
 GameObject:
@@ -28404,6 +28669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -28519,6 +28785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -28620,6 +28887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -28749,6 +29017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -28867,6 +29136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -38724,6 +38994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -38839,6 +39110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -38954,6 +39226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -39135,8 +39408,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -39250,6 +39524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -39331,6 +39606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 0
@@ -39382,6 +39658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -39497,8 +39774,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -39612,6 +39890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -39783,6 +40062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -39912,8 +40192,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -40027,6 +40308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -40142,6 +40424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -40257,8 +40540,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -40442,8 +40726,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -40557,8 +40842,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -40734,6 +41020,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -40849,6 +41136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -40964,6 +41252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -41079,6 +41368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -41194,8 +41484,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -41295,8 +41586,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -41372,11 +41664,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1144210034}
   m_LocalRotation: {x: -0.48356926, y: 0.14365335, z: -0.859648, w: -0.0808079}
-  m_LocalPosition: {x: 81.94545, y: -32.96701, z: 49.789814}
-  m_LocalScale: {x: 150.00002, y: 150.00006, z: 150}
+  m_LocalPosition: {x: 80.91211, y: -117.30368, z: 26.64233}
+  m_LocalScale: {x: 150, y: 150.00003, z: 150}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 305
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1145604776
 GameObject:
@@ -41410,8 +41702,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -41486,12 +41779,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1145604776}
-  m_LocalRotation: {x: 0.6255958, y: -0.20454264, z: 0.73229665, w: 0.17473932}
-  m_LocalPosition: {x: 85.65422, y: -52.543175, z: 13.544752}
-  m_LocalScale: {x: 150.00002, y: 150.00006, z: 150.00006}
+  m_LocalRotation: {x: 0.6255958, y: -0.20454267, z: 0.73229665, w: 0.17473933}
+  m_LocalPosition: {x: 84.62088, y: -136.87985, z: -9.602732}
+  m_LocalScale: {x: 150, y: 150.00006, z: 150.00006}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 319
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1150383614
 GameObject:
@@ -41539,8 +41832,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -41654,6 +41948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -41769,6 +42064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -41884,8 +42180,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -42002,6 +42299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -46934,6 +47232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 0
@@ -46985,8 +47284,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -47100,8 +47400,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -47215,6 +47516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -47330,8 +47632,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -47431,8 +47734,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -47507,12 +47811,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1195158828}
-  m_LocalRotation: {x: 0.62522906, y: -0.24069715, z: 0.7116417, w: 0.21146996}
-  m_LocalPosition: {x: 79.90707, y: -61.548195, z: 10.373407}
-  m_LocalScale: {x: 150, y: 150.00012, z: 150.00003}
+  m_LocalRotation: {x: 0.62522906, y: -0.24069715, z: 0.7116418, w: 0.21146996}
+  m_LocalPosition: {x: 78.873726, y: -145.88486, z: -12.774076}
+  m_LocalScale: {x: 150, y: 150.0001, z: 150.00003}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 318
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1212676015 stripped
 Transform:
@@ -47565,6 +47869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -47680,8 +47985,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -47795,8 +48101,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -47910,6 +48217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -48025,6 +48333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -48140,6 +48449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -48255,8 +48565,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -48356,6 +48667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -48485,6 +48797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -48600,6 +48913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -48715,6 +49029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -48830,8 +49145,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -48945,8 +49261,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -49060,6 +49377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -49175,8 +49493,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -49290,6 +49609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -49371,6 +49691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 0
@@ -49408,8 +49729,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -49485,11 +49807,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330091898}
   m_LocalRotation: {x: 0.6932704, y: -0.22630885, z: 0.6385911, w: 0.24568652}
-  m_LocalPosition: {x: 78.50273, y: -63.847332, z: -6.456713}
-  m_LocalScale: {x: 150.00006, y: 149.99994, z: 150.00002}
+  m_LocalPosition: {x: 77.46939, y: -148.184, z: -29.604197}
+  m_LocalScale: {x: 150.00005, y: 149.99995, z: 150}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 298
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1330164976
 GameObject:
@@ -49537,6 +49859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -49722,6 +50045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -49837,8 +50161,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -49952,8 +50277,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -50067,6 +50393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -50182,8 +50509,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -50283,6 +50611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -50398,8 +50727,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -50475,11 +50805,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1355353144}
   m_LocalRotation: {x: 0.5340232, y: -0.21195266, z: 0.8063444, w: 0.14037131}
-  m_LocalPosition: {x: 81.28906, y: -49.859512, z: 34.452984}
-  m_LocalScale: {x: 150, y: 150, z: 150.00002}
+  m_LocalPosition: {x: 80.25572, y: -134.19618, z: 11.3055}
+  m_LocalScale: {x: 150.00002, y: 149.99998, z: 150.00002}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 313
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1361140303
 GameObject:
@@ -50527,6 +50857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -50642,6 +50973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -50757,6 +51089,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -50934,6 +51267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -51049,6 +51383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -51164,6 +51499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -51245,6 +51581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 0
@@ -51296,6 +51633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -51411,6 +51749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -51526,8 +51865,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -51627,8 +51967,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -51703,12 +52044,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1417139243}
-  m_LocalRotation: {x: -0.41878924, y: 0.2784249, z: -0.8534815, w: -0.1366185}
-  m_LocalPosition: {x: 64.768974, y: -59.791317, z: 50.1082}
+  m_LocalRotation: {x: -0.41878924, y: 0.27842498, z: -0.8534815, w: -0.13661852}
+  m_LocalPosition: {x: 63.735638, y: -144.12799, z: 26.960716}
   m_LocalScale: {x: 150, y: 150, z: 150.00014}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 44
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 327
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1417211116
 GameObject:
@@ -51742,6 +52083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -51857,8 +52199,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -51933,12 +52276,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1420334860}
-  m_LocalRotation: {x: 0.747416, y: -0.15579364, z: 0.6177074, w: 0.1885078}
-  m_LocalPosition: {x: 86.53733, y: -47.46638, z: -16.594688}
-  m_LocalScale: {x: 200, y: 200.00006, z: 200.00003}
+  m_LocalRotation: {x: 0.747416, y: -0.15579362, z: 0.6177074, w: 0.1885078}
+  m_LocalPosition: {x: 85.50399, y: -131.80305, z: -39.742172}
+  m_LocalScale: {x: 200.00003, y: 200.00008, z: 200.00005}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 301
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1422758011
 GameObject:
@@ -51986,6 +52329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -52101,6 +52445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -52216,6 +52561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -52317,6 +52663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -52412,6 +52759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 0
@@ -52449,8 +52797,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -52525,12 +52874,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1449797532}
-  m_LocalRotation: {x: 0.69220656, y: -0.25664464, z: 0.6079413, w: 0.29221752}
-  m_LocalPosition: {x: 70.12954, y: -72.65931, z: -9.128824}
-  m_LocalScale: {x: 150.00003, y: 150.00003, z: 150.00006}
+  m_LocalRotation: {x: 0.69220656, y: -0.2566446, z: 0.6079413, w: 0.2922175}
+  m_LocalPosition: {x: 69.0962, y: -156.99597, z: -32.276306}
+  m_LocalScale: {x: 150.00005, y: 150.00005, z: 150.00006}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 299
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1450225900
 GameObject:
@@ -52578,6 +52927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -52693,8 +53043,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -52808,6 +53159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -52923,6 +53275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -53038,6 +53391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -53139,8 +53493,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -53216,11 +53571,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1474125424}
   m_LocalRotation: {x: 0.58259726, y: -0.267488, z: 0.73785025, w: 0.21120515}
-  m_LocalPosition: {x: 75.71643, y: -64.9765, z: 18.054457}
-  m_LocalScale: {x: 150, y: 150.00003, z: 150}
+  m_LocalPosition: {x: 74.68309, y: -149.31317, z: -5.093027}
+  m_LocalScale: {x: 150, y: 150.00003, z: 150.00002}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 323
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1481628795
 GameObject:
@@ -53254,8 +53609,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -53330,12 +53686,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1481628795}
-  m_LocalRotation: {x: 0.7233325, y: -0.24062231, z: 0.570923, w: 0.30485722}
-  m_LocalPosition: {x: 67.98052, y: -71.639305, z: -16.235708}
-  m_LocalScale: {x: 200.00003, y: 200.00003, z: 200.00008}
+  m_LocalRotation: {x: 0.7233326, y: -0.24062231, z: 0.570923, w: 0.30485722}
+  m_LocalPosition: {x: 66.94718, y: -155.97598, z: -39.383194}
+  m_LocalScale: {x: 200.00006, y: 200.00003, z: 200.00009}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 304
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1482580563
 GameObject:
@@ -53383,6 +53739,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -53484,8 +53841,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -53560,12 +53918,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1487483652}
-  m_LocalRotation: {x: 0.68068194, y: -0.1392935, z: 0.7065857, w: 0.13418694}
-  m_LocalPosition: {x: 92.53303, y: -37.984837, z: 3.4568543}
-  m_LocalScale: {x: 200.00003, y: 199.99997, z: 200}
+  m_LocalRotation: {x: 0.68068194, y: -0.13929349, z: 0.7065857, w: 0.13418692}
+  m_LocalPosition: {x: 91.49969, y: -122.3215, z: -19.69063}
+  m_LocalScale: {x: 200.00002, y: 199.99997, z: 200}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 297
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1489318180
 PrefabInstance:
@@ -53646,6 +54004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 0
@@ -53697,6 +54056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -53798,8 +54158,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -53874,12 +54235,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1500286498}
-  m_LocalRotation: {x: 0.5383459, y: -0.058180146, z: 0.8398858, w: 0.03729202}
-  m_LocalPosition: {x: 89.81414, y: -13.7603035, z: 41.276264}
-  m_LocalScale: {x: 150.00006, y: 150.00009, z: 150}
+  m_LocalRotation: {x: 0.5383459, y: -0.05818013, z: 0.8398858, w: 0.03729201}
+  m_LocalPosition: {x: 88.7808, y: -98.09697, z: 18.12878}
+  m_LocalScale: {x: 150.00006, y: 150.00009, z: 149.99998}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 45
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 328
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1519744181
 GameObject:
@@ -53927,6 +54288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -54042,6 +54404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -54157,8 +54520,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -54272,8 +54636,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -54387,6 +54752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -54502,6 +54868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -54886,6 +55253,50 @@ Transform:
   - {fileID: 217473336}
   - {fileID: 1775605521}
   - {fileID: 1714749425}
+  - {fileID: 983993868}
+  - {fileID: 478267870}
+  - {fileID: 1771799698}
+  - {fileID: 1889439803}
+  - {fileID: 214393431}
+  - {fileID: 505448177}
+  - {fileID: 244431925}
+  - {fileID: 3268635}
+  - {fileID: 188665298}
+  - {fileID: 1487483657}
+  - {fileID: 1330091903}
+  - {fileID: 1449797537}
+  - {fileID: 659100205}
+  - {fileID: 1420334865}
+  - {fileID: 2110648266}
+  - {fileID: 2032708529}
+  - {fileID: 1481628800}
+  - {fileID: 1144210039}
+  - {fileID: 2146890472}
+  - {fileID: 520466607}
+  - {fileID: 200388244}
+  - {fileID: 566398691}
+  - {fileID: 978468968}
+  - {fileID: 77691825}
+  - {fileID: 1578803382}
+  - {fileID: 1355353149}
+  - {fileID: 1825809785}
+  - {fileID: 1925405607}
+  - {fileID: 479189000}
+  - {fileID: 83604941}
+  - {fileID: 1195158833}
+  - {fileID: 1145604781}
+  - {fileID: 1725150876}
+  - {fileID: 311357932}
+  - {fileID: 758918967}
+  - {fileID: 1474125429}
+  - {fileID: 1605409222}
+  - {fileID: 1726807881}
+  - {fileID: 1700311658}
+  - {fileID: 1417139248}
+  - {fileID: 1500286503}
+  - {fileID: 178877449}
+  - {fileID: 405207903}
+  - {fileID: 830200562}
   m_Father: {fileID: 558378539}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -54935,6 +55346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -55050,6 +55462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -55165,6 +55578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -55266,8 +55680,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -55342,12 +55757,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1578803377}
-  m_LocalRotation: {x: 0.5677704, y: -0.15346263, z: 0.80141467, w: 0.10872218}
-  m_LocalPosition: {x: 88.889824, y: -37.458622, z: 31.247066}
+  m_LocalRotation: {x: 0.5677704, y: -0.15346263, z: 0.80141467, w: 0.10872217}
+  m_LocalPosition: {x: 87.85648, y: -121.79529, z: 8.099583}
   m_LocalScale: {x: 150, y: 150.00003, z: 150}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 312
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1589436933
 GameObject:
@@ -55395,6 +55810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -55496,6 +55912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -55700,6 +56117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -55815,6 +56233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -55916,8 +56335,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -55993,11 +56413,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1605409217}
   m_LocalRotation: {x: -0.4777183, y: 0.32067856, z: -0.7948619, w: -0.19273038}
-  m_LocalPosition: {x: 64.46984, y: -70.36096, z: 34.261314}
-  m_LocalScale: {x: 150.00003, y: 150.00006, z: 150.00006}
+  m_LocalPosition: {x: 63.436504, y: -154.69763, z: 11.113831}
+  m_LocalScale: {x: 150.00005, y: 150.00006, z: 150.00006}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 41
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 324
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1617713371
 PrefabInstance:
@@ -56110,8 +56530,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -56225,8 +56646,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -56340,6 +56762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -56455,8 +56878,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -56570,8 +56994,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -56671,8 +57096,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -56747,12 +57173,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1700311653}
-  m_LocalRotation: {x: -0.46334553, y: 0.22034132, z: -0.84990036, w: -0.12012485}
-  m_LocalPosition: {x: 74.490425, y: -49.26311, z: 48.012535}
-  m_LocalScale: {x: 150.00003, y: 150.00014, z: 150.00009}
+  m_LocalRotation: {x: -0.46334553, y: 0.2203413, z: -0.84990036, w: -0.12012484}
+  m_LocalPosition: {x: 73.457085, y: -133.59978, z: 24.865051}
+  m_LocalScale: {x: 150.00003, y: 150.00015, z: 150.00009}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 43
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 326
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1705350371
 PrefabInstance:
@@ -56862,8 +57288,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -56977,6 +57404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -57092,8 +57520,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -57207,6 +57636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -57322,6 +57752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -57470,6 +57901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 0
@@ -57521,8 +57953,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -57622,8 +58055,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -57699,11 +58133,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1725150871}
   m_LocalRotation: {x: 0.52742136, y: -0.26219591, z: 0.7888931, w: 0.17529331}
-  m_LocalPosition: {x: 75.05579, y: -60.694317, z: 31.042948}
+  m_LocalPosition: {x: 74.02245, y: -145.03099, z: 7.895464}
   m_LocalScale: {x: 150.00003, y: 150.00003, z: 150.00006}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 320
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1726354692
 GameObject:
@@ -57794,6 +58228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -57954,8 +58389,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -58031,11 +58467,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1726807876}
   m_LocalRotation: {x: -0.42320803, y: 0.23992787, z: -0.8657799, w: -0.11728086}
-  m_LocalPosition: {x: 68.59686, y: -52.189743, z: 53.40052}
+  m_LocalPosition: {x: 67.56352, y: -136.52641, z: 30.253036}
   m_LocalScale: {x: 150.00006, y: 150.0002, z: 150.00009}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 42
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 325
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1728168938
 GameObject:
@@ -58083,8 +58519,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -58198,6 +58635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -58313,6 +58751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -58428,8 +58867,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -58543,6 +58983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -58644,6 +59085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -58773,6 +59215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -58888,8 +59331,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -58989,8 +59433,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -59066,11 +59511,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1771799693}
   m_LocalRotation: {x: 0.7805361, y: -0.1378093, z: 0.58093774, w: 0.18515779}
-  m_LocalPosition: {x: 85.658485, y: -44.954613, z: -25.667534}
-  m_LocalScale: {x: 200.00006, y: 200.00009, z: 200.00009}
+  m_LocalPosition: {x: 84.625145, y: -129.29129, z: -48.815018}
+  m_LocalScale: {x: 200.00006, y: 200.0001, z: 200.00009}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 290
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1775591235
 GameObject:
@@ -59118,6 +59563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -59233,8 +59679,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -59348,6 +59795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -59463,6 +59911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -59676,6 +60125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 0
@@ -59760,6 +60210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 0
@@ -59873,6 +60324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -59974,8 +60426,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -60050,12 +60503,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1825809780}
-  m_LocalRotation: {x: 0.6062541, y: -0.1296501, z: 0.7781019, w: 0.10101621}
-  m_LocalPosition: {x: 93.00547, y: -32.876736, z: 23.451948}
+  m_LocalRotation: {x: 0.6062541, y: -0.12965013, z: 0.7781019, w: 0.10101622}
+  m_LocalPosition: {x: 91.97213, y: -117.21341, z: 0.30446434}
   m_LocalScale: {x: 150.00002, y: 150.00006, z: 150}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 314
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1836333890
 GameObject:
@@ -60103,6 +60556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -60218,6 +60672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -60333,6 +60788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -60448,6 +60904,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -60563,6 +61020,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -60678,6 +61136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -60793,8 +61252,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -60908,6 +61368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -61009,8 +61470,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -61085,12 +61547,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1889439798}
-  m_LocalRotation: {x: 0.6170673, y: -0.17505588, z: 0.7536854, w: 0.14332406}
-  m_LocalPosition: {x: 89.22408, y: -44.690163, z: 17.963737}
-  m_LocalScale: {x: 150, y: 150, z: 150.00002}
+  m_LocalRotation: {x: 0.6170673, y: -0.17505583, z: 0.7536854, w: 0.14332403}
+  m_LocalPosition: {x: 88.19074, y: -129.02682, z: -5.1837463}
+  m_LocalScale: {x: 149.99998, y: 150, z: 150.00003}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 291
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1893638040
 PrefabInstance:
@@ -61171,6 +61633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 0
@@ -61222,6 +61685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -61337,6 +61801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -61452,8 +61917,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -61591,8 +62057,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -61692,8 +62159,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -61768,12 +62236,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1925405602}
-  m_LocalRotation: {x: 0.5675361, y: -0.19672383, z: 0.78680813, w: 0.14189973}
-  m_LocalPosition: {x: 84.89309, y: -47.719822, z: 28.228811}
+  m_LocalRotation: {x: 0.5675361, y: -0.19672383, z: 0.78680813, w: 0.1418997}
+  m_LocalPosition: {x: 83.85975, y: -132.05649, z: 5.0813274}
   m_LocalScale: {x: 150.00003, y: 150.00002, z: 150.00003}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 315
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1926101663
 GameObject:
@@ -61821,6 +62289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -61936,8 +62405,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -62051,8 +62521,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -62166,8 +62637,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -62374,6 +62846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -62489,8 +62962,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -62604,6 +63078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -62719,8 +63194,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -62820,6 +63296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -62949,6 +63426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -63030,6 +63508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 0
@@ -63086,6 +63565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -63201,6 +63681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -63316,6 +63797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -63431,6 +63913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -63546,6 +64029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -63647,8 +64131,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -63723,12 +64208,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2032708524}
-  m_LocalRotation: {x: 0.63175416, y: -0.28956044, z: 0.6642238, w: 0.2754057}
-  m_LocalPosition: {x: 68.92393, y: -74.28611, z: 3.4558325}
-  m_LocalScale: {x: 150.00002, y: 150.00006, z: 150.00006}
+  m_LocalRotation: {x: 0.63175416, y: -0.28956047, z: 0.6642238, w: 0.2754057}
+  m_LocalPosition: {x: 67.89059, y: -158.62277, z: -19.69165}
+  m_LocalScale: {x: 150.00003, y: 150.00006, z: 150.00008}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 303
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2035068731
 GameObject:
@@ -63776,6 +64261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -63891,8 +64377,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -63992,6 +64479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -64121,6 +64609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -64222,6 +64711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -64351,6 +64841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -64466,6 +64957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -64581,8 +65073,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -64696,6 +65189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -64811,6 +65305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -64988,8 +65483,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -65173,8 +65669,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -65288,6 +65785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -65403,6 +65901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -65504,8 +66003,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -65581,11 +66081,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110648261}
   m_LocalRotation: {x: 0.7592647, y: -0.18991362, z: 0.5684167, w: 0.25367782}
-  m_LocalPosition: {x: 76.74589, y: -60.163105, z: -22.529232}
-  m_LocalScale: {x: 200.00006, y: 200.00006, z: 200.00006}
+  m_LocalPosition: {x: 75.71255, y: -144.49977, z: -45.676716}
+  m_LocalScale: {x: 200.00005, y: 200.00005, z: 200.00006}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 302
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2124443195
 PrefabInstance:
@@ -65765,6 +66265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -65866,8 +66367,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
-  SphereMove: 1
+  SphereMove: 0
   isModel: 1
   swapSide: 0
   rotate180: 0
@@ -65943,11 +66445,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146890467}
   m_LocalRotation: {x: -0.43804842, y: 0.17505419, z: -0.8774004, w: -0.087397054}
-  m_LocalPosition: {x: 74.838326, y: -38.910576, z: 56.26789}
+  m_LocalPosition: {x: 73.804985, y: -123.247246, z: 33.120407}
   m_LocalScale: {x: 150.00003, y: 150.00006, z: 150.00003}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_Father: {fileID: 1570465033}
+  m_RootOrder: 306
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &271395670628910008
 MeshRenderer:
@@ -66097,6 +66599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1
@@ -66195,6 +66698,7 @@ GameObject:
   - component: {fileID: 2177446678226396924}
   - component: {fileID: 2177446678226396922}
   - component: {fileID: 2177446678226396923}
+  - component: {fileID: 2177446678226396921}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -66217,6 +66721,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &2177446678226396921
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2177446678226396919}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!136 &2177446678226396922
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -66247,6 +66847,19 @@ MonoBehaviour:
   mouseSensitivity: 10
   cameraRotationSmoothTime: 0.1
   cameraTiltRange: {x: -30, y: 30}
+  useSound: 1
+  playFootsteps: {fileID: 2177446678226396921}
+  walkingSounds:
+  - {fileID: 8300000, guid: 23df7fc781557654bbdc2a8edf594dc1, type: 3}
+  - {fileID: 8300000, guid: a094ac4ad84c89e46bb1889a162061c2, type: 3}
+  - {fileID: 8300000, guid: 7df31972111b66c4f9918575026fd6b2, type: 3}
+  - {fileID: 8300000, guid: a41c79583a8355340ae8d3c9bfb5f9a9, type: 3}
+  sprintingSounds:
+  - {fileID: 8300000, guid: fa914170f4decf1488796ae4571ff6ba, type: 3}
+  - {fileID: 8300000, guid: 5b069d4af9227144cac6e61264551c2f, type: 3}
+  - {fileID: 8300000, guid: e507c713bf9ad0a47bc3c72ed38a0336, type: 3}
+  - {fileID: 8300000, guid: 5330beeba69392745bd33a663c97f567, type: 3}
+  footstepVolume: 0.05
   walkSpeed: 2.5
   sprintSpeed: 5
   movementSmoothTime: 0.1
@@ -66259,6 +66872,9 @@ MonoBehaviour:
   wallWalk: 0
   gravityRotationSpeed: 10
   wallWalkDetection: 1.5
+  groundLayers:
+    serializedVersion: 2
+    m_Bits: 0
   insideSphere: 0
   insideSphereRadius: 5
   enableShooting: 1
@@ -66510,6 +67126,7 @@ MonoBehaviour:
     coming from them!
   tempText: {fileID: 6804104043977985340}
   textPanel: {fileID: 6804104044066574239}
+  whiteRoom: 0
 --- !u!1 &3942775772511176049
 GameObject:
   m_ObjectHideFlags: 0
@@ -73571,6 +74188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213dae650b05f994c95aec8b282a02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCamera: 0
   planetGameObject: {fileID: 1906594915}
   SphereMove: 0
   isModel: 1

@@ -87,8 +87,6 @@ public class SimonSaysActivator : MonoBehaviour
 
         for (int i = 0; i < simonSaysScript.simonButton.Length; i++)
         {
-            Debug.Log ("Loop");
-
             if (targetObject.GetComponent <SimonSaysButton>() == simonSaysScript.simonButton[i])
             {
                 buttonPressSequence.Add (i + 1);

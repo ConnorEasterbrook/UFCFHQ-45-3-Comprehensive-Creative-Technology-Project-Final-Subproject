@@ -1058,7 +1058,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &101577270
 MonoBehaviour:
@@ -1093,6 +1093,7 @@ MonoBehaviour:
   tempTextString_3: Press 'P' to receive this message again.
   tempText: {fileID: 6804104045468214983}
   textPanel: {fileID: 6804104045814752356}
+  whiteRoom: 0
 --- !u!1 &104600362
 GameObject:
   m_ObjectHideFlags: 0
@@ -2469,6 +2470,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.3
   portalLineInEditor: {r: 1, g: 1, b: 1, a: 1}
+  activateDistance: 20
 --- !u!65 &363745575
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2678,6 +2680,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.3
   portalLineInEditor: {r: 1, g: 1, b: 1, a: 1}
+  activateDistance: 20
 --- !u!65 &382790250
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3359,6 +3362,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.3
   portalLineInEditor: {r: 1, g: 1, b: 1, a: 1}
+  activateDistance: 20
 --- !u!65 &448934820
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3769,6 +3773,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.3
   portalLineInEditor: {r: 1, g: 1, b: 1, a: 1}
+  activateDistance: 20
 --- !u!33 &469097238
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4772,6 +4777,7 @@ MonoBehaviour:
   nearClipOffset: 0.2
   nearClipLimit: 0.3
   portalLineInEditor: {r: 0, g: 0, b: 0, a: 1}
+  activateDistance: 20
 --- !u!65 &593606332
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5229,6 +5235,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.3
   portalLineInEditor: {r: 1, g: 1, b: 1, a: 1}
+  activateDistance: 20
 --- !u!65 &663697444
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5574,6 +5581,107 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1001 &678885614
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 429866991094755694, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: playerScript
+      value: 
+      objectReference: {fileID: 1663711222}
+    - target: {fileID: 429866991094755733, guid: 0736f463944b802428676c678c14ff8c, type: 3}
+      propertyPath: m_Name
+      value: In-Game Menu
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0736f463944b802428676c678c14ff8c, type: 3}
 --- !u!1 &681727426
 GameObject:
   m_ObjectHideFlags: 0
@@ -8488,6 +8596,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.3
   portalLineInEditor: {r: 1, g: 1, b: 1, a: 1}
+  activateDistance: 20
 --- !u!65 &1052620439
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13104,6 +13213,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.2
   portalLineInEditor: {r: 0.07242751, g: 1, b: 0, a: 1}
+  activateDistance: 20
 --- !u!65 &1641481723
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13227,6 +13337,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb06c7e54e17d984095e1478d634eadf, type: 3}
+--- !u!114 &1663711222 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7749184659018813804, guid: bb06c7e54e17d984095e1478d634eadf, type: 3}
+  m_PrefabInstance: {fileID: 1663711221}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65b28f06854ba764ba629de11cf2c730, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1671772462
 GameObject:
   m_ObjectHideFlags: 0
@@ -13942,6 +14063,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.3
   portalLineInEditor: {r: 0, g: 1, b: 0, a: 1}
+  activateDistance: 20
 --- !u!65 &1838645867
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17510,6 +17632,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.3
   portalLineInEditor: {r: 1, g: 1, b: 1, a: 1}
+  activateDistance: 20
 --- !u!114 &337349980835564868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17527,6 +17650,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.3
   portalLineInEditor: {r: 1, g: 1, b: 1, a: 1}
+  activateDistance: 20
 --- !u!20 &337349981067699492
 Camera:
   m_ObjectHideFlags: 0
@@ -17618,6 +17742,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.3
   portalLineInEditor: {r: 1, g: 1, b: 1, a: 1}
+  activateDistance: 20
 --- !u!1 &337349982088573388
 GameObject:
   m_ObjectHideFlags: 0
@@ -18121,6 +18246,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.2
   portalLineInEditor: {r: 1, g: 1, b: 1, a: 1}
+  activateDistance: 20
 --- !u!65 &400773033320929664
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20776,6 +20902,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.2
   portalLineInEditor: {r: 0.07242751, g: 1, b: 0, a: 1}
+  activateDistance: 20
 --- !u!4 &1928222035875791830
 Transform:
   m_ObjectHideFlags: 0
@@ -21275,6 +21402,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.3
   portalLineInEditor: {r: 1, g: 0, b: 0.020682812, a: 1}
+  activateDistance: 20
 --- !u!4 &1928222036204476170
 Transform:
   m_ObjectHideFlags: 0
@@ -22009,6 +22137,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.2
   portalLineInEditor: {r: 1, g: 1, b: 1, a: 1}
+  activateDistance: 20
 --- !u!4 &2255669315830895440
 Transform:
   m_ObjectHideFlags: 0
@@ -22303,6 +22432,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.3
   portalLineInEditor: {r: 1, g: 1, b: 1, a: 1}
+  activateDistance: 20
 --- !u!65 &2293571151997010197
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22925,6 +23055,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.3
   portalLineInEditor: {r: 1, g: 1, b: 1, a: 1}
+  activateDistance: 20
 --- !u!23 &2672291879835464358
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24175,6 +24306,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.3
   portalLineInEditor: {r: 1, g: 1, b: 1, a: 1}
+  activateDistance: 20
 --- !u!4 &3801332546851024096
 Transform:
   m_ObjectHideFlags: 0
@@ -26052,6 +26184,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.3
   portalLineInEditor: {r: 1, g: 0.018660132, b: 0, a: 1}
+  activateDistance: 20
 --- !u!4 &4184293476288260797
 Transform:
   m_ObjectHideFlags: 0
@@ -27843,6 +27976,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.3
   portalLineInEditor: {r: 1, g: 0, b: 0.019823551, a: 1}
+  activateDistance: 20
 --- !u!224 &4343135938626287767
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28959,6 +29093,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.3
   portalLineInEditor: {r: 1, g: 1, b: 1, a: 1}
+  activateDistance: 20
 --- !u!114 &5348848833343682067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29698,6 +29833,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.3
   portalLineInEditor: {r: 1, g: 1, b: 1, a: 1}
+  activateDistance: 20
 --- !u!4 &5993226508664656351
 Transform:
   m_ObjectHideFlags: 0
@@ -30077,6 +30213,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.3
   portalLineInEditor: {r: 0, g: 1, b: 0, a: 1}
+  activateDistance: 20
 --- !u!65 &6001991606482357135
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32275,6 +32412,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.3
   portalLineInEditor: {r: 1, g: 1, b: 1, a: 1}
+  activateDistance: 20
 --- !u!4 &7460864102667773188
 Transform:
   m_ObjectHideFlags: 0
@@ -32440,6 +32578,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.3
   portalLineInEditor: {r: 1, g: 0.019607842, b: 0.067658536, a: 1}
+  activateDistance: 20
 --- !u!1 &7461606508359850167
 GameObject:
   m_ObjectHideFlags: 0
@@ -33561,6 +33700,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.3
   portalLineInEditor: {r: 1, g: 1, b: 1, a: 1}
+  activateDistance: 20
 --- !u!114 &8008439454563057980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33578,6 +33718,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.3
   portalLineInEditor: {r: 1, g: 1, b: 1, a: 1}
+  activateDistance: 20
 --- !u!23 &8071972156531071257
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33819,6 +33960,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.3
   portalLineInEditor: {r: 1, g: 0, b: 0.058195114, a: 1}
+  activateDistance: 20
 --- !u!114 &8083187240098242833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33836,6 +33978,7 @@ MonoBehaviour:
   nearClipOffset: 0.05
   nearClipLimit: 0.3
   portalLineInEditor: {r: 1, g: 0, b: 0.019823551, a: 1}
+  activateDistance: 20
 --- !u!1 &8095364085820648796
 GameObject:
   m_ObjectHideFlags: 0
