@@ -69,9 +69,6 @@ public class Portal : MonoBehaviour
 	{
 		if (linkedPortal != null)
 		{
-			/* COLLISIONS */
-			PortalMovement();
-
 			if (portalScreen.isVisible && portalToPlayerDistance < 20.0f)
 			{
 				// linkedPortal.gameObject.SetActive (true);
@@ -83,6 +80,12 @@ public class Portal : MonoBehaviour
 		{
 			gameObject.SetActive (false);
 		}
+	}
+
+	private void FixedUpdate() 
+	{
+		/* COLLISIONS */
+		PortalMovement();
 	}
 
 	/* VISUALS */

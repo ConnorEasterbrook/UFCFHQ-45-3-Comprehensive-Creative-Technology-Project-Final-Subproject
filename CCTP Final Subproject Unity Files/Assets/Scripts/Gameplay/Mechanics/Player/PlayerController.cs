@@ -51,6 +51,7 @@ public class PlayerController : PortalObject
     public float movementSmoothTime = 0.1f;
     [Tooltip ("Jump height. 7.5f feels good for arcade-like jumping (10.0f gravity). 10.0 for realistic jumping (20.0f gravity)")]
     public float jumpForce = 10.0f;
+    public bool allowJumping = true;
     private bool jumping;
     [Tooltip ("Amount of gravity. 10.0f feels good for arcade-like gravity. 20.0f for realistic gravity.")]
     public float gravityForce = 20.0f;
@@ -249,7 +250,7 @@ public class PlayerController : PortalObject
         fallingVelocity -= gravityForce * Time.deltaTime;
 
         // Check for jump input and if true, check that the character isn't jumping or falling. Then jump
-        if (Input.GetKeyDown (KeyCode.Space) && CheckGrounded())
+        if (Input.GetKeyDown (KeyCode.Space) && CheckGrounded() && allowJumping)
         {
             jumping = true;
             fallingVelocity = jumpForce;
@@ -477,21 +478,43 @@ public class PlayerController : PortalObject
     {
         Vector3 eulerRotation = teleportRotation.eulerAngles; // Create a Vector3 of quaternion for transform calculation
 
-        // Calculate the shortest distance between player's camera rotation and desired teleportation rotation
-        float shortestDistance = Mathf.DeltaAngle (cameraPanSmooth, eulerRotation.y);
-
-        cameraPan += shortestDistance; // Establish correct rotation for left & right camera movement
-
-        cameraPanSmooth += shortestDistance; // Correct Yaw Smooth with calculated shortest distance to allow for continuity
-
-        playerChild.transform.rotation = Quaternion.Euler (transform.up * cameraPanSmooth); // Set player rotation to correct rotation. It should match the implied direction before entering portals
+        float shortestDistance = 0;
 
         // Rotate the player game object to match the outPortal's X & Z rotations. Doesn't work if LateUpdate() lock is being called.
-        Vector3 correctRotation = new Vector3 (outPortal.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, outPortal.rotation.eulerAngles.z);
-        transform.rotation = Quaternion.Euler (correctRotation);
+        if (outPortal.eulerAngles.x > 0 || outPortal.eulerAngles.z > 0)
+        {
+            Vector3 relativeRot = (outPortal.rotation.eulerAngles * -1) + transform.rotation.eulerAngles; // Get the opposite rotation of current rotation
+            Vector3 cameraRot = (outPortal.rotation.eulerAngles * -1) + playerChild.transform.rotation.eulerAngles; // Get the opposite rotation of current rotation
+            Quaternion teleRot = outPortal.rotation * Quaternion.Euler (cameraRot); // Establish rotation variable for correct way to face after teleportation
+            
+            shortestDistance = Mathf.DeltaAngle (cameraPanSmooth, cameraRot.y); // Calculate the shortest distance between player's camera rotation and desired teleportation rotation
+            shortestDistance += (outPortal.rotation.eulerAngles.z + 90);
+
+            cameraPan += shortestDistance; // Establish correct rotation for left & right camera movement
+
+            cameraPanSmooth += shortestDistance; // Correct Yaw Smooth with calculated shortest distance to allow for continuity
+
+            transform.rotation = Quaternion.Euler (relativeRot);
+            playerChild.transform.rotation = Quaternion.Euler (transform.up * cameraPanSmooth); // Set player rotation to correct rotation. It should match the implied direction before entering portals
+        }
+        else
+        {
+            shortestDistance = Mathf.DeltaAngle (cameraPanSmooth, eulerRotation.y); // Calculate the shortest distance between player's camera rotation and desired teleportation rotation
+
+            Vector3 correctRotation = new Vector3 (0, 0, 0);
+            transform.rotation = Quaternion.Euler (correctRotation);
+
+            cameraPan += shortestDistance; // Establish correct rotation for left & right camera movement
+
+            cameraPanSmooth += shortestDistance; // Correct Yaw Smooth with calculated shortest distance to allow for continuity
+
+            playerChild.transform.rotation = Quaternion.Euler (transform.up * cameraPanSmooth); // Set player rotation to correct rotation. It should match the implied direction before entering portals
+        }
 
         velocity = outPortal.TransformVector (inPortal.InverseTransformVector (-velocity)); // Move player off the dotProduct (mid point) of the portal and match velocity of entering
 
         playerRigidbody.transform.position = teleportPosition; // Set player position to the calculated teleport location
+
+        Physics.SyncTransforms(); // Sync physics to stop drifting
     }
 }
