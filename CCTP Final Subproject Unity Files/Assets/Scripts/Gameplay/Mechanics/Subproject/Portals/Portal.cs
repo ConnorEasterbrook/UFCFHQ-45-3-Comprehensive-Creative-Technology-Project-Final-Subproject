@@ -65,8 +65,11 @@ public class Portal : MonoBehaviour
 	}
 
 	// Update is called once per frame
-	private void Update()
+	private void LateUpdate()
 	{
+		/* COLLISIONS */
+		PortalMovement();
+
 		if (linkedPortal != null)
 		{
 			if (portalScreen.isVisible && portalToPlayerDistance < 20.0f)
@@ -80,12 +83,6 @@ public class Portal : MonoBehaviour
 		{
 			gameObject.SetActive (false);
 		}
-	}
-
-	private void FixedUpdate() 
-	{
-		/* COLLISIONS */
-		PortalMovement();
 	}
 
 	/* VISUALS */

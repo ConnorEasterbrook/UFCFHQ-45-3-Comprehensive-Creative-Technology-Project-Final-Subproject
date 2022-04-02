@@ -481,14 +481,17 @@ public class PlayerController : PortalObject
         float shortestDistance = 0;
 
         // Rotate the player game object to match the outPortal's X & Z rotations. Doesn't work if LateUpdate() lock is being called.
-        if (outPortal.eulerAngles.x > 0 || outPortal.eulerAngles.z > 0)
+        if (outPortal.eulerAngles.x > 1 || outPortal.eulerAngles.z > 1 || outPortal.eulerAngles.x < -1 || outPortal.eulerAngles.z < -1)
         {
             Vector3 relativeRot = (outPortal.rotation.eulerAngles * -1) + transform.rotation.eulerAngles; // Get the opposite rotation of current rotation
+            if (relativeRot.y < 1 && relativeRot.y > -1) relativeRot.y += 180;
+            else if (relativeRot.y < -179 && relativeRot.y > -181) relativeRot.y += 180;
+            Debug.Log (relativeRot);
+
             Vector3 cameraRot = (outPortal.rotation.eulerAngles * -1) + playerChild.transform.rotation.eulerAngles; // Get the opposite rotation of current rotation
             Quaternion teleRot = outPortal.rotation * Quaternion.Euler (cameraRot); // Establish rotation variable for correct way to face after teleportation
             
-            shortestDistance = Mathf.DeltaAngle (cameraPanSmooth, cameraRot.y); // Calculate the shortest distance between player's camera rotation and desired teleportation rotation
-            shortestDistance += (outPortal.rotation.eulerAngles.z + 90);
+            shortestDistance = Mathf.DeltaAngle (cameraPanSmooth, teleRot.y); // Calculate the shortest distance between player's camera rotation and desired teleportation rotation
 
             cameraPan += shortestDistance; // Establish correct rotation for left & right camera movement
 
