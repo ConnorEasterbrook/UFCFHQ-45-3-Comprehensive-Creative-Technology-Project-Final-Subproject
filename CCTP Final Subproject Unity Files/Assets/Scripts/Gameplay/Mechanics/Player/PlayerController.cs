@@ -187,7 +187,7 @@ public class PlayerController : PortalObject
 
     private void LateUpdate() 
     {
-        if (!sphericalMovement)
+        if (!sphericalMovement && wallWalk)
         {
             transform.rotation = Quaternion.Euler (transform.eulerAngles.x, 0, transform.eulerAngles.z);
         }
@@ -486,10 +486,12 @@ public class PlayerController : PortalObject
 
         playerChild.transform.rotation = Quaternion.Euler (transform.up * cameraPanSmooth); // Set player rotation to correct rotation. It should match the implied direction before entering portals
 
+        // Rotate the player game object to match the outPortal's X & Z rotations. Doesn't work if LateUpdate() lock is being called.
+        Vector3 correctRotation = new Vector3 (outPortal.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, outPortal.rotation.eulerAngles.z);
+        transform.rotation = Quaternion.Euler (correctRotation);
+
         velocity = outPortal.TransformVector (inPortal.InverseTransformVector (-velocity)); // Move player off the dotProduct (mid point) of the portal and match velocity of entering
 
         playerRigidbody.transform.position = teleportPosition; // Set player position to the calculated teleport location
-
-        Physics.SyncTransforms (); // Apply transform changes to the physics engine
     }
 }
