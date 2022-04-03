@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class PlayerController : PortalObject
@@ -76,10 +77,11 @@ public class PlayerController : PortalObject
 
     // Wall-Walk Variables
     [HideInInspector] public bool wallWalk; // Enable wall walking
-    [HideInInspector] public float gravityRotationSpeed = 10.0f; // How quickly should the player rotate
+    [HideInInspector] public float gravityRotationSpeed = 4.0f; // How quickly should the player rotate
     [HideInInspector] public float wallWalkDetection = 1.5f; // How long should the raycast be
     [HideInInspector] public LayerMask groundLayers; // What layers are floor objects set as
     private Vector3 groundDirection; // What direction is the ground
+    private bool wallWalkRotate;
 
     // Inner-Sphere Variables
     [HideInInspector] public bool insideSphere;
@@ -131,7 +133,7 @@ public class PlayerController : PortalObject
         yCollisionBounds = playerCollider.bounds.extents.y;
 
         // Set direction of the ground
-        groundDirection = transform.position;
+        groundDirection = transform.rotation.eulerAngles;
     }
 
     // Update is called once per frame
@@ -150,11 +152,6 @@ public class PlayerController : PortalObject
         if (sphericalWorld) UpdateSphericalWorld();
         
         if (enableShooting && projectileRigidbody != null) UpdateShooting();
-
-        if (Input.GetKeyDown (KeyCode.O))
-        {
-            playerRigidbody.transform.Rotate (90, 0, 0);
-        }
 
         if (Input.GetKey (KeyCode.W) || Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.S) || Input.GetKey (KeyCode.D))
         {
@@ -182,16 +179,17 @@ public class PlayerController : PortalObject
         playerRigidbody.AddForce (-transform.up * playerRigidbody.mass * gravityForce);
 
         // Apply movement to rigidbody based on calculations
-		Vector3 localMove = transform.TransformDirection (velocity); // Final calculation
-		playerRigidbody.MovePosition (playerRigidbody.position + localMove * Time.fixedDeltaTime); // Movement call
+        Vector3 localMove = transform.TransformDirection (velocity); // Final calculation
+        playerRigidbody.MovePosition (playerRigidbody.position + localMove * Time.fixedDeltaTime); // Movement call
     }
 
-    private void LateUpdate() 
+    private async void LateUpdate() 
     {
-        if (!sphericalMovement && wallWalk)
-        {
-            transform.rotation = Quaternion.Euler (transform.eulerAngles.x, 0, transform.eulerAngles.z);
-        }
+        // if (!sphericalMovement && wallWalk)
+        // {
+        //     await Task.Delay (1000);
+        //     transform.rotation = Quaternion.Euler (transform.eulerAngles.x, 0, transform.eulerAngles.z);
+        // }
     }
 
     private void UpdateCameraMovement()
@@ -301,6 +299,7 @@ public class PlayerController : PortalObject
 
         if (CheckCeilingCollision())
         {
+            Debug.Log ("Heads");
             fallingVelocity = -1.0f;
         }
 
@@ -313,7 +312,7 @@ public class PlayerController : PortalObject
     {
         if (!sphericalMovement || isModel)
         {
-            return Physics.Raycast (transform.position, -transform.up, yCollisionBounds + 0.1f);
+            return Physics.Raycast (transform.position, -transform.up, yCollisionBounds + 0.5f);
         }
         else return Physics.Raycast (transform.position, -transform.up, 0.1f);
     }
@@ -383,46 +382,16 @@ public class PlayerController : PortalObject
     Vector3 SurfaceAngle()
     {
         Vector3 hitDirection = Vector3.zero;
-        Vector3 hitPosition = new Vector3 (transform.position.x, transform.position.y - 0.5f, transform.position.z);
+        Vector3 hitPosition = new Vector3 (transform.position.x, transform.position.y - 0.25f, transform.position.z);
+        
+		Vector3 localMove = transform.TransformDirection (velocity); // Final calculation
 
         // Front raycast
         RaycastHit rayFront;
-        Physics.Raycast (hitPosition, transform.forward, out rayFront, wallWalkDetection, groundLayers);
+        Physics.Raycast (hitPosition, localMove, out rayFront, wallWalkDetection, groundLayers);
         if (rayFront.transform != null)
         {
             hitDirection += rayFront.normal;
-        }
-
-        // Back raycast
-        RaycastHit rayBack;
-        Physics.Raycast (hitPosition, -transform.forward, out rayBack, wallWalkDetection, groundLayers);
-        if (rayBack.transform != null)
-        {
-            hitDirection += rayBack.normal;
-        }
-
-        // Down raycast
-        RaycastHit rayDown;
-        Physics.Raycast (hitPosition, -transform.up, out rayDown, wallWalkDetection, groundLayers);
-        if (rayDown.transform != null)
-        {
-            hitDirection += rayDown.normal;
-        }
-
-        // Right raycast
-        RaycastHit rayRight;
-        Physics.Raycast (hitPosition, -transform.up, out rayRight, wallWalkDetection, groundLayers);
-        if (rayRight.transform != null)
-        {
-            hitDirection += rayDown.normal;
-        }
-
-        // Left raycast
-        RaycastHit rayLeft;
-        Physics.Raycast (hitPosition, -transform.forward, out rayLeft, wallWalkDetection, groundLayers);
-        if (rayLeft.transform != null)
-        {
-            hitDirection += rayBack.normal;
         }
 
         return hitDirection.normalized;
@@ -486,6 +455,7 @@ public class PlayerController : PortalObject
             Vector3 relativeRot = (outPortal.rotation.eulerAngles * -1) + transform.rotation.eulerAngles; // Get the opposite rotation of current rotation
             if (relativeRot.y < 1 && relativeRot.y > -1) relativeRot.y += 180;
             else if (relativeRot.y < -179 && relativeRot.y > -181) relativeRot.y += 180;
+            else if (relativeRot.y < 181 && relativeRot.y > 179) relativeRot.y += 180;
             Debug.Log (relativeRot);
 
             Vector3 cameraRot = (outPortal.rotation.eulerAngles * -1) + playerChild.transform.rotation.eulerAngles; // Get the opposite rotation of current rotation
