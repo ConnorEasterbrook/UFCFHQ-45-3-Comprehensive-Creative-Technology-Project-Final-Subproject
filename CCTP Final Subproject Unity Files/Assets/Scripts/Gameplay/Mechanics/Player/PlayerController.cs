@@ -180,7 +180,8 @@ public class PlayerController : PortalObject
 
         // Apply movement to rigidbody based on calculations
         Vector3 localMove = transform.TransformDirection (velocity); // Final calculation
-        playerRigidbody.MovePosition (playerRigidbody.position + localMove * Time.fixedDeltaTime); // Movement call
+        playerRigidbody.AddForce (localMove - playerRigidbody.velocity, ForceMode.VelocityChange);
+        // playerRigidbody.MovePosition (playerRigidbody.position + localMove * Time.fixedDeltaTime); // Movement call
     }
 
     private async void LateUpdate() 
