@@ -184,7 +184,7 @@ public class PlayerController : PortalObject
         // playerRigidbody.MovePosition (playerRigidbody.position + localMove * Time.fixedDeltaTime); // Movement call
     }
 
-    private async void LateUpdate() 
+    private void LateUpdate() 
     {
         // if (!sphericalMovement && wallWalk)
         // {

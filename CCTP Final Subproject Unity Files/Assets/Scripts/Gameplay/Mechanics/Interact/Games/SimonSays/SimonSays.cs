@@ -54,6 +54,10 @@ public class SimonSays : MonoBehaviour
         {
             SceneManager.LoadScene (1);
         }
+        else if (desiredResult == 1)
+        {
+            GameObject.FindObjectOfType <FinaleManager>().completedPuzzles++;
+        }
         else
         {
             return;
