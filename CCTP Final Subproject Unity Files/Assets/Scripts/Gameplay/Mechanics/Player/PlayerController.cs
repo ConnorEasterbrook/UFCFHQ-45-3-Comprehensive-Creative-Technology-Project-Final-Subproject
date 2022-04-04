@@ -142,6 +142,7 @@ public class PlayerController : PortalObject
         UpdateCameraMovement();
         UpdateGravity();
         UpdateDefaultMovement();
+        FixedCameraMovement();
 
         if (useSound) UpdateSound();
         
@@ -172,7 +173,6 @@ public class PlayerController : PortalObject
 
     private void FixedUpdate()
     {
-        FixedCameraMovement();
         
         if (wallWalk) UpdateWallWalk();
 
@@ -446,10 +446,6 @@ public class PlayerController : PortalObject
     // Function that handles player teleportation within portals
     public override void Teleport (Transform inPortal, Transform outPortal, Vector3 teleportPosition, Quaternion teleportRotation) 
     {
-        Vector3 eulerRotation = teleportRotation.eulerAngles; // Create a Vector3 of quaternion for transform calculation
-
-        float shortestDistance = 0;
-
         // Rotate the player game object to match the outPortal's X & Z rotations. Doesn't work if LateUpdate() lock is being called.
         if (outPortal.eulerAngles.x > 1 || outPortal.eulerAngles.z > 1 || outPortal.eulerAngles.x < -1 || outPortal.eulerAngles.z < -1)
         {
@@ -462,18 +458,20 @@ public class PlayerController : PortalObject
             Vector3 cameraRot = (outPortal.rotation.eulerAngles * -1) + playerChild.transform.rotation.eulerAngles; // Get the opposite rotation of current rotation
             Quaternion teleRot = outPortal.rotation * Quaternion.Euler (cameraRot); // Establish rotation variable for correct way to face after teleportation
             
-            shortestDistance = Mathf.DeltaAngle (cameraPanSmooth, teleRot.y); // Calculate the shortest distance between player's camera rotation and desired teleportation rotation
+            float shortestDistance = Mathf.DeltaAngle (cameraPanSmooth, teleRot.y); // Calculate the shortest distance between player's camera rotation and desired teleportation rotation
 
             cameraPan += shortestDistance; // Establish correct rotation for left & right camera movement
 
             cameraPanSmooth += shortestDistance; // Correct Yaw Smooth with calculated shortest distance to allow for continuity
 
-            transform.rotation = Quaternion.Euler (relativeRot);
+            playerRigidbody.transform.rotation = Quaternion.Euler (relativeRot);
             playerChild.transform.rotation = Quaternion.Euler (transform.up * cameraPanSmooth); // Set player rotation to correct rotation. It should match the implied direction before entering portals
         }
         else
         {
-            shortestDistance = Mathf.DeltaAngle (cameraPanSmooth, eulerRotation.y); // Calculate the shortest distance between player's camera rotation and desired teleportation rotation
+            Vector3 eulerRotation = teleportRotation.eulerAngles; // Create a Vector3 of quaternion for transform calculation
+
+            float shortestDistance = Mathf.DeltaAngle (cameraPanSmooth, eulerRotation.y); // Calculate the shortest distance between player's camera rotation and desired teleportation rotation
 
             Vector3 correctRotation = new Vector3 (0, 0, 0);
             transform.rotation = Quaternion.Euler (correctRotation);

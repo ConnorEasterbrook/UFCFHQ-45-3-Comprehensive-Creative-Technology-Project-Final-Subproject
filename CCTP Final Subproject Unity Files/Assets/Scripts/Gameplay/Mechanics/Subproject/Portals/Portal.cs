@@ -189,8 +189,6 @@ public class Portal : MonoBehaviour
 
 			Quaternion halfTurn = Quaternion.Euler (0.0f, 180.0f, 0.0f); // halfTurn is required to have player facing the correct direction after teleportation
 
-			// Debug.Log (linkedPortal.transform.rotation.eulerAngles);
-
 			// Update position of portal object.
 			Vector3 relativePos = transform.InverseTransformPoint (portalObject.transform.position); // Get local position of the portal object
 			relativePos = halfTurn * relativePos; // Apply the halfTurn to portal object's transform position
