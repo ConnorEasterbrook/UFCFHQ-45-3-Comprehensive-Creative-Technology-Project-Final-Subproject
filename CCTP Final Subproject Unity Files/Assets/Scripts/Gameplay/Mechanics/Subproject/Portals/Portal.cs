@@ -70,16 +70,7 @@ public class Portal : MonoBehaviour
 		/* COLLISIONS */
 		PortalMovement();
 
-		if (linkedPortal != null)
-		{
-			if (portalScreen.isVisible && portalToPlayerDistance < 20.0f)
-			{
-				// linkedPortal.gameObject.SetActive (true);
-
-				portalCamera.Render(); // Render the camera
-			}
-		}
-		else
+		if (linkedPortal == null)
 		{
 			gameObject.SetActive (false);
 		}
@@ -131,7 +122,7 @@ public class Portal : MonoBehaviour
 	private void PortalCameraTransform ()
 	{
 		// Check to make sure that the camera transforms aren't changing when they don't need to be
-		Vector3 camToPortal = transform.InverseTransformPoint(mainCamera.transform.position);
+		Vector3 camToPortal = transform.InverseTransformPoint (mainCamera.transform.position);
 
 		if (camToPortal.z < 0.0f)
 		{
@@ -163,7 +154,7 @@ public class Portal : MonoBehaviour
 
 		Vector4 clipPlaneWorldSpace = new Vector4 (plane.normal.x, plane.normal.y, plane.normal.z, distance); // Via normal distance format, get the defined plane transform for calculations
 
-		// If camera is close to portal then don't use oblique matrix
+		// If camera is not close to portal then use oblique matrix
 		if (Mathf.Abs (planeToPlayerDistance) > (nearClipOffset)) 
 		{
 			// Convert from world space to camera space by getting the inverse transposr of the camera's worldToCameraMatrix and then use that to multiply the world space clip plane.

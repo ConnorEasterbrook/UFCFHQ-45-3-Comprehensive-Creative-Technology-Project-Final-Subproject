@@ -207,8 +207,8 @@ public class PlayerController : PortalObject
             mouseY = 0;
         }
 
-        cameraPan += mouseX * mouseSensitivity; // Move camera left & right
-        cameraTilt -= mouseY * mouseSensitivity; // Move camera up & down
+        cameraPan += mouseX * (mouseSensitivity * 100) * Time.deltaTime; // Move camera left & right
+        cameraTilt -= mouseY * (mouseSensitivity * 100) * Time.deltaTime; // Move camera up & down
 
         // Clamp the camera pitch so that the there is a limit when looking up & down
         cameraTilt = Mathf.Clamp (cameraTilt, cameraTiltRange.x, cameraTiltRange.y);

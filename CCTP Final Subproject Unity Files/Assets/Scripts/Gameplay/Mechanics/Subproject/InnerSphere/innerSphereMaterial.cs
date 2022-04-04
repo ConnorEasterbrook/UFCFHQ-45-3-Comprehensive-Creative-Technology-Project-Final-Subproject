@@ -9,11 +9,16 @@ public class innerSphereMaterial : MonoBehaviour
     private Renderer innerSphereRenderer; 
     public Material innerSphereMat;
     public Material standardMat;
+    public bool useSetMaterial;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake() 
     {
         innerSphereRenderer = GetComponent <Renderer>();
+
+        if (useSetMaterial)
+        {
+            standardMat = innerSphereRenderer.material;
+        }
     }
 
     // Update is called once per frame
