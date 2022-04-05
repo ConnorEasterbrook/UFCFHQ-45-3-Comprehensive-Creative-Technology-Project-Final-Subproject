@@ -2362,10 +2362,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e507c713bf9ad0a47bc3c72ed38a0336, type: 3}
   - {fileID: 8300000, guid: 5330beeba69392745bd33a663c97f567, type: 3}
   footstepVolume: 0.05
-  walkSpeed: 3
+  walkSpeed: 4
   sprintSpeed: 6
   movementSmoothTime: 0.1
-  jumpForce: 15
+  jumpForce: 10
   allowJumping: 1
   gravityForce: 20
   dissolvingFloor: 0
@@ -9417,15 +9417,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5144264715595498832, guid: c489f1ef94d90a94b843e56c43e5ff78, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -29.34
+      value: -29.340002
       objectReference: {fileID: 0}
     - target: {fileID: 5144264715595498832, guid: c489f1ef94d90a94b843e56c43e5ff78, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 30.286264
+      value: 32.286263
       objectReference: {fileID: 0}
     - target: {fileID: 5144264715595498832, guid: c489f1ef94d90a94b843e56c43e5ff78, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -25.739449
+      value: -76.48945
       objectReference: {fileID: 0}
     - target: {fileID: 5144264715595498832, guid: c489f1ef94d90a94b843e56c43e5ff78, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15603,6 +15603,67 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1709473590}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1712381675
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5144264715595498832, guid: c489f1ef94d90a94b843e56c43e5ff78, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5144264715595498832, guid: c489f1ef94d90a94b843e56c43e5ff78, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -29.340002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5144264715595498832, guid: c489f1ef94d90a94b843e56c43e5ff78, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 31.536263
+      objectReference: {fileID: 0}
+    - target: {fileID: 5144264715595498832, guid: c489f1ef94d90a94b843e56c43e5ff78, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -74.48945
+      objectReference: {fileID: 0}
+    - target: {fileID: 5144264715595498832, guid: c489f1ef94d90a94b843e56c43e5ff78, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710707
+      objectReference: {fileID: 0}
+    - target: {fileID: 5144264715595498832, guid: c489f1ef94d90a94b843e56c43e5ff78, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5144264715595498832, guid: c489f1ef94d90a94b843e56c43e5ff78, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5144264715595498832, guid: c489f1ef94d90a94b843e56c43e5ff78, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071066
+      objectReference: {fileID: 0}
+    - target: {fileID: 5144264715595498832, guid: c489f1ef94d90a94b843e56c43e5ff78, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5144264715595498832, guid: c489f1ef94d90a94b843e56c43e5ff78, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5144264715595498832, guid: c489f1ef94d90a94b843e56c43e5ff78, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5144264715595498833, guid: c489f1ef94d90a94b843e56c43e5ff78, type: 3}
+      propertyPath: m_Name
+      value: Interactable (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5144264715595498836, guid: c489f1ef94d90a94b843e56c43e5ff78, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c489f1ef94d90a94b843e56c43e5ff78, type: 3}
 --- !u!1 &1718879551
 GameObject:
   m_ObjectHideFlags: 0

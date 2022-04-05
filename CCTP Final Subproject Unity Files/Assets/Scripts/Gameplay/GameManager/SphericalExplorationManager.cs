@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SphericalExplorationManager : MonoBehaviour
 {
     public List <Trigger> triggerObjectives;
+    public Text objectiveText;
     private int objectives = 0;
     
     private bool oneTime2;
@@ -19,8 +21,6 @@ public class SphericalExplorationManager : MonoBehaviour
             if (triggerObjectives [i].isTriggered)
             {
                 objectives++;
-
-                triggerObjectives.Remove (triggerObjectives [i]);
             }
         }
 
@@ -28,6 +28,8 @@ public class SphericalExplorationManager : MonoBehaviour
         {
             LoadNextScene();
         }
+
+        objectiveText.text = "Explore the planet and find the warp shards... They're smoking skulls? Shards found: " + objectives + " / " + triggerObjectives.Count;
     }
 
     private async void LoadNextScene()

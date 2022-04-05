@@ -380,7 +380,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 7442060873d10d943a3434090e51750c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -872,7 +872,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 7442060873d10d943a3434090e51750c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1360,7 +1360,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 7442060873d10d943a3434090e51750c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2533,7 +2533,7 @@ GameObject:
   - component: {fileID: 1096333639}
   - component: {fileID: 1096333638}
   - component: {fileID: 1096333637}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Plane (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5756,12 +5756,12 @@ MonoBehaviour:
   sphericalMovement: 0
   planetGameObject: {fileID: 0}
   isModel: 0
-  wallWalk: 0
+  wallWalk: 1
   gravityRotationSpeed: 10
   wallWalkDetection: 1.5
   groundLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   insideSphere: 0
   insideSphereRadius: 5
   enableShooting: 1

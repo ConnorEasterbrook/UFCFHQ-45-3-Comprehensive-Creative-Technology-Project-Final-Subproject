@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 3
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: feaa29d41c5619f45826e9a1d357fdf7, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -286,7 +286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -388,7 +388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -518,7 +518,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -634,7 +634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -750,7 +750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -866,7 +866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -985,7 +985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -5885,7 +5885,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -6001,7 +6001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -6117,7 +6117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -6233,7 +6233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -6349,7 +6349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -6465,7 +6465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -6581,7 +6581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -6683,7 +6683,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -6813,7 +6813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -6929,7 +6929,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -7045,7 +7045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -7147,7 +7147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -7277,7 +7277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -7393,7 +7393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -7542,7 +7542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 0
   swapSide: 0
@@ -7594,7 +7594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -7663,63 +7663,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110949868}
   m_Mesh: {fileID: 4493585093827132993, guid: c758e09b84239e140adae4acf5dfe5b4, type: 3}
---- !u!1001 &111517933
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 558378539}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 689290b170f832442b26ed68ca9f4bd5, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 689290b170f832442b26ed68ca9f4bd5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.0333368
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 689290b170f832442b26ed68ca9f4bd5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -84.33667
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 689290b170f832442b26ed68ca9f4bd5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -23.147484
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 689290b170f832442b26ed68ca9f4bd5, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 689290b170f832442b26ed68ca9f4bd5, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 689290b170f832442b26ed68ca9f4bd5, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 689290b170f832442b26ed68ca9f4bd5, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 689290b170f832442b26ed68ca9f4bd5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 689290b170f832442b26ed68ca9f4bd5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 689290b170f832442b26ed68ca9f4bd5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 689290b170f832442b26ed68ca9f4bd5, type: 3}
-      propertyPath: m_Name
-      value: 7sd_25s_Icosphere
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 689290b170f832442b26ed68ca9f4bd5, type: 3}
 --- !u!1 &119179489
 GameObject:
   m_ObjectHideFlags: 0
@@ -7767,7 +7710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -7916,7 +7859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 0
   swapSide: 0
@@ -7968,7 +7911,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -8084,7 +8027,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -8200,7 +8143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -8316,7 +8259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -8418,7 +8361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -8548,7 +8491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -8664,7 +8607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -8780,7 +8723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -8952,7 +8895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -9068,7 +9011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -9198,7 +9141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -9314,7 +9257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -9416,7 +9359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -9532,7 +9475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -9662,7 +9605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -9811,7 +9754,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 0
   swapSide: 0
@@ -9863,7 +9806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -9965,7 +9908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -10095,7 +10038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -10211,7 +10154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -10327,7 +10270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -10443,7 +10386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -10559,7 +10502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -10675,7 +10618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -10791,7 +10734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -10893,7 +10836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -11023,7 +10966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -11106,7 +11049,7 @@ PrefabInstance:
     - target: {fileID: 1724910103, guid: c5527eed5e1bb314886941179aed2b9f, type: 3}
       propertyPath: planetGameObject
       value: 
-      objectReference: {fileID: 1906594915}
+      objectReference: {fileID: 919132149132074428}
     - target: {fileID: 3654406708617720310, guid: c5527eed5e1bb314886941179aed2b9f, type: 3}
       propertyPath: m_Name
       value: SphericalTower
@@ -11190,7 +11133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -11320,7 +11263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -11436,7 +11379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -11518,7 +11461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 0
   swapSide: 0
@@ -11570,7 +11513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -11652,7 +11595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 0
   swapSide: 0
@@ -11704,7 +11647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -11786,7 +11729,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 0
   swapSide: 0
@@ -11838,7 +11781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -11954,7 +11897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -12070,7 +12013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -12219,7 +12162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 0
   swapSide: 0
@@ -12271,7 +12214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -12387,7 +12330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -12503,7 +12446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -12605,7 +12548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -12787,7 +12730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -12903,7 +12846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -13019,7 +12962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -13135,7 +13078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -13251,7 +13194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -13367,7 +13310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -13483,7 +13426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -13599,7 +13542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -13715,7 +13658,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -13831,7 +13774,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -13947,7 +13890,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -14049,7 +13992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -14132,6 +14075,101 @@ Transform:
   m_Father: {fileID: 1570465033}
   m_RootOrder: 178
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &457993385
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 457993389}
+  - component: {fileID: 457993388}
+  - component: {fileID: 457993387}
+  - component: {fileID: 457993386}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &457993386
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457993385}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &457993387
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457993385}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: adc181479f17d5c47881e4fc6a23fe21, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &457993388
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457993385}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &457993389
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457993385}
+  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0.000000104308114}
+  m_LocalPosition: {x: -150, y: 0, z: 0}
+  m_LocalScale: {x: 50, y: 50, z: 50}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1 &458587012
 GameObject:
   m_ObjectHideFlags: 0
@@ -14179,7 +14217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -14295,7 +14333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -14397,7 +14435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -14513,7 +14551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -14643,7 +14681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -14759,7 +14797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -14910,7 +14948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -15026,7 +15064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -15142,7 +15180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -15258,7 +15296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -15374,7 +15412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -15476,7 +15514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -15606,7 +15644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -15722,7 +15760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -15838,7 +15876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -15954,7 +15992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -16056,7 +16094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -16186,7 +16224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -16268,7 +16306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 0
   swapSide: 0
@@ -16306,7 +16344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -16436,7 +16474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -16585,7 +16623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 0
   swapSide: 0
@@ -16637,7 +16675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -16733,12 +16771,12 @@ Transform:
   m_LocalPosition: {x: 1.0333368, y: 84.33667, z: 23.147484}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1906594919}
+  - {fileID: 543450653588506374}
   - {fileID: 1570465033}
   - {fileID: 1726354693}
   - {fileID: 490414644}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &564898006
 GameObject:
@@ -16773,7 +16811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -16889,7 +16927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -17019,7 +17057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -17135,7 +17173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -17251,7 +17289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -17367,7 +17405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -17483,7 +17521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -17599,7 +17637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -17715,7 +17753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -17831,7 +17869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -17947,7 +17985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -18100,7 +18138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -18152,7 +18190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -18268,7 +18306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -18370,7 +18408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -18500,7 +18538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -18616,7 +18654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -18732,7 +18770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -18848,7 +18886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -18964,7 +19002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -19142,7 +19180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -19258,7 +19296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -19374,7 +19412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -19490,7 +19528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -19606,7 +19644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -19722,7 +19760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -19838,7 +19876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -19987,7 +20025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 0
   swapSide: 0
@@ -20039,7 +20077,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -20155,7 +20193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -20271,7 +20309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -20387,7 +20425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -20503,7 +20541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -20619,7 +20657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -20721,7 +20759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -20837,7 +20875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -20967,7 +21005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -21083,7 +21121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -21185,7 +21223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -21318,7 +21356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -26218,7 +26256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -26367,7 +26405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 0
   swapSide: 0
@@ -26419,7 +26457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -26521,7 +26559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -26651,7 +26689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -26829,7 +26867,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -26945,7 +26983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -27061,7 +27099,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -27147,7 +27185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 429866991094755689, guid: 0736f463944b802428676c678c14ff8c, type: 3}
       propertyPath: m_AnchorMax.x
@@ -27278,7 +27316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -27394,7 +27432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -27510,7 +27548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -27626,7 +27664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -27742,7 +27780,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -27858,7 +27896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -27974,7 +28012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -28090,7 +28128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -28206,7 +28244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -28322,7 +28360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -28424,7 +28462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -28540,7 +28578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -28670,7 +28708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -28786,7 +28824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -28888,7 +28926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -29018,7 +29056,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -29137,7 +29175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -38995,7 +39033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -39111,7 +39149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -39227,7 +39265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -39409,7 +39447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -39525,7 +39563,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -39607,7 +39645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 0
   swapSide: 0
@@ -39659,7 +39697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -39775,7 +39813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -39891,7 +39929,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -40063,7 +40101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -40193,7 +40231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -40309,7 +40347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -40425,7 +40463,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -40541,7 +40579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -40610,6 +40648,87 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1086727263}
   m_Mesh: {fileID: -5495902117074765545, guid: df7419c78d550d940950e5772b99e0c7, type: 3}
+--- !u!1 &1104796951
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1104796955}
+  - component: {fileID: 1104796954}
+  - component: {fileID: 1104796953}
+  m_Layer: 0
+  m_Name: Cube (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &1104796953
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104796951}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 3889bc6d831d69f488c71911d2c53af6, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1104796954
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104796951}
+  m_Mesh: {fileID: 289301614986012343, guid: cc628fc1af8bd854b80c6f625e8e6e6e, type: 3}
+--- !u!4 &1104796955
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104796951}
+  m_LocalRotation: {x: -0, y: -0, z: 1, w: 0.000000104308114}
+  m_LocalPosition: {x: 0, y: -150, z: 0}
+  m_LocalScale: {x: 5000, y: 5000, z: 5000}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1001 &1115125246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40727,7 +40846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -40843,7 +40962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -41021,7 +41140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -41137,7 +41256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -41253,7 +41372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -41369,7 +41488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -41485,7 +41604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -41587,7 +41706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -41703,7 +41822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -41833,7 +41952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -41949,7 +42068,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -42065,7 +42184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -42181,7 +42300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -42300,7 +42419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -47233,7 +47352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 0
   swapSide: 0
@@ -47285,7 +47404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -47401,7 +47520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -47517,7 +47636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -47633,7 +47752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -47735,7 +47854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -47870,7 +47989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -47986,7 +48105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -48102,7 +48221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -48218,7 +48337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -48334,7 +48453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -48450,7 +48569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -48566,7 +48685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -48668,7 +48787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -48798,7 +48917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -48914,7 +49033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -49030,7 +49149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -49146,7 +49265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -49262,7 +49381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -49378,7 +49497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -49447,6 +49566,119 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1300287678}
   m_Mesh: {fileID: -5495902117074765545, guid: df7419c78d550d940950e5772b99e0c7, type: 3}
+--- !u!1 &1309776913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1309776917}
+  - component: {fileID: 1309776916}
+  - component: {fileID: 1309776915}
+  - component: {fileID: 1309776914}
+  - component: {fileID: 1309776918}
+  m_Layer: 0
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1309776914
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309776913}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1309776915
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309776913}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 3876542345217667742, guid: 6ecbf6e16b883454ea1d239457a789ec, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1309776916
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309776913}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1309776917
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309776913}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 150, y: 0, z: 0}
+  m_LocalScale: {x: 50, y: 50, z: 50}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1309776918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309776913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bbe0408bc877aa46bdaa272b3fbf0ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetToCircle: {fileID: 543450653588506374}
+  circleSpeed: 1
+  circleRadius: 0.02
+  heightOffset: 0
+  circleAway: 0
 --- !u!1 &1315334304
 GameObject:
   m_ObjectHideFlags: 0
@@ -49494,7 +49726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -49610,7 +49842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -49692,7 +49924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 0
   swapSide: 0
@@ -49730,7 +49962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -49860,7 +50092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -50046,7 +50278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -50162,7 +50394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -50278,7 +50510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -50394,7 +50626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -50510,7 +50742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -50612,7 +50844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -50728,7 +50960,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -50858,7 +51090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -50974,7 +51206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -51090,7 +51322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -51268,7 +51500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -51384,7 +51616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -51500,7 +51732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -51582,7 +51814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 0
   swapSide: 0
@@ -51634,7 +51866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -51750,7 +51982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -51866,7 +52098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -51968,7 +52200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -52084,7 +52316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -52200,7 +52432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -52330,7 +52562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -52446,7 +52678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -52562,7 +52794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -52664,7 +52896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -52760,7 +52992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 0
   swapSide: 0
@@ -52798,7 +53030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -52928,7 +53160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -53044,7 +53276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -53160,7 +53392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -53276,7 +53508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -53392,7 +53624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -53494,7 +53726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -53610,7 +53842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -53740,7 +53972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -53842,7 +54074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -54005,7 +54237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 0
   swapSide: 0
@@ -54057,7 +54289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -54159,7 +54391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -54289,7 +54521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -54405,7 +54637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -54521,7 +54753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -54637,7 +54869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -54753,7 +54985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -54869,7 +55101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -55347,7 +55579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -55463,7 +55695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -55579,7 +55811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -55681,7 +55913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -55811,7 +56043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -55913,7 +56145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -56118,7 +56350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -56234,7 +56466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -56336,7 +56568,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -56433,7 +56665,7 @@ PrefabInstance:
     - target: {fileID: 1724910103, guid: c5527eed5e1bb314886941179aed2b9f, type: 3}
       propertyPath: planetGameObject
       value: 
-      objectReference: {fileID: 1906594915}
+      objectReference: {fileID: 919132149132074428}
     - target: {fileID: 3654406708617720310, guid: c5527eed5e1bb314886941179aed2b9f, type: 3}
       propertyPath: m_Name
       value: SphericalTower (1)
@@ -56531,7 +56763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -56647,7 +56879,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -56763,7 +56995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -56879,7 +57111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -56995,7 +57227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -57128,7 +57360,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1700311653
 GameObject:
@@ -57163,7 +57395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -57355,7 +57587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -57471,7 +57703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -57587,7 +57819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -57703,7 +57935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -57819,7 +58051,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -57968,7 +58200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 0
   swapSide: 0
@@ -58020,7 +58252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -58122,7 +58354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -58295,7 +58527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -58418,7 +58650,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1726714786}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 20, y: 4, z: 15}
@@ -58456,7 +58688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -58586,7 +58818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -58702,7 +58934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -58818,7 +59050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -58934,7 +59166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -59050,7 +59282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -59152,7 +59384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -59282,7 +59514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -59398,7 +59630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -59500,7 +59732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -59630,7 +59862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -59746,7 +59978,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -59862,7 +60094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -59978,7 +60210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -60192,7 +60424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 0
   swapSide: 0
@@ -60277,7 +60509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 0
   swapSide: 0
@@ -60391,7 +60623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -60493,7 +60725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -60623,7 +60855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -60739,7 +60971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -60855,7 +61087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -60971,7 +61203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -61087,7 +61319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -61203,7 +61435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -61319,7 +61551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -61435,7 +61667,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -61537,7 +61769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -61700,7 +61932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 0
   swapSide: 0
@@ -61752,7 +61984,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -61868,7 +62100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -61984,7 +62216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -62053,30 +62285,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904799709}
   m_Mesh: {fileID: 4493585093827132993, guid: c758e09b84239e140adae4acf5dfe5b4, type: 3}
---- !u!1 &1906594915 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 689290b170f832442b26ed68ca9f4bd5, type: 3}
-  m_PrefabInstance: {fileID: 111517933}
-  m_PrefabAsset: {fileID: 0}
 --- !u!64 &1906594916
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1906594915}
+  m_GameObject: {fileID: 919132149132074428}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 0
-  m_CookingOptions: 30
+  m_CookingOptions: 14
   m_Mesh: {fileID: 289301614986012343, guid: 689290b170f832442b26ed68ca9f4bd5, type: 3}
---- !u!4 &1906594919 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 689290b170f832442b26ed68ca9f4bd5, type: 3}
-  m_PrefabInstance: {fileID: 111517933}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1918342671
 GameObject:
   m_ObjectHideFlags: 0
@@ -62124,7 +62346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -62226,7 +62448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -62356,7 +62578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -62472,7 +62694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -62588,7 +62810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -62704,7 +62926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -62773,99 +62995,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1949996426}
   m_Mesh: {fileID: 4493585093827132993, guid: c758e09b84239e140adae4acf5dfe5b4, type: 3}
---- !u!1 &1956906564
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1956906566}
-  - component: {fileID: 1956906565}
-  m_Layer: 0
-  m_Name: Directional Light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!108 &1956906565
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1956906564}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 1
-  m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 2
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
---- !u!4 &1956906566
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1956906564}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1965744329
 GameObject:
   m_ObjectHideFlags: 0
@@ -62913,7 +63042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -63029,7 +63158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -63145,7 +63274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -63261,7 +63390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -63363,7 +63492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -63493,7 +63622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -63575,7 +63704,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 0
   swapSide: 0
@@ -63632,7 +63761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -63748,7 +63877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -63864,7 +63993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -63980,7 +64109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -64096,7 +64225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -64198,7 +64327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -64328,7 +64457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -64444,7 +64573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -64546,7 +64675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -64676,7 +64805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -64778,7 +64907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -64908,7 +65037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -65024,7 +65153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -65140,7 +65269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -65256,7 +65385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -65372,7 +65501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -65550,7 +65679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -65736,7 +65865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -65852,7 +65981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -65968,7 +66097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -66070,7 +66199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -66332,7 +66461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -66434,7 +66563,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -66559,6 +66688,39 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!4 &543450653588506374
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149132074428}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.0333368, y: -84.33667, z: -23.147484}
+  m_LocalScale: {x: 10000, y: 10000, z: 10000}
+  m_Children: []
+  m_Father: {fileID: 558378539}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &919132149132074428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 543450653588506374}
+  - component: {fileID: 3469287837572516003}
+  - component: {fileID: 1711813855657016425}
+  - component: {fileID: 1906594916}
+  m_Layer: 0
+  m_Name: 7sd_25s_Icosphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!114 &1243339331133871953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66633,6 +66795,49 @@ Transform:
   m_Father: {fileID: 1570465033}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1711813855657016425
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149132074428}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: -6478536213147159724, guid: 689290b170f832442b26ed68ca9f4bd5, type: 3}
+  - {fileID: 1760265153787145879, guid: 689290b170f832442b26ed68ca9f4bd5, type: 3}
+  - {fileID: 5169713293541039106, guid: 689290b170f832442b26ed68ca9f4bd5, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1784776325345960557
 GameObject:
   m_ObjectHideFlags: 0
@@ -66666,7 +66871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0
@@ -66934,8 +67139,8 @@ MonoBehaviour:
   gravityForce: 22
   dissolvingFloor: 0
   sphericalMovement: 1
-  planetGameObject: {fileID: 1906594915}
-  isModel: 0
+  planetGameObject: {fileID: 919132149132074428}
+  isModel: 1
   wallWalk: 0
   gravityRotationSpeed: 10
   wallWalkDetection: 1.5
@@ -66947,9 +67152,9 @@ MonoBehaviour:
   enableShooting: 1
   projectileRigidbody: {fileID: 0}
   projectileSpeed: 40
-  sphericalWorld: 0
-  sphereXAxis: 0
-  sphereYAxis: 0
+  sphericalWorld: 1
+  sphereXAxis: 0.25
+  sphereYAxis: 0.5
 --- !u!54 &2177446678226396924
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -67156,6 +67361,14 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1784776325345960557}
   m_Mesh: {fileID: -5495902117074765545, guid: df7419c78d550d940950e5772b99e0c7, type: 3}
+--- !u!33 &3469287837572516003
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149132074428}
+  m_Mesh: {fileID: 289301614986012343, guid: 689290b170f832442b26ed68ca9f4bd5, type: 3}
 --- !u!114 &3811222404803530956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67174,6 +67387,7 @@ MonoBehaviour:
   - {fileID: 34569033}
   - {fileID: 1165651689}
   - {fileID: 786832562}
+  objectiveText: {fileID: 1243339331133871953}
 --- !u!114 &3811222404803530957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74256,7 +74470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCamera: 0
-  planetGameObject: {fileID: 1906594915}
+  planetGameObject: {fileID: 919132149132074428}
   SphereMove: 0
   isModel: 1
   swapSide: 0

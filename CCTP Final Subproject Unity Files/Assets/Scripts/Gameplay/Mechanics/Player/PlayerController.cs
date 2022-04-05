@@ -178,19 +178,10 @@ public class PlayerController : PortalObject
 
         playerRigidbody.AddForce (-transform.up * playerRigidbody.mass * gravityForce);
 
+
         // Apply movement to rigidbody based on calculations
         Vector3 localMove = transform.TransformDirection (velocity); // Final calculation
         playerRigidbody.AddForce (localMove - playerRigidbody.velocity, ForceMode.VelocityChange);
-        // playerRigidbody.MovePosition (playerRigidbody.position + localMove * Time.fixedDeltaTime); // Movement call
-    }
-
-    private void LateUpdate() 
-    {
-        // if (!sphericalMovement && wallWalk)
-        // {
-        //     await Task.Delay (1000);
-        //     transform.rotation = Quaternion.Euler (transform.eulerAngles.x, 0, transform.eulerAngles.z);
-        // }
     }
 
     private void UpdateCameraMovement()
@@ -251,6 +242,7 @@ public class PlayerController : PortalObject
         // Check for jump input and if true, check that the character isn't jumping or falling. Then jump
         if (Input.GetKeyDown (KeyCode.Space) && CheckGrounded() && allowJumping)
         {
+            Debug.Log ("f");
             jumping = true;
             fallingVelocity = jumpForce;
         }
@@ -313,7 +305,14 @@ public class PlayerController : PortalObject
     {
         if (!sphericalMovement || isModel)
         {
-            return Physics.Raycast (transform.position, -transform.up, yCollisionBounds + 0.5f);
+            // return Physics.Raycast (transform.position, -transform.up, yCollisionBounds + 0.1f);
+
+            if (Physics.Raycast (new Vector3 (transform.position.x + 0.25f, transform.position.y, transform.position.z), -transform.up, yCollisionBounds + 0.1f) || 
+            Physics.Raycast (new Vector3 (transform.position.x - 0.25f, transform.position.y, transform.position.z), -transform.up, yCollisionBounds + 0.1f))
+            {
+                return true;
+            }
+            else return false;
         }
         else return Physics.Raycast (transform.position, -transform.up, 0.1f);
     }

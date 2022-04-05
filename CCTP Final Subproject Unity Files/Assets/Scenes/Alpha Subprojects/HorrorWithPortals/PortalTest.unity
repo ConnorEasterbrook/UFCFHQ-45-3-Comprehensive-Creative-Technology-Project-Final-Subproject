@@ -3140,7 +3140,7 @@ MonoBehaviour:
   movementSmoothTime: 0.1
   jumpForce: 12
   allowJumping: 1
-  gravityForce: 20
+  gravityForce: 25
   dissolvingFloor: 0
   sphericalMovement: 0
   planetGameObject: {fileID: 0}
@@ -3278,7 +3278,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!222 &6804104045083054909
 CanvasRenderer:
   m_ObjectHideFlags: 0

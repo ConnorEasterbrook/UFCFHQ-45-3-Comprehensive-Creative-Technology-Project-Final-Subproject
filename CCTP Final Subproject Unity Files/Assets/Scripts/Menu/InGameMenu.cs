@@ -113,6 +113,11 @@ public class InGameMenu : MonoBehaviour
         music.volume = 1.0f * sliderValue;
     }
 
+    public void SetSensitivity (float sliderValue)
+    {
+        if (playerScript != null) playerScript.mouseSensitivity *= sliderValue;
+    }
+
     public void CloseSettings()
     {
         settingsUI.SetActive (false);

@@ -13,6 +13,7 @@ public class SimonSays : MonoBehaviour
     public int checkLight = 0;
     public List <int> sequence = new List <int>(); //list of chosen buttons in order
     public int desiredResult = 1;
+    bool oneTime = false;
 
     public async void StartOrder()//choose first 2 buttons
     {    
@@ -50,9 +51,10 @@ public class SimonSays : MonoBehaviour
     {
         await Task.Delay (1000);
 
-        if (resultOption == 0)
+        if (resultOption == 0 && !oneTime)
         {
-            SceneManager.LoadScene (1);
+            SceneManager.LoadScene (2);
+            oneTime = true;
         }
         else if (desiredResult == 1)
         {

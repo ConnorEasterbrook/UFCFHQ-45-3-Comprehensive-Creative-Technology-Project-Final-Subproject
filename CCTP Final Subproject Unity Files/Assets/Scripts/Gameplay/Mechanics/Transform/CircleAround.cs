@@ -5,12 +5,17 @@ using UnityEngine;
 public class CircleAround : MonoBehaviour
 {
     public Transform targetToCircle;
-    [Range (1.0f, 15.0f)] public float circleSpeed = 1;
-    [Range (0.0f, 5.0f)] public float circleRadius = 1;
-    [Range (-10.0f, 10.0f)] public float heightOffset = 0;
+    public float circleSpeed = 1;
+    public float circleRadius = 1;
+    public float heightOffset = 0;
     public bool circleAway;
     private Vector3 circleOffset;
     private float degree;
+
+    private void Awake() 
+    {
+        
+    }
 
     private void LateUpdate() 
     {
