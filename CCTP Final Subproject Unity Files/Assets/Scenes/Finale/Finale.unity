@@ -1314,7 +1314,7 @@ PrefabInstance:
       objectReference: {fileID: 1920950541}
     - target: {fileID: 7460864103089834837, guid: 3e47ebc52a4877f42b421bdd3dd12bd2, type: 3}
       propertyPath: activateDistance
-      value: 40
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7460864103089834837, guid: 3e47ebc52a4877f42b421bdd3dd12bd2, type: 3}
       propertyPath: portalIterations
@@ -3469,21 +3469,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 735131012}
     m_Modifications:
+    - target: {fileID: 915727849, guid: d39b9c67dc607814faf3a7cdc837fd53, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 6327377476902879134}
+    - target: {fileID: 1258438139, guid: d39b9c67dc607814faf3a7cdc837fd53, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 6327377476902879134}
+    - target: {fileID: 1476113996, guid: d39b9c67dc607814faf3a7cdc837fd53, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 6327377476902879134}
+    - target: {fileID: 1623354642, guid: d39b9c67dc607814faf3a7cdc837fd53, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 6327377476902879134}
+    - target: {fileID: 1763053806, guid: d39b9c67dc607814faf3a7cdc837fd53, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 6327377476902879134}
+    - target: {fileID: 2008559681, guid: d39b9c67dc607814faf3a7cdc837fd53, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 6327377476902879134}
     - target: {fileID: 9090373583784489447, guid: d39b9c67dc607814faf3a7cdc837fd53, type: 3}
       propertyPath: m_RootOrder
       value: 636
-      objectReference: {fileID: 0}
-    - target: {fileID: 9090373583784489447, guid: d39b9c67dc607814faf3a7cdc837fd53, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9090373583784489447, guid: d39b9c67dc607814faf3a7cdc837fd53, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.6666667
-      objectReference: {fileID: 0}
-    - target: {fileID: 9090373583784489447, guid: d39b9c67dc607814faf3a7cdc837fd53, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.33333334
       objectReference: {fileID: 0}
     - target: {fileID: 9090373583784489447, guid: d39b9c67dc607814faf3a7cdc837fd53, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7195,7 +7207,7 @@ PrefabInstance:
       objectReference: {fileID: 1868362626}
     - target: {fileID: 7460864103089834837, guid: 3e47ebc52a4877f42b421bdd3dd12bd2, type: 3}
       propertyPath: activateDistance
-      value: 40
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7460864103089834837, guid: 3e47ebc52a4877f42b421bdd3dd12bd2, type: 3}
       propertyPath: portalIterations
@@ -8319,7 +8331,7 @@ PrefabInstance:
       objectReference: {fileID: 1163672093}
     - target: {fileID: 7460864103089834837, guid: 3e47ebc52a4877f42b421bdd3dd12bd2, type: 3}
       propertyPath: activateDistance
-      value: 40
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7460864103089834837, guid: 3e47ebc52a4877f42b421bdd3dd12bd2, type: 3}
       propertyPath: portalIterations
@@ -21760,7 +21772,7 @@ PrefabInstance:
       objectReference: {fileID: 2144695487}
     - target: {fileID: 7460864103089834837, guid: 3e47ebc52a4877f42b421bdd3dd12bd2, type: 3}
       propertyPath: activateDistance
-      value: 40
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7460864103089834837, guid: 3e47ebc52a4877f42b421bdd3dd12bd2, type: 3}
       propertyPath: portalIterations
@@ -29763,7 +29775,7 @@ PrefabInstance:
       objectReference: {fileID: 1357761226}
     - target: {fileID: 7460864103089834837, guid: 3e47ebc52a4877f42b421bdd3dd12bd2, type: 3}
       propertyPath: activateDistance
-      value: 40
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7460864103089834837, guid: 3e47ebc52a4877f42b421bdd3dd12bd2, type: 3}
       propertyPath: portalIterations
@@ -43932,6 +43944,10 @@ PrefabInstance:
       propertyPath: linkedPortal
       value: 
       objectReference: {fileID: 2114955736}
+    - target: {fileID: 9090595401162588426, guid: d39b9c67dc607814faf3a7cdc837fd53, type: 3}
+      propertyPath: activateDistance
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 9092463716027774677, guid: d39b9c67dc607814faf3a7cdc837fd53, type: 3}
       propertyPath: m_Name
       value: Portal 1 (1)
@@ -46043,27 +46059,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerController: {fileID: 6327377476902879134}
   innerSphereMat: {fileID: 2100000, guid: e199c13caea5cb14ea2ff5c67a73c01d, type: 2}
-  standardMat: {fileID: 0}
-  useSetMaterial: 1
---- !u!1 &915727844 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9090595399413983488, guid: d39b9c67dc607814faf3a7cdc837fd53, type: 3}
-  m_PrefabInstance: {fileID: 77837812}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &915727849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 915727844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6e03563eee07bf459c80cd830f76fbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerController: {fileID: 6327377476902879134}
-  innerSphereMat: {fileID: 2100000, guid: e79d86c82ccf9ff4abd1f36b1b83efd8, type: 2}
   standardMat: {fileID: 0}
   useSetMaterial: 1
 --- !u!1 &920473469
@@ -59553,7 +59548,7 @@ PrefabInstance:
       objectReference: {fileID: 165569703}
     - target: {fileID: 7460864103089834837, guid: 3e47ebc52a4877f42b421bdd3dd12bd2, type: 3}
       propertyPath: activateDistance
-      value: 40
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7460864103089834837, guid: 3e47ebc52a4877f42b421bdd3dd12bd2, type: 3}
       propertyPath: portalIterations
@@ -64857,27 +64852,6 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1256269416}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6e03563eee07bf459c80cd830f76fbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerController: {fileID: 6327377476902879134}
-  innerSphereMat: {fileID: 2100000, guid: e79d86c82ccf9ff4abd1f36b1b83efd8, type: 2}
-  standardMat: {fileID: 0}
-  useSetMaterial: 1
---- !u!1 &1258438134 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9090595400441101673, guid: d39b9c67dc607814faf3a7cdc837fd53, type: 3}
-  m_PrefabInstance: {fileID: 77837812}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1258438139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1258438134}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6e03563eee07bf459c80cd830f76fbc, type: 3}
@@ -70308,7 +70282,7 @@ PrefabInstance:
       objectReference: {fileID: 612618872}
     - target: {fileID: 7460864103089834837, guid: 3e47ebc52a4877f42b421bdd3dd12bd2, type: 3}
       propertyPath: activateDistance
-      value: 40
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7460864103089834837, guid: 3e47ebc52a4877f42b421bdd3dd12bd2, type: 3}
       propertyPath: portalIterations
@@ -76390,27 +76364,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1468847032}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1476113992 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9090595400616201061, guid: d39b9c67dc607814faf3a7cdc837fd53, type: 3}
-  m_PrefabInstance: {fileID: 77837812}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1476113996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1476113992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6e03563eee07bf459c80cd830f76fbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerController: {fileID: 6327377476902879134}
-  innerSphereMat: {fileID: 2100000, guid: e79d86c82ccf9ff4abd1f36b1b83efd8, type: 2}
-  standardMat: {fileID: 0}
-  useSetMaterial: 1
 --- !u!1 &1476257770
 GameObject:
   m_ObjectHideFlags: 0
@@ -83610,27 +83563,6 @@ MonoBehaviour:
   innerSphereMat: {fileID: 2100000, guid: e79d86c82ccf9ff4abd1f36b1b83efd8, type: 2}
   standardMat: {fileID: 0}
   useSetMaterial: 1
---- !u!1 &1623354637 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9090595401174249883, guid: d39b9c67dc607814faf3a7cdc837fd53, type: 3}
-  m_PrefabInstance: {fileID: 77837812}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1623354642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1623354637}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6e03563eee07bf459c80cd830f76fbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerController: {fileID: 6327377476902879134}
-  innerSphereMat: {fileID: 2100000, guid: e79d86c82ccf9ff4abd1f36b1b83efd8, type: 2}
-  standardMat: {fileID: 0}
-  useSetMaterial: 1
 --- !u!1001 &1624040880
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84140,7 +84072,7 @@ PrefabInstance:
       objectReference: {fileID: 1848784700}
     - target: {fileID: 7460864103089834837, guid: 3e47ebc52a4877f42b421bdd3dd12bd2, type: 3}
       propertyPath: activateDistance
-      value: 40
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7460864103089834837, guid: 3e47ebc52a4877f42b421bdd3dd12bd2, type: 3}
       propertyPath: portalIterations
@@ -91691,27 +91623,6 @@ MonoBehaviour:
   innerSphereMat: {fileID: 2100000, guid: e79d86c82ccf9ff4abd1f36b1b83efd8, type: 2}
   standardMat: {fileID: 0}
   useSetMaterial: 1
---- !u!1 &1763053801 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9090595399918927390, guid: d39b9c67dc607814faf3a7cdc837fd53, type: 3}
-  m_PrefabInstance: {fileID: 77837812}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1763053806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1763053801}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6e03563eee07bf459c80cd830f76fbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerController: {fileID: 6327377476902879134}
-  innerSphereMat: {fileID: 2100000, guid: e79d86c82ccf9ff4abd1f36b1b83efd8, type: 2}
-  standardMat: {fileID: 0}
-  useSetMaterial: 1
 --- !u!1 &1763916784
 GameObject:
   m_ObjectHideFlags: 0
@@ -96228,7 +96139,7 @@ PrefabInstance:
       objectReference: {fileID: 1630465456}
     - target: {fileID: 7460864103089834837, guid: 3e47ebc52a4877f42b421bdd3dd12bd2, type: 3}
       propertyPath: activateDistance
-      value: 40
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7460864103089834837, guid: 3e47ebc52a4877f42b421bdd3dd12bd2, type: 3}
       propertyPath: portalIterations
@@ -97746,7 +97657,7 @@ PrefabInstance:
       objectReference: {fileID: 146781356}
     - target: {fileID: 7460864103089834837, guid: 3e47ebc52a4877f42b421bdd3dd12bd2, type: 3}
       propertyPath: activateDistance
-      value: 40
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7460864103089834837, guid: 3e47ebc52a4877f42b421bdd3dd12bd2, type: 3}
       propertyPath: portalIterations
@@ -98944,6 +98855,10 @@ PrefabInstance:
       propertyPath: linkedPortal
       value: 
       objectReference: {fileID: 9090595399305919847}
+    - target: {fileID: 7460864103089834837, guid: 3e47ebc52a4877f42b421bdd3dd12bd2, type: 3}
+      propertyPath: activateDistance
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 7460864103089834837, guid: 3e47ebc52a4877f42b421bdd3dd12bd2, type: 3}
       propertyPath: portalIterations
       value: 1
@@ -100784,7 +100699,7 @@ PrefabInstance:
       objectReference: {fileID: 24288051}
     - target: {fileID: 7460864103089834837, guid: 3e47ebc52a4877f42b421bdd3dd12bd2, type: 3}
       propertyPath: activateDistance
-      value: 40
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7460864103089834837, guid: 3e47ebc52a4877f42b421bdd3dd12bd2, type: 3}
       propertyPath: portalIterations
@@ -105801,27 +105716,6 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2008236123}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6e03563eee07bf459c80cd830f76fbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerController: {fileID: 6327377476902879134}
-  innerSphereMat: {fileID: 2100000, guid: e79d86c82ccf9ff4abd1f36b1b83efd8, type: 2}
-  standardMat: {fileID: 0}
-  useSetMaterial: 1
---- !u!1 &2008559680 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9092463716027774677, guid: d39b9c67dc607814faf3a7cdc837fd53, type: 3}
-  m_PrefabInstance: {fileID: 77837812}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2008559681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2008559680}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6e03563eee07bf459c80cd830f76fbc, type: 3}
@@ -111205,7 +111099,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9090595401162588426, guid: d39b9c67dc607814faf3a7cdc837fd53, type: 3}
   m_PrefabInstance: {fileID: 77837812}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2008559680}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8ebad32bfb69fc45a6f453239b51f0c, type: 3}
@@ -112940,7 +112834,7 @@ PrefabInstance:
       objectReference: {fileID: 425921080}
     - target: {fileID: 7460864103089834837, guid: 3e47ebc52a4877f42b421bdd3dd12bd2, type: 3}
       propertyPath: activateDistance
-      value: 40
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7460864103089834837, guid: 3e47ebc52a4877f42b421bdd3dd12bd2, type: 3}
       propertyPath: portalIterations

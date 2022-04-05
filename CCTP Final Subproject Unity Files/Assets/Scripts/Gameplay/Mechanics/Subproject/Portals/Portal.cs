@@ -64,6 +64,18 @@ public class Portal : MonoBehaviour
 		portalScreen.material.mainTexture = tempTexture1;
 	}
 
+	private void Update() 
+	{
+		if (portalToPlayerDistance > activateDistance)
+		{
+			portalCamera.gameObject.SetActive (false);
+		}
+		else
+		{
+			portalCamera.gameObject.SetActive (true);
+		}
+	}
+
 	// Update is called once per frame
 	private void LateUpdate()
 	{

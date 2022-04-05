@@ -53,7 +53,7 @@ public class SimonSays : MonoBehaviour
 
         if (resultOption == 0 && !oneTime)
         {
-            SceneManager.LoadScene (2);
+            SceneManager.LoadScene (3);
             oneTime = true;
         }
         else if (desiredResult == 1)

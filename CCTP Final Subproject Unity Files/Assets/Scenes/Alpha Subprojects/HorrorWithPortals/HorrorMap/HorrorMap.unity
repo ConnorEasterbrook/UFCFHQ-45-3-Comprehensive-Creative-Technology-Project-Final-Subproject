@@ -33735,7 +33735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lockCursor: 1
-  mouseSensitivity: 5
+  mouseSensitivity: 3
   cameraRotationSmoothTime: 0.1
   cameraTiltRange: {x: -30, y: 30}
   useSound: 1
@@ -33751,8 +33751,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e507c713bf9ad0a47bc3c72ed38a0336, type: 3}
   - {fileID: 8300000, guid: 5330beeba69392745bd33a663c97f567, type: 3}
   footstepVolume: 0.05
-  walkSpeed: 2.5
-  sprintSpeed: 5
+  walkSpeed: 4
+  sprintSpeed: 6
   movementSmoothTime: 0.1
   jumpForce: 12
   allowJumping: 1

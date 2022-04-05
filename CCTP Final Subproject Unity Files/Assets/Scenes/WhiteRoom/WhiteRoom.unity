@@ -3201,8 +3201,7 @@ MonoBehaviour:
   betaPortal:
   - {fileID: 1025739894}
   - {fileID: 1737498164}
-  finalPortal: {fileID: 0}
-  alphaStage: 0
+  finalPortal: {fileID: 1129887559}
 --- !u!1 &1349611520
 GameObject:
   m_ObjectHideFlags: 0
@@ -5597,7 +5596,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Go through a green portal to access an alpha-stage subproject.
+  m_Text: Go through a green portal to access an alpha-stage subproject. Red (beta-stage)
+    opens up once all green are complete. Orange is the finale.
 --- !u!222 &1253487372455233766
 CanvasRenderer:
   m_ObjectHideFlags: 0

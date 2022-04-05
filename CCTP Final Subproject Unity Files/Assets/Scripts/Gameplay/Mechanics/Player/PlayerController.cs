@@ -308,7 +308,7 @@ public class PlayerController : PortalObject
             // return Physics.Raycast (transform.position, -transform.up, yCollisionBounds + 0.1f);
 
             if (Physics.Raycast (new Vector3 (transform.position.x + 0.25f, transform.position.y, transform.position.z), -transform.up, yCollisionBounds + 0.1f) || 
-            Physics.Raycast (new Vector3 (transform.position.x - 0.25f, transform.position.y, transform.position.z), -transform.up, yCollisionBounds + 0.1f))
+            Physics.Raycast (new Vector3 (transform.position.x - 0.25f, transform.position.y, transform.position.z), -transform.up, yCollisionBounds + 0.1f) || Physics.Raycast (transform.position, -transform.up, yCollisionBounds + 0.5f))
             {
                 return true;
             }

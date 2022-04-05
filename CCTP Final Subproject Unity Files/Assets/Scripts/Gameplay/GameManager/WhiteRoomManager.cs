@@ -10,18 +10,17 @@ public class WhiteRoomManager : MonoBehaviour
     public Trigger[] betaPortal;
     public Trigger finalPortal;
 
-    public bool alphaStage = true;
+    public static bool alphaStage = true;
     private static int portalsComplete;
-    private bool finalStage;
+    public static bool finalStage;
 
     private static bool[] alphaPortalUsed = {false, false, false, false, false};
     private static bool[] betaPortalUsed = {false, false};
 
-
     // Update is called once per frame
     async void Update()
     {
-        if (!finalStage)
+        if (alphaStage)
         {
             for (int i = 0; i < alphaPortal.Length; i++)
             {
@@ -56,10 +55,6 @@ public class WhiteRoomManager : MonoBehaviour
                     await Task.Delay (500);
                     alphaPortalUsed [i] = true;
                 }
-                else if (alphaPortalUsed [i] == true)
-                {
-                    alphaPortal [i].gameObject.SetActive (false);
-                }
             }
         }
         else
@@ -82,11 +77,27 @@ public class WhiteRoomManager : MonoBehaviour
                     await Task.Delay (500);
                     betaPortalUsed [i] = true;
                 }
-                else if (betaPortalUsed [i] == true)
-                {
-                    betaPortal [i].gameObject.SetActive (false);
-                }
             }
+        }
+
+        for (int i = 0; i < alphaPortal.Length; i++)
+        {
+            if (alphaPortalUsed [i] == true)
+            {
+                alphaPortal [i].gameObject.SetActive (false);
+            }
+        }
+        for (int i = 0; i < betaPortal.Length; i++)
+        {
+            if (betaPortalUsed [i] == true)
+            {
+                betaPortal [i].gameObject.SetActive (false);
+            }
+        }
+
+        if (portalsComplete == 5)
+        {
+            alphaStage = false;
         }
 
         if (portalsComplete == 7)
