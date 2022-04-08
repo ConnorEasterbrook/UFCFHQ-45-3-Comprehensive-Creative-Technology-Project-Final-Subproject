@@ -4068,10 +4068,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d0bcb530225a4c41b0495493e4d330a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tempTextString_1: Welcome to the Inner Shere alpha stage subproject. Nothing too
-    fancy, just a shader.
-  tempTextString_2: You've been placed in what could only be considered as a pet
-    enclosure... Or a doll house
+  tempTextString_1: This level infringes upon Euclid's second postulate as the world
+    only exists within a sphere so a line can not be extended indefinitely, even
+    if the local world is Euclidean.
+  tempTextString_2: Welcome to the Inner Shere alpha stage subproject. Nothing too
+    fancy, just a shader. You've been placed in what could only be considered as
+    a pet enclosure... Or a doll house
   tempTextString_3: Explore the map and find the requested objects. Press 'P' to
     see this again.
   tempText: {fileID: 5861009473398611441}

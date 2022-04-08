@@ -67586,9 +67586,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d0bcb530225a4c41b0495493e4d330a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tempTextString_1: Welcome to an exploration of spherical proportions... Does that
-    make sense?
-  tempTextString_2: Well anyway. Walk around the planet and find the goodies.
+  tempTextString_1: This level relies on the Riemannian Postulate. Two parallel lines
+    will intersect twice.
+  tempTextString_2: Welcome to an exploration of spherical proportions... Does that
+    make sense? Well anyway. Walk around the planet and find the goodies.
   tempTextString_3: Explore the planet and find the orange cubes that have particles
     coming from them!
   tempText: {fileID: 6804104043977985340}

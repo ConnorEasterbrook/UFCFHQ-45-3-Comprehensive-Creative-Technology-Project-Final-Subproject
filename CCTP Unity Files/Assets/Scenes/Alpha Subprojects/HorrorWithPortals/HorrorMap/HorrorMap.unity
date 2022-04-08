@@ -1086,10 +1086,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d0bcb530225a4c41b0495493e4d330a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tempTextString_1: Welcome to the 'Horror with portals' alpha stage subprojt. Please
-    make your way through the portals in order to find the exit.
-  tempTextString_2: To clarify, you must enter the correct portal rooms to get to
-    the exit.
+  tempTextString_1: These portals break Euclid's fifth postulate. Due to the hyperbolic
+    nature of portals, there can be multiple lines between two points.
+  tempTextString_2: Welcome to the 'Horror with portals' alpha stage subproject.
+    Please make your way through the portals in order to find the exit. To clarify,
+    you must enter the correct portal rooms to get to the exit.
   tempTextString_3: Press 'P' to receive this message again.
   tempText: {fileID: 6804104045468214983}
   textPanel: {fileID: 6804104045814752356}
@@ -33735,7 +33736,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lockCursor: 1
-  mouseSensitivity: 3
+  mouseSensitivity: 8
   cameraRotationSmoothTime: 0.1
   cameraTiltRange: {x: -30, y: 30}
   useSound: 1

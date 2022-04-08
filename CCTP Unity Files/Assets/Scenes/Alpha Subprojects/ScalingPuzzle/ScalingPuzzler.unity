@@ -24177,9 +24177,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d0bcb530225a4c41b0495493e4d330a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tempTextString_1: Welcome to the scaling, gravity changing puzzler. Gravity changing
-    scaling puzzler...
-  tempTextString_2: The name is not all that great, I'll admit... *cough* explore
+  tempTextString_1: This level infringes upon Euclid's first postulate. One line
+    is what the player sees. The other line is the global change in the scaled object.
+  tempTextString_2: Welcome to the scaling, gravity changing puzzler. Gravity changing
+    scaling puzzler... The name is not all that great, I'll admit... *cough* explore
     the warehouse.
   tempTextString_3: Press 'E' on the orange cubes to scale them. Jump at walls to
     change gravity. Press 'P' to show this again.
