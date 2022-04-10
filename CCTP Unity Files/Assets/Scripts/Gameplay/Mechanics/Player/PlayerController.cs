@@ -349,15 +349,14 @@ public class PlayerController : PortalObject
 
     private void UpdateSphericalRotation()
     {
-        // Get player's current "up" && get the centre of the planetGameObject
-        Vector3 localUp = playerRigidbody.transform.up;
+        // Get the target direction of the planetGameObject to the player
         Vector3 targetDirection = (playerRigidbody.position - planetGameObject.transform.position).normalized;
 
         // Create a smooth movement of adusting player rotation to match axis with the planetGameObject
         playerToPlanetRotation = Quaternion.Slerp 
         (
             transform.rotation, // Get player's current rotation
-            Quaternion.FromToRotation (localUp, targetDirection) * playerRigidbody.rotation, // Compare current position to planet pos
+            Quaternion.FromToRotation (playerRigidbody.transform.up, targetDirection) * playerRigidbody.rotation, // Compare current position to planet pos
             cameraRotationSmoothTime * 2 // Speed of rotation
         );
 
@@ -452,7 +451,6 @@ public class PlayerController : PortalObject
             if (relativeRot.y < 1 && relativeRot.y > -1) relativeRot.y += 180;
             else if (relativeRot.y < -179 && relativeRot.y > -181) relativeRot.y += 180;
             else if (relativeRot.y < 181 && relativeRot.y > 179) relativeRot.y += 180;
-            Debug.Log (relativeRot);
 
             Vector3 cameraRot = (outPortal.rotation.eulerAngles * -1) + playerChild.transform.rotation.eulerAngles; // Get the opposite rotation of current rotation
             Quaternion teleRot = outPortal.rotation * Quaternion.Euler (cameraRot); // Establish rotation variable for correct way to face after teleportation

@@ -1086,8 +1086,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d0bcb530225a4c41b0495493e4d330a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tempTextString_1: These portals break Euclid's fifth postulate. Due to the hyperbolic
-    nature of portals, there can be multiple lines between two points.
+  tempTextString_1: These portals breach Euclid's fourth postulate. If rooms are
+    connected with portals, then although they appear Euclidean, the map plays as
+    if it were hyperbolic. Walking straight and right four times would not return
+    you to the same room, for example.
   tempTextString_2: Welcome to the 'Horror with portals' alpha stage subproject.
     Please make your way through the portals in order to find the exit. To clarify,
     you must enter the correct portal rooms to get to the exit.
