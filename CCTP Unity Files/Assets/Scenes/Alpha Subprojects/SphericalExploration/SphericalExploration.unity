@@ -21467,7 +21467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTriggered: 0
-  result: 0
+  result: 1
 --- !u!199 &786832563
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -39004,7 +39004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTriggered: 0
-  result: 0
+  result: 1
 --- !u!1001 &1025350922
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -21,6 +21,7 @@ public class SphericalExplorationManager : MonoBehaviour
             if (triggerObjectives [i].isTriggered)
             {
                 objectives++;
+                triggerObjectives [i].gameObject.SetActive (false);
             }
         }
 

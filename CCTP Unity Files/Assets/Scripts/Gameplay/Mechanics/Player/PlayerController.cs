@@ -242,7 +242,6 @@ public class PlayerController : PortalObject
         // Check for jump input and if true, check that the character isn't jumping or falling. Then jump
         if (Input.GetKeyDown (KeyCode.Space) && CheckGrounded() && allowJumping)
         {
-            Debug.Log ("f");
             jumping = true;
             fallingVelocity = jumpForce;
         }
@@ -292,7 +291,6 @@ public class PlayerController : PortalObject
 
         if (CheckCeilingCollision())
         {
-            Debug.Log ("Heads");
             fallingVelocity = -1.0f;
         }
 

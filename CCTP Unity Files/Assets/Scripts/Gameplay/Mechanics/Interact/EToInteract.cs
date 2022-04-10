@@ -31,7 +31,7 @@ public class EToInteract : MonoBehaviour
             }
             else if (desiredResult == 1)
             {
-                SceneManager.LoadScene (2);
+                SceneManager.LoadScene (3);
             }
             else if (desiredResult == 2)
             {

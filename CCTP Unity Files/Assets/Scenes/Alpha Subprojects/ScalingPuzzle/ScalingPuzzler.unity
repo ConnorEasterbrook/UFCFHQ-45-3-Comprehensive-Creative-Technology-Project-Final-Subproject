@@ -24150,7 +24150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerDetected: 0
   progressScene: {fileID: 641571032}
-  result: 0
+  result: 1
 --- !u!4 &1241011577
 Transform:
   m_ObjectHideFlags: 0

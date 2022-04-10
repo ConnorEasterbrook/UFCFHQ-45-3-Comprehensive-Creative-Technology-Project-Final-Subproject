@@ -34,7 +34,7 @@ public class TimeLimit : MonoBehaviour
 
         timerText.color = Color.Lerp (red, green, timer / initialTimer);
 
-        if (timer == 0)
+        if (timer <= 0)
         {
             SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex);
         }
