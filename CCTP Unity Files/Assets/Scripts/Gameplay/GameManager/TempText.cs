@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class TempText : MonoBehaviour
 {
     private bool oneTime;
+    private static bool whiteRoomOneTime;
     public string tempTextString_1;
     public string tempTextString_2;
     public string tempTextString_3;
@@ -21,6 +22,17 @@ public class TempText : MonoBehaviour
     {
         if (oneTime)
         {
+            textPanel.gameObject.SetActive (false);
+            tempText.gameObject.SetActive (false);
+        }
+
+        if (SceneManager.GetActiveScene().buildIndex == 3 && !whiteRoomOneTime)
+        {
+            whiteRoomOneTime = true;
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 3)
+        {
+            oneTime = true;
             textPanel.gameObject.SetActive (false);
             tempText.gameObject.SetActive (false);
         }
