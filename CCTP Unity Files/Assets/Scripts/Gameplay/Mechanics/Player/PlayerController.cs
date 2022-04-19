@@ -53,6 +53,7 @@ public class PlayerController : PortalObject
     [Tooltip ("Jump height. 7.5f feels good for arcade-like jumping (10.0f gravity). 10.0 for realistic jumping (20.0f gravity)")]
     public float jumpForce = 10.0f;
     public bool allowJumping = true;
+    public bool slopes = false;
     private bool jumping;
     [Tooltip ("Amount of gravity. 10.0f feels good for arcade-like gravity. 20.0f for realistic gravity.")]
     public float gravityForce = 20.0f;
@@ -301,12 +302,13 @@ public class PlayerController : PortalObject
     // Boolean function that uses a raycast to see if there is ground within a superficial amount of the collider bounds.
     private bool CheckGrounded()
     {
-        if (!sphericalMovement || isModel)
+        if (slopes) return Physics.Raycast (transform.position, -transform.up, yCollisionBounds + 0.5f);
+        else if (!sphericalMovement || isModel)
         {
             // return Physics.Raycast (transform.position, -transform.up, yCollisionBounds + 0.1f);
 
-            if (Physics.Raycast (new Vector3 (transform.position.x + 0.25f, transform.position.y, transform.position.z), -transform.up, yCollisionBounds + 0.1f) || 
-            Physics.Raycast (new Vector3 (transform.position.x - 0.25f, transform.position.y, transform.position.z), -transform.up, yCollisionBounds + 0.1f) || Physics.Raycast (transform.position, -transform.up, yCollisionBounds + 0.5f))
+            if (Physics.Raycast (new Vector3 (transform.position.x + 0.25f, transform.position.y, transform.position.z), -transform.up, yCollisionBounds + 0.05f) || 
+            Physics.Raycast (new Vector3 (transform.position.x - 0.25f, transform.position.y, transform.position.z), -transform.up, yCollisionBounds + 0.05f) || Physics.Raycast (transform.position, -transform.up, yCollisionBounds + 0.025f))
             {
                 return true;
             }

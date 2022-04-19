@@ -20841,8 +20841,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tempTextString_1: 'Ah, how quaint. A tactical game with changing gravity but that
     is not non-Euclidean is it? '
-  tempTextString_2: Well, the non-Euclidean comes from those lovely orange cubes
-    you've already become acquainted with.
+  tempTextString_2: Well, the non-Euclidean comes from that lovely inner-sphere effect
+    that you've already become acquainted with.
   tempTextString_3: Get to the end of the level with tactical thinking. Press 'P'
     to see this again.
   tempText: {fileID: 9619353872420483}

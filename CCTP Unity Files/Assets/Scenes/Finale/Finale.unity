@@ -113415,6 +113415,7 @@ MonoBehaviour:
   movementSmoothTime: 0.1
   jumpForce: 12
   allowJumping: 1
+  slopes: 1
   gravityForce: 20
   dissolvingFloor: 0
   sphericalMovement: 0
