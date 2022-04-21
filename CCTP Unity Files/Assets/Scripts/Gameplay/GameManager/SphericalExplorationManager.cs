@@ -14,11 +14,11 @@ public class SphericalExplorationManager : MonoBehaviour
     private bool oneTime2;
 
     // Update is called once per frame.
-    void Update()
+    async void Update()
     {
         for (int i = 0; i < triggerObjectives.Count; i++)
         {
-            if (triggerObjectives [i].isTriggered)
+            if (triggerObjectives [i].isTriggered && triggerObjectives [i].gameObject.activeInHierarchy)
             {
                 objectives++;
                 triggerObjectives [i].gameObject.SetActive (false);
