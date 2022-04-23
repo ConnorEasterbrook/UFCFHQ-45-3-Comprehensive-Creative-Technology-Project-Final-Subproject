@@ -20,7 +20,10 @@ There is a demo video of this project but it primarily focuses on the first alph
 https://www.youtube.com/watch?v=EwTqkeslOEQ
 
 A summary video of this project can be found at:
-LINK
+https://youtu.be/cTUx0pBz8Mw
 
-The final viva video of this project can be found at: LINK
+<!-- The final viva video of this project can be found at: LINK -->
+
+## Assets List
+All assets were created by the project developer specifically for the project.
 
